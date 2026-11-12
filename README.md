@@ -2,6 +2,15 @@
 
 Aplicação web estática, sem dependências externas, para acompanhar **20 frentes de projeto**, **15 demandas/rotinas** e **22 marcos preliminares** da ENAJU conforme a base gerencial de 12/11/2026. A identidade visual utiliza o logotipo ENAJU fornecido pela equipe.
 
+## Acessar o painel
+
+- **Código do painel (acesso imediato com login GitHub):** [abrir `index.html`](https://github.com/redenacional-enaju-cnj/Painel_projetos/blob/main/index.html). **Atenção:** o GitHub mostra o arquivo-fonte; esse endereço não executa o dashboard.
+- **Site do painel:** **ainda não publicado** — o GitHub Pages do repositório está desativado (verificação de 12/11/2026). Endereço previsto *após* habilitar a hospedagem: `https://redenacional-enaju-cnj.github.io/Painel_projetos/`. **Não tratar esse endereço como link ativo** antes de verificar a publicação.
+- **Publicar pela interface do GitHub:** [`Settings → Pages`](https://github.com/redenacional-enaju-cnj/Painel_projetos/settings/pages) → em *Build and deployment*, selecionar *Deploy from a branch* → `main` → `/ (root)` → *Save*, quando a opção estiver disponível para o plano da conta.
+- **Privacidade:** o repositório atual é **privado**, mas um site comum do GitHub Pages pode ser **público**, mesmo com repositório privado. A base `data/portfolio.json` contém informações de gestão; avaliar a classificação dos dados antes de habilitar a hospedagem. Publicação privada com controle de acesso não é fornecida pelo Pages comum e requer infraestrutura/plano apropriado.
+- **Executar sem publicar:** baixar ou clonar o repositório e iniciar `python -m http.server 8000` na pasta raiz; abrir `http://localhost:8000/` no próprio computador.
+
+---
 ## O que está funcional
 
 - Dashboard com filtros, todos os projetos, eixos, responsáveis sugeridos e próximos passos.
