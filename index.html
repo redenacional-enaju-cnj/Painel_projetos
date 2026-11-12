@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Painel integrado de projetos, atividades e cronogramas da ENAJU.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <title>ENAJU | Painel de Gestão Integrada</title>
+  <link rel="icon" href="assets/enaju-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Ir para o conteúdo</a>
+  <div class="app">
+    <header class="topbar">
+      <div class="branding">
+        <img src="assets/enaju-logo.png" alt="ENAJU — Escola Nacional do Judiciário" class="brandlogo">
+        <span class="branddivider"></span>
+        <div class="cnjmark" aria-label="Conselho Nacional de Justiça"><strong>CNJ</strong><span>CONSELHO NACIONAL<br>DE JUSTIÇA</span></div>
+      </div>
+      <div class="topbar-right">
+        <span class="portfolio-year"><span class="dot"></span>Carteira 2026–2027</span>
+        <button class="btn btn-outline btn-sm" id="btnSync"><span class="icon">⟳</span> Recarregar</button>
+        <button class="btn btn-solid btn-sm" id="btnConnect">Conectar GitHub</button>
+        <button class="btn btn-subtle btn-sm" id="btnSend" disabled>Enviar alterações <span id="sendIndicator"></span></button>
+      </div>
+    </header>
+    <section class="headband">
+      <div>
+        <div class="eyebrow">GOVERNANÇA E MONITORAMENTO</div>
+        <h1>Painel de Gestão Integrada da ENAJU</h1>
+        <p>Um portfólio, duas funções: gestão de projetos e acompanhamento de demandas.</p>
+      </div>
+      <div class="sync-info" id="connectionBanner" role="status">
+        <span id="connectionDot" class="connection-dot"></span>
+        <div><strong id="connectionTitle">Base inicial carregada</strong><small id="connectionSubtitle">Edição local · envio exige conexão GitHub</small></div>
+      </div>
+    </section>
+    <nav class="mainnav" aria-label="Seções do painel" id="mainnav">
+      <button class="nav-btn active" data-view="overview" aria-current="page">◈ <span>Visão geral</span></button>
+      <button class="nav-btn" data-view="projects">▦ <span>Projetos</span></button>
+      <button class="nav-btn" data-view="routines">☷ <span>Demandas e rotinas</span></button>
+      <button class="nav-btn" data-view="timeline">▤ <span>Cronograma</span></button>
+      <button class="nav-btn" data-view="history">◷ <span>Atualizações</span></button>
+    </nav>
+    <main id="main">
+      <div id="banner" class="banner" hidden></div>
+      <div class="content" id="viewRoot"><div class="loading">Carregando a carteira da ENAJU…</div></div>
+    </main>
+    <footer class="footer">
+      <div><span class="footer-mark">ENAJU · CNJ</span> <span id="lastUpdatedText">Base inicial: 12/11/2026</span></div>
+      <div><span id="dirtyCounter"></span><button class="text-button" id="btnExport">Exportar JSON</button><button class="text-button" id="btnImport">Importar JSON</button></div>
+    </footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <input type="file" id="importInput" accept="application/json,.json" hidden>
+  <div id="modal" class="modal-layer" hidden>
+    <div class="modal-backdrop" data-action="close-modal"></div>
+    <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header"><h2 id="modalTitle">Editar</h2><button class="icon-button" id="closeModal" aria-label="Fechar">×</button></div>
+      <div id="modalContent" class="modal-content"></div>
+    </section>
+  </div>
+  <noscript>Ative JavaScript para utilizar o painel.</noscript>
+</body>
+</html>
