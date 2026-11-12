@@ -5,8 +5,8 @@ Aplicação web estática, sem dependências externas, para acompanhar **20 fren
 ## Acessar o painel
 
 - **Código do painel (acesso imediato com login GitHub):** [abrir `index.html`](https://github.com/redenacional-enaju-cnj/Painel_projetos/blob/main/index.html). **Atenção:** o GitHub mostra o arquivo-fonte; esse endereço não executa o dashboard.
-- **Site do painel:** **ainda não publicado** — o GitHub Pages do repositório está desativado (verificação de 12/11/2026). Endereço previsto *após* habilitar a hospedagem: `https://redenacional-enaju-cnj.github.io/Painel_projetos/`. **Não tratar esse endereço como link ativo** antes de verificar a publicação.
-- **Publicar pela interface do GitHub:** [`Settings → Pages`](https://github.com/redenacional-enaju-cnj/Painel_projetos/settings/pages) → em *Build and deployment*, selecionar *Deploy from a branch* → `main` → `/ (root)` → *Save*, quando a opção estiver disponível para o plano da conta.
+- **Site do painel:** **não publicado intencionalmente**. Decisão de 12/11/2026: **permanecer privado até nova autorização expressa**. O GitHub Pages comum **não é o destino autorizado**, porque a conta proprietária é pessoal e a publicação do site não teria o controle de acesso desejado.
+- **Não habilitar o Pages ainda.** A branch `main` existe e já contém o projeto; a limitação é o nível de privacidade da hospedagem, não a ausência do código. Para um acesso privado pelo navegador, avaliar uma hospedagem com autenticação obrigatória, como Cloudflare Pages protegido integralmente por Cloudflare Access, inclusive o domínio de produção e as prévias.
 - **Privacidade:** o repositório atual é **privado**, mas um site comum do GitHub Pages pode ser **público**, mesmo com repositório privado. A base `data/portfolio.json` contém informações de gestão; avaliar a classificação dos dados antes de habilitar a hospedagem. Publicação privada com controle de acesso não é fornecida pelo Pages comum e requer infraestrutura/plano apropriado.
 - **Executar sem publicar:** baixar ou clonar o repositório e iniciar `python -m http.server 8000` na pasta raiz; abrir `http://localhost:8000/` no próprio computador.
 
@@ -30,6 +30,10 @@ python -m http.server 8000
 ```
 
 Em seguida, abra `http://localhost:8000/` no navegador. Abra a visão geral, clique em **Editar** e salve; a edição é local até que um envio remoto seja confirmado.
+
+## Decisão de privacidade — 12/11/2026
+
+**Acesso ao painel somente para usuários autorizados, por enquanto.** O repositório `Painel_projetos` permanece privado. Não modificar a visibilidade nem disponibilizar `data/portfolio.json` em um site público sem nova decisão da coordenação. O endereço futuro do site privado só deve ser registrado após implantação, aplicação da autenticação a todos os caminhos e teste de acesso não autenticado.
 
 ## Repositório e publicação
 
