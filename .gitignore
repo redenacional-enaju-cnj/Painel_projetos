@@ -1,0 +1,7 @@
+# Resultados de build e segredos locais
+dist/
+.dev.vars
+.env
+.env.*
+!.env.example
+node_modules/
