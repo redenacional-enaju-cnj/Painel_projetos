@@ -1,6 +1,6 @@
 # ENAJU — Painel de Gestão Integrada
 
-Aplicação web com interface estática e autenticação provisória no Cloudflare Pages, para acompanhar **20 frentes de projeto**, **15 demandas/rotinas** e **22 marcos preliminares** da ENAJU conforme a base gerencial de 12/11/2026. A identidade visual utiliza o logotipo ENAJU fornecido pela equipe.
+Aplicação web estática com base versionada no GitHub, atualizada em 13/11/2026, para acompanhar **14 projetos na carteira principal**, **27 demandas/rotinas** e **21 marcos de planejamento**, além dos itens preservados em backlog e histórico. A identidade visual utiliza o logotipo ENAJU fornecido pela equipe.
 
 ## Publicação com endereço fixo — GitHub Pages
 
@@ -36,23 +36,13 @@ python -m http.server 8000
 
 Em seguida, abra `http://localhost:8000/` no navegador. Abra a visão geral, clique em **Editar** e salve; a edição é local até que um envio remoto seja confirmado.
 
-## Decisão de privacidade — 12/11/2026
+## Decisão de publicação — 13/11/2026
 
-**Acesso ao painel somente para usuários autorizados, por enquanto.** O repositório `Painel_projetos` permanece privado. Não modificar a visibilidade nem disponibilizar `data/portfolio.json` em um site público sem nova decisão da coordenação. O endereço futuro do site privado só deve ser registrado após implantação, aplicação da autenticação a todos os caminhos e teste de acesso não autenticado.
+A coordenação autorizou que o repositório e o painel possam ser **públicos**, para que qualquer pessoa com o endereço visualize o portfólio. Antes da mudança de visibilidade, conferir se `data/portfolio.json` e o histórico do Git contêm apenas informações apropriadas à divulgação pública.
 
-## Repositório e publicação protegida
+**Método selecionado: GitHub Pages** (branch `main`, diretório `/ (root)`). A versão HTML, CSS, JavaScript e JSON já está na raiz, sem etapa de build. O link fica estável e o JSON atualizado é republicado quando houver novo commit na `main`.
 
-Repositório **privado**: [redenacional-enaju-cnj/Painel_projetos](https://github.com/redenacional-enaju-cnj/Painel_projetos).
-
-A implantação recomendada é **Cloudflare Pages**, conectada ao GitHub: branch `main`, comando de build `sh build.sh`, pasta de saída `dist`. O pacote de build publica somente os arquivos da interface e `data/portfolio.json`, todos bloqueados pelo middleware quando não há login; os arquivos de origem, documentação e testes ficam fora do diretório de publicação.
-
-**Credenciais:** cadastrar **somente na Cloudflare**, como **secrets criptografados**: `ENAJU_BASIC_USER` e `ENAJU_BASIC_PASSWORD`. Não compartilhar senha no chat, não escrever senha no HTML ou GitHub. O primeiro deploy sem secrets fica propositalmente indisponível (503), até a configuração.
-
-**Verificação obrigatória:** após o deploy, uma nova janela anônima deve receber **401** tanto para a raiz quanto para `/data/portfolio.json`; credenciais corretas liberam a navegação. Não divulgar a URL antes dessa verificação. Todas as URLs de preview também precisam de credenciais, inclusive produção.
-
-**Edição:** login no painel controla a **visualização**, não concede automaticamente escrita no repositório. A versão atual ainda solicita um token GitHub *fine-grained* durante a sessão para enviar alterações diretamente pelo navegador. É mais simples solicitar alterações aqui pelo comando `atualize`, usando o conector GitHub autorizado. Para operação multiusuário futura, substituir a credencial compartilhada por Cloudflare Access + login Google e implementar backend próprio para gravação.
-
-Instruções completas: [docs/CLOUDFLARE_DEPLOY.md](docs/CLOUDFLARE_DEPLOY.md).
+O código adicional em `functions/_middleware.js`, `build.sh` e `docs/CLOUDFLARE_DEPLOY.md` documenta a alternativa antiga de publicação privada via Cloudflare Pages, **não usada pelo GitHub Pages**, e não deve ser confundido com login protegido na versão pública.
 
 ## Arquitetura e consistência
 
