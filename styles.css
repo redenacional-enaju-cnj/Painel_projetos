@@ -74,3 +74,32 @@
 .sei-await{min-width:270px;line-height:1.45;font-size:12px}
 @media(max-width:860px){.sei-dashboard-head{align-items:flex-start;flex-direction:column}.sei-mini-grid{grid-template-columns:1fr 1fr}.sei-mini-grid>div:last-child{grid-column:1/-1}}
 @media(max-width:470px){.sei-mini-grid{grid-template-columns:1fr}.sei-mini-grid>div:last-child{grid-column:auto}.sei-dashboard{padding:16px}.sei-dashboard-title{align-items:flex-start}.sei-card-icon{width:42px;height:42px;font-size:28px;flex:none}}
+
+/* ENAJU — cartões de demandas por responsável */
+
+.owners-layout{display:grid;grid-template-columns:minmax(230px,290px) minmax(0,1fr);gap:17px;align-items:start}
+.owner-panel,.owner-results{min-width:0}
+.owner-list{display:flex;flex-direction:column;padding:10px;gap:5px;max-height:720px;overflow:auto}
+.owner-entry{display:flex;width:100%;justify-content:space-between;align-items:center;gap:10px;text-align:left;border:1px solid transparent;border-radius:9px;background:transparent;padding:12px 11px;color:#254c6f;cursor:pointer}
+.owner-entry:hover{background:#f1f8ff}
+.owner-entry.selected{border-color:#a7d8f4;background:#e9f6ff;box-shadow:inset 3px 0 #0789c7}
+.owner-name{font-size:13px;font-weight:750}
+.owner-count{font-size:11px;color:#70869b;white-space:nowrap}
+.owner-results-header{flex-wrap:wrap}
+.owner-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;padding:17px}
+.owner-demand-card{display:flex;flex-direction:column;min-width:0;gap:11px;padding:17px;border:1px solid #dce8f2;border-radius:12px;background:#fff;box-shadow:0 1px 5px #143b5908}
+.owner-card-head{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.owner-demand-id{font-size:11px;font-weight:800;color:#61809b}
+.owner-demand-card h3{font-size:14px;line-height:1.5;font-weight:750;color:#143e68;margin:0;overflow-wrap:anywhere}
+.owner-demand-context{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:12px;color:#55748e}
+.owner-project-link{background:transparent;padding:0;border:0;color:#075c9d;text-align:left;text-decoration:underline;text-underline-offset:2px;font-size:12px;font-weight:700}
+.owner-sei{border-left:1px solid #cbdbe7;padding-left:7px}
+.owner-demand-meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:11px;color:#577188}
+.owner-demand-meta b{color:#2f5677}
+.owner-last-report{margin:0;padding-top:8px;border-top:1px solid #edf2f7;color:#56728c;font-size:12px;line-height:1.55;overflow-wrap:anywhere}
+.owner-assignment-note{margin:0;color:#86621f;background:#fff8e8;border-radius:7px;padding:9px;font-size:11px}
+.owner-card-bottom{margin-top:auto;padding-top:5px}
+.owner-entry:focus-visible,.owner-project-link:focus-visible,.owner-card-bottom button:focus-visible{outline:3px solid #00a2d8;outline-offset:2px}
+@media(max-width:1020px){.owner-cards{grid-template-columns:1fr}}
+@media(max-width:750px){.owners-layout{grid-template-columns:1fr}.owner-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));max-height:none}.owner-cards{grid-template-columns:1fr}}
+@media(max-width:480px){.owner-list{grid-template-columns:1fr}.owner-entry{padding:10px}.owner-cards{padding:11px}}
