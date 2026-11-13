@@ -1,6 +1,6 @@
 # ENAJU — Painel de Gestão Integrada
 
-Aplicação web estática com base versionada no GitHub, atualizada em 13/11/2026, para acompanhar **14 projetos na carteira principal**, **27 demandas/rotinas** e **21 marcos de planejamento**, além dos itens preservados em backlog e histórico. A identidade visual utiliza o logotipo ENAJU fornecido pela equipe.
+Aplicação web estática com base versionada no GitHub, atualizada em 13/11/2026, para acompanhar **14 projetos na carteira principal**, **32 demandas/rotinas** e **21 marcos de planejamento**, além dos itens preservados em backlog e histórico. A identidade visual utiliza o logotipo ENAJU fornecido pela equipe.
 
 ## Publicação com endereço fixo — GitHub Pages
 
@@ -28,7 +28,7 @@ Aplicação web estática com base versionada no GitHub, atualizada em 13/11/202
 
 - A página inicial ganhou um cartão **SEI prioritários**, e a navegação inclui **SEI prioritários** com número, situação, unidade atual (quando verificada), última unidade ou destino informado, o que está aguardando e data da informação.
 - **Link direto para a aba:** https://redenacional-enaju-cnj.github.io/Painel_projetos/#sei
-- **Lista atualizada (13/11/2026): dez processos de reestruturação** — 21240/2026, 20736/2026, 20608/2026, 20650/2026, 21997/2026, 02704/2026, 16537/2026, 15083/2026, 18501/2026 e 20451/2026. O SEI 08366/2026 saiu da lista prioritária e foi conservado no histórico, sem pressupor encerramento.
+- **Lista atualizada (13/11/2026): onze processos prioritários acompanhados** — 21240/2026, 20736/2026, 20608/2026, 20650/2026, 21997/2026, 02704/2026, 16537/2026, 15083/2026, 18501/2026, 20451/2026 e **21372/2026 (Programa ENAJU; prioritário, Igor, SEP)**. O SEI 08366/2026 saiu da lista prioritária e foi conservado no histórico, sem pressupor encerramento.
 - **Não há integração com a caixa SEI**: unidades e situações atuais ficam como não verificadas até registro de movimentação com fonte. Última tramitação histórica não comprova localização atual.
 - A edição no navegador é local até usar **Enviar alterações** com autenticação GitHub. Os dados ficam no mesmo arquivo `data/portfolio.json` e a URL pública permanece inalterada.
 - O acompanhamento de rotina no ChatGPT deve fazer a checagem diária nos dias úteis, comparar revisões documentadas e notificar somente alterações relevantes; não declarar que consultou a caixa SEI sem efetivamente ter acesso.
@@ -111,3 +111,8 @@ build.sh
 .gitignore
 docs/CLOUDFLARE_DEPLOY.md
 ```
+## Demandas por responsável — atualização de 13/11/2026
+
+- A aba **Por responsável** reúne os cards das demandas em cada pessoa e permite abrir/editar a demanda, consultar o projeto e acompanhar status, prioridade e prazo.
+- Demandas compartilhadas aparecem para cada participante sem duplicação na base. Atribuições ainda sugeridas são identificadas como tais.
+- O **SEI 21372/2026** foi incluído como prioritário, unidade atual **SEP**, responsabilidade **Igor**, com vínculo à demanda **R09** do projeto **P01**. Referência de fonte **S22** (captura do SEI e atualização da coordenação).
