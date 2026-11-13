@@ -2,14 +2,20 @@
 
 Aplicação web com interface estática e autenticação provisória no Cloudflare Pages, para acompanhar **20 frentes de projeto**, **15 demandas/rotinas** e **22 marcos preliminares** da ENAJU conforme a base gerencial de 12/11/2026. A identidade visual utiliza o logotipo ENAJU fornecido pela equipe.
 
-## Acessar o painel
+## Publicação com endereço fixo — GitHub Pages
 
-- **Prévia local:** [abrir o arquivo principal do repositório](https://github.com/redenacional-enaju-cnj/Painel_projetos/blob/main/index.html) (código-fonte, não hospedagem navegável). A versão HTML autônoma para visualizar o protótipo é entregue pelo ChatGPT.
-- **URL do protótipo na nuvem:** **pendente da criação do projeto Cloudflare Pages**. Não existe link ativo verificado neste momento. A Cloudflare fornecerá o endereço `https://<nome-do-projeto>.pages.dev` quando o deploy estiver concluído.
-- **Login e senha:** já implementados no **servidor**, por `functions/_middleware.js`; a proteção vale para o site completo e para `/data/portfolio.json`. Sem segredos cadastrados o site responde **503**, nunca exibe dados anônimos.
-- **Tutorial de publicação:** [Cloudflare Pages — configuração, segredos e testes de segurança](docs/CLOUDFLARE_DEPLOY.md). O repositório GitHub permanece privado.
+**Decisão em 13/11/2026:** a coordenação autorizou que o painel e o repositório possam ficar públicos para acesso pelo link. A implantação escolhida é **GitHub Pages a partir de `main`, pasta `/ (root)`**, sem build. O código e a carteira `data/portfolio.json` serão públicos assim que a visibilidade for alterada e o Pages for habilitado.
 
----
+- **URL prevista (ainda depende de ativação e verificação):** https://redenacional-enaju-cnj.github.io/Painel_projetos/
+- **Configurar visibilidade:** [Settings → General](https://github.com/redenacional-enaju-cnj/Painel_projetos/settings) → **Danger Zone → Change repository visibility → Public**.
+- **Habilitar hospedagem:** [Settings → Pages](https://github.com/redenacional-enaju-cnj/Painel_projetos/settings/pages) → **Build and deployment → Source: Deploy from a branch → Branch: main → Folder: / (root) → Save**.
+- **Atualização da base:** sempre que `data/portfolio.json` for alterado e salvo em commit na branch `main`, o GitHub Pages republica os arquivos automaticamente. A URL não muda; recarregue a página para obter a versão mais recente.
+- **Edição:** o site público é de leitura para os visitantes. Alterar e enviar a base exige permissão de escrita no GitHub, e a interface pode solicitar um token de sessão. O comando `atualize` no chat da ENAJU poderá atualizar a base pelo conector GitHub autorizado.
+- **Atenção à publicidade:** processos, responsáveis, histórico, arquivos e versões anteriores da carteira passam a ficar acessíveis na internet. Não armazenar senhas, tokens, CPF, dados pessoais sensíveis ou documentos internos no repositório. Revisar a classificação dos dados antes de converter a visibilidade.
+- O middleware `functions/_middleware.js` é usado apenas na opção **Cloudflare Pages**. **GitHub Pages não o executa e não exige login e senha.** O protótipo público não possui autenticação.
+
+**Situação de verificação:** enquanto o repositório não for convertido para público e o GitHub Pages não estiver ativado, o endereço previsto não deve ser divulgado como funcionando.
+
 ## O que está funcional
 
 - Dashboard com filtros, todos os projetos, eixos, responsáveis sugeridos e próximos passos.
