@@ -157,6 +157,13 @@
       "date": "2026-11-13",
       "type": "Imagem de andamento SEI e relato direto da coordenação",
       "note": "A captura apresenta documentos do processo, entre eles Despacho 2858441 (SEP). Igor designado responsável e prioridade informada diretamente pela coordenação. Não houve acesso ao teor dos documentos."
+    },
+    {
+      "id": "S23",
+      "title": "Correção de responsável e sigla SAD — orientação da Coordenação ENAJU",
+      "date": "2026-11-13",
+      "type": "Indicação direta do coordenador",
+      "note": "SAD é a Secretaria de Administração do CNJ, não uma pessoa. Rodrigo Pereira foi definido para acompanhamento. Mantidas as unidades atuais dos processos, sem inferência de nova tramitação."
     }
   ],
   "projects": [
@@ -412,8 +419,8 @@
       "id": "P08",
       "name": "Sede, estúdio e equipe",
       "group": "Rede e tecnologia",
-      "owner_display": "Fábio · Dr. Daniel · Assad",
-      "owner": "Fábio; Dr. Daniel; Assad",
+      "owner_display": "Fábio · Dr. Daniel · Rodrigo Pereira",
+      "owner": "Fábio; Dr. Daniel; Rodrigo Pereira",
       "historical_status": "Proposta",
       "last_report": "Mudança de sede provável entre dezembro e janeiro, dependente de confirmação.",
       "next_action": "Acompanhar solicitação de Jailson (TJDFT) na SEP para envio à SGP (SEI 20451/2026), além da sede, estúdio e equipe.",
@@ -422,13 +429,14 @@
       "source_ids": [
         "S01",
         "S04",
-        "S19"
+        "S19",
+        "S23"
       ],
       "sei": [
         "20451/2026"
       ],
       "scope": "Nova Sede ENAJU (E2.7); estúdio multifuncional/acústica/equipamentos; equipe técnica, suporte e ocupação. Nova sede condicionada à decisão administrativa.",
-      "note": "Prazos distintos para equipe/estúdio; nenhuma contratação ou nomeação presumida. Atualização SEI de 13/11/2026: 20451/2026 — Encaminhado à SEP. Informe da coordenação em 13/11/2026: Solicitação de Jailson na SEP para envio à SGP (20451/2026).",
+      "note": "Prazos distintos para equipe/estúdio; nenhuma contratação ou nomeação presumida. Atualização SEI de 13/11/2026: 20451/2026 — Encaminhado à SEP. Informe da coordenação em 13/11/2026: Solicitação de Jailson na SEP para envio à SGP (20451/2026). Correção em 13/11: SAD é a Secretaria de Administração do CNJ, não pessoa. Rodrigo Pereira é o responsável pelo acompanhamento operacional relacionado.",
       "last_source_date": "2026-11-13",
       "checked_at": "2026-11-13",
       "target_label": "Janela provável",
@@ -441,7 +449,7 @@
       "progress_evidence": null,
       "progress_validated": false,
       "owner_original_display": "A confirmar",
-      "owner_assignment_basis": "Informação direta do coordenador ENAJU em 13/11/2026"
+      "owner_assignment_basis": "Direção do projeto: Fábio e Dr. Daniel; acompanhamento operacional: Rodrigo Pereira, conforme orientação da coordenação em 13/11/2026."
     },
     {
       "verified_current": true,
@@ -1390,22 +1398,23 @@
       "id": "R34",
       "sei": "20451/2026",
       "project_id": "P08",
-      "owner": "Fábio · Dr. Daniel · Assad",
+      "owner": "Rodrigo Pereira",
       "action": "Acompanhar na SEP o envio à SGP da solicitação de Jailson, servidor do TJDFT.",
       "status_current": "Em execução",
       "verified_current": true,
       "priority": "Verificar",
       "source_ids": [
         "S20",
-        "S21"
+        "S21",
+        "S23"
       ],
       "historical_date": "2026-11-13",
       "due_date": null,
       "due_kind": "Não confirmado",
-      "owner_basis": "Equipe de projeto para acompanhamento; a validar atribuição processual",
-      "owner_suggested": "Fábio · Dr. Daniel · Assad",
-      "owner_assignment_basis": "Projeto relacionado",
-      "evidence": "Informação direta da coordenação em 13/11/2026 (sem consulta direta ao SEI).",
+      "owner_basis": "Acompanhamento atribuído expressamente a Rodrigo Pereira pela coordenação em 13/11/2026.",
+      "owner_suggested": "Rodrigo Pereira",
+      "owner_assignment_basis": "Confirmação direta do coordenador.",
+      "evidence": "Indicação direta da coordenação de Rodrigo Pereira para acompanhar; unidade atual do processo segue SEP, conforme informe anterior.",
       "last_report": "Posição relatada pela coordenação em 13/11/2026: SEP; Na SEP; aguardando encaminhamento à SGP."
     }
   ],
@@ -1690,10 +1699,62 @@
     "note": "Revisar dados antes de disponibilizar o repositório ou GitHub Pages publicamente. Não publicar informações pessoais/sigilosas.",
     "progress": "Por padrão nulo até pactuação do denominador e aceite comprovado."
   },
-  "revision": 6,
-  "last_saved_at": "2026-11-13T20:45:28.468Z",
-  "last_saved_by": "Atualização de acompanhamento por instrução da Coordenação ENAJU",
+  "revision": 7,
+  "last_saved_at": "2026-11-13T21:44:04.342Z",
+  "last_saved_by": "Atualização da Coordenação ENAJU — correção SAD/Rodrigo Pereira",
   "audit_history": [
+    {
+      "id": "RESP-SAD-RODRIGO-20261113",
+      "type": "correcao_responsavel",
+      "title": "SAD é unidade; Rodrigo Pereira assumiu acompanhamento operacional",
+      "at": "2026-11-13T21:44:04.342Z",
+      "actor": "Coordenação ENAJU",
+      "evidence": "Solicitação explícita no chat ENAJU em 13/11/2026, com captura da tela da aba Por responsável.",
+      "changes": [
+        {
+          "id": "P08",
+          "before": {
+            "owner": "Fábio; Dr. Daniel; Assad",
+            "owner_display": "Fábio · Dr. Daniel · Assad",
+            "note": "Prazos distintos para equipe/estúdio; nenhuma contratação ou nomeação presumida. Atualização SEI de 13/11/2026: 20451/2026 — Encaminhado à SEP. Informe da coordenação em 13/11/2026: Solicitação de Jailson na SEP para envio à SGP (20451/2026)."
+          },
+          "after": {
+            "owner": "Fábio; Dr. Daniel; Rodrigo Pereira",
+            "owner_display": "Fábio · Dr. Daniel · Rodrigo Pereira"
+          }
+        },
+        {
+          "id": "R34",
+          "before": {
+            "owner": "Fábio · Dr. Daniel · Assad",
+            "owner_suggested": "Fábio · Dr. Daniel · Assad",
+            "owner_basis": "Equipe de projeto para acompanhamento; a validar atribuição processual"
+          },
+          "after": {
+            "owner": "Rodrigo Pereira",
+            "owner_suggested": "Rodrigo Pereira"
+          }
+        },
+        {
+          "id": "SEI-11",
+          "before": {
+            "responsible": "Fábio · Dr. Daniel · Assad"
+          },
+          "after": {
+            "responsible": "Rodrigo Pereira"
+          }
+        },
+        {
+          "id": "SEI-10",
+          "before": {
+            "last_movement": "SAD pediu ao ECP realinhamento de cronograma; DGE e DIPJ manifestaram-se favoravelmente e devolveram ao ECP. SOF informou não identificar estimativa de despesa no projeto e colocou-se à disposição; solicitou realinhamento e devolveu ao ECP. Datas não informadas."
+          },
+          "after": {
+            "last_movement": "A Secretaria de Administração do CNJ (SAD) solicitou ao ECP realinhamento de cronograma; DGE e DIPJ manifestaram-se favoravelmente e devolveram ao ECP. SOF informou não identificar estimativa de despesa no projeto e colocou-se à disposição; solicitou realinhamento e devolveu ao ECP. Datas não informadas."
+          }
+        }
+      ]
+    },
     {
       "id": "SEI-21372-20261113",
       "type": "atualizacao_sei",
@@ -2551,7 +2612,7 @@
       "current_unit_verified": true,
       "last_reported_unit": "ECP (destinatário do retorno)",
       "awaiting": "Acompanhar a tramitação do ENAJU Talks na SCS, mantendo a necessidade de realinhamento de cronograma levantada anteriormente até confirmação de sua resolução.",
-      "last_movement": "SAD pediu ao ECP realinhamento de cronograma; DGE e DIPJ manifestaram-se favoravelmente e devolveram ao ECP. SOF informou não identificar estimativa de despesa no projeto e colocou-se à disposição; solicitou realinhamento e devolveu ao ECP. Datas não informadas.",
+      "last_movement": "A Secretaria de Administração do CNJ (SAD) solicitou ao ECP realinhamento de cronograma; DGE e DIPJ manifestaram-se favoravelmente e devolveram ao ECP. SOF informou não identificar estimativa de despesa no projeto e colocou-se à disposição; solicitou realinhamento e devolveu ao ECP. Datas não informadas.",
       "last_movement_date": null,
       "last_checked_at": "2026-11-13T16:36:00-03:00",
       "last_verified_at": "2026-11-13T16:36:00-03:00",
@@ -2567,7 +2628,7 @@
       "number": "20451/2026",
       "title": "Solicitação de Jailson — servidor do TJDFT",
       "project_id": "P08",
-      "responsible": "Fábio · Dr. Daniel · Assad",
+      "responsible": "Rodrigo Pereira",
       "priority": "Monitorar",
       "status_current": "Na SEP; aguardando encaminhamento à SGP",
       "current_unit": "SEP",
@@ -2579,11 +2640,11 @@
       "last_checked_at": "2026-11-13T16:36:00-03:00",
       "last_verified_at": "2026-11-13T16:36:00-03:00",
       "last_report_received_date": "2026-11-13",
-      "source": "Atualização de localização informada diretamente pela coordenação ENAJU em 13/11/2026 (chat). Não houve consulta direta à caixa do SEI.",
+      "source": "Atualização de localização informada diretamente pela coordenação ENAJU em 13/11/2026 (chat). Não houve consulta direta à caixa do SEI. Atualização de responsável: Rodrigo Pereira indicado pela coordenação ENAJU em 13/11/2026.",
       "evidence": "Informação direta da coordenação sobre a unidade atual, situação e encaminhamento, recebida em 13/11/2026.",
       "tracked_since": "2026-11-13",
       "verification_method": "relato_direto_coordenacao",
-      "update_note": "A unidade atual informada pela coordenação não foi confirmada por leitura direta da tramitação no sistema SEI."
+      "update_note": "A unidade atual informada pela coordenação não foi confirmada por leitura direta da tramitação no sistema SEI. Acompanhamento atribuído a Rodrigo Pereira; a unidade administrativa do processo permanece SEP."
     }
   ],
   "sei_tracking_policy": {
