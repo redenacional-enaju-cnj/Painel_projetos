@@ -150,6 +150,13 @@
       "date": "2026-11-13",
       "type": "Relato direto da coordenação no chat",
       "note": "10 posições informadas em 13/11/2026, incluindo autorização da Presidência para COIN e envio SEP → SGP. Não houve acesso autenticado à caixa SEI."
+    },
+    {
+      "id": "S22",
+      "title": "Captura de andamento SEI 21372/2026 — Programa ENAJU",
+      "date": "2026-11-13",
+      "type": "Imagem de andamento SEI e relato direto da coordenação",
+      "note": "A captura apresenta documentos do processo, entre eles Despacho 2858441 (SEP). Igor designado responsável e prioridade informada diretamente pela coordenação. Não houve acesso ao teor dos documentos."
     }
   ],
   "projects": [
@@ -906,7 +913,7 @@
       "priority": "Prioritário",
       "source_ids": [
         "S16",
-        "S21"
+        "S22"
       ],
       "owner_basis": "Indicação direta da coordenação em 13/11/2026",
       "evidence": "Captura do andamento SEI e relato do coordenador, 13/11/2026",
@@ -1683,8 +1690,8 @@
     "note": "Revisar dados antes de disponibilizar o repositório ou GitHub Pages publicamente. Não publicar informações pessoais/sigilosas.",
     "progress": "Por padrão nulo até pactuação do denominador e aceite comprovado."
   },
-  "revision": 5,
-  "last_saved_at": "2026-11-13T20:44:34.613Z",
+  "revision": 6,
+  "last_saved_at": "2026-11-13T20:45:28.468Z",
   "last_saved_by": "Atualização de acompanhamento por instrução da Coordenação ENAJU",
   "audit_history": [
     {
@@ -2344,7 +2351,8 @@
       "evidence": "Imagem apresenta os documentos 2852310 (ECP), 2857596 (ECP) e 2858441 (SEP); Igor foi indicado expressamente como responsável e a SEP como unidade atual.",
       "tracked_since": "2026-11-13",
       "verification_method": "relato_direto_coordenacao_com_imagem",
-      "update_note": "O processo está classificado como prioritário por orientação expressa da coordenação. Não foi consultado o teor dos documentos."
+      "update_note": "O processo está classificado como prioritário por orientação expressa da coordenação. Não foi consultado o teor dos documentos.",
+      "source_id": "S22"
     },
     {
       "id": "SEI-01",
