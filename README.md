@@ -6,7 +6,7 @@ Aplicação web estática com base versionada no GitHub, atualizada em 13/11/202
 
 **Decisão em 13/11/2026:** a coordenação autorizou que o painel e o repositório possam ficar públicos para acesso pelo link. A implantação escolhida é **GitHub Pages a partir de `main`, pasta `/ (root)`**, sem build. O código e a carteira `data/portfolio.json` serão públicos assim que a visibilidade for alterada e o Pages for habilitado.
 
-- **URL prevista (ainda depende de ativação e verificação):** https://redenacional-enaju-cnj.github.io/Painel_projetos/
+- **URL permanente do painel:** https://redenacional-enaju-cnj.github.io/Painel_projetos/
 - **Configurar visibilidade:** [Settings → General](https://github.com/redenacional-enaju-cnj/Painel_projetos/settings) → **Danger Zone → Change repository visibility → Public**.
 - **Habilitar hospedagem:** [Settings → Pages](https://github.com/redenacional-enaju-cnj/Painel_projetos/settings/pages) → **Build and deployment → Source: Deploy from a branch → Branch: main → Folder: / (root) → Save**.
 - **Atualização da base:** sempre que `data/portfolio.json` for alterado e salvo em commit na branch `main`, o GitHub Pages republica os arquivos automaticamente. A URL não muda; recarregue a página para obter a versão mais recente.
@@ -14,7 +14,7 @@ Aplicação web estática com base versionada no GitHub, atualizada em 13/11/202
 - **Atenção à publicidade:** processos, responsáveis, histórico, arquivos e versões anteriores da carteira passam a ficar acessíveis na internet. Não armazenar senhas, tokens, CPF, dados pessoais sensíveis ou documentos internos no repositório. Revisar a classificação dos dados antes de converter a visibilidade.
 - O middleware `functions/_middleware.js` é usado apenas na opção **Cloudflare Pages**. **GitHub Pages não o executa e não exige login e senha.** O protótipo público não possui autenticação.
 
-**Situação de verificação:** enquanto o repositório não for convertido para público e o GitHub Pages não estiver ativado, o endereço previsto não deve ser divulgado como funcionando.
+**Estado da publicação (13/11/2026):** repositório público e GitHub Pages ativado; o workflow `pages build and deployment` [concluiu com sucesso](https://github.com/redenacional-enaju-cnj/Painel_projetos/actions/runs/43477696533). **Abrir o [painel publicado](https://redenacional-enaju-cnj.github.io/Painel_projetos/)**. O deploy foi confirmado pela plataforma; o carregamento da URL externa não pôde ser testado diretamente por esta sessão.
 
 ## O que está funcional
 
