@@ -893,24 +893,25 @@
     },
     {
       "id": "R09",
-      "sei": "A identificar",
+      "sei": "21372/2026",
       "project_id": "P01",
-      "action": "Verificar autuação do TAP e encaminhamento à ECP",
-      "last_report": "Lembrete histórico de 09/10 executado, sem prova de autuação",
-      "owner": "A confirmar",
-      "historical_date": null,
+      "action": "Acompanhar prioritariamente o andamento do Programa ENAJU (SEI 21372/2026) na SEP e registrar o próximo encaminhamento.",
+      "last_report": "Processo 21372/2026 informado como prioritário; responsável Igor; unidade SEP. Captura mostra Termo de Abertura 2852310, Parecer 2857596 e Despacho 2858441, sem acesso ao teor.",
+      "owner": "Igor",
+      "historical_date": "2026-11-13",
       "due_date": null,
       "due_kind": "Não confirmado",
-      "status_current": "A confirmar",
-      "verified_current": false,
-      "priority": "Verificar",
+      "status_current": "Em execução",
+      "verified_current": true,
+      "priority": "Prioritário",
       "source_ids": [
-        "S16"
+        "S16",
+        "S21"
       ],
-      "owner_basis": "Não identificado",
-      "evidence": null,
-      "owner_suggested": "Fábio · Dr. Daniel",
-      "owner_assignment_basis": "Distribuição por frente; a validar"
+      "owner_basis": "Indicação direta da coordenação em 13/11/2026",
+      "evidence": "Captura do andamento SEI e relato do coordenador, 13/11/2026",
+      "owner_suggested": "Igor",
+      "owner_assignment_basis": "Confirmação expressa pelo coordenador ENAJU"
     },
     {
       "id": "R12",
@@ -1682,10 +1683,93 @@
     "note": "Revisar dados antes de disponibilizar o repositório ou GitHub Pages publicamente. Não publicar informações pessoais/sigilosas.",
     "progress": "Por padrão nulo até pactuação do denominador e aceite comprovado."
   },
-  "revision": 4,
-  "last_saved_at": "2026-11-13T16:36:00-03:00",
-  "last_saved_by": "Coordenação ENAJU (posição dos processos repassada pelo chat)",
+  "revision": 5,
+  "last_saved_at": "2026-11-13T20:44:34.613Z",
+  "last_saved_by": "Atualização de acompanhamento por instrução da Coordenação ENAJU",
   "audit_history": [
+    {
+      "id": "SEI-21372-20261113",
+      "type": "atualizacao_sei",
+      "title": "Inclusão prioritária do SEI 21372/2026 — Programa ENAJU",
+      "at": "2026-11-13T20:44:34.613Z",
+      "actor": "Coordenação ENAJU (instrução no chat)",
+      "evidence": "Imagem do processo SEI e indicação do responsável Igor, unidade SEP e prioridade expressa, em 13/11/2026.",
+      "changes": [
+        {
+          "number": "21372/2026",
+          "before": null,
+          "after": {
+            "id": "SEI-12",
+            "number": "21372/2026",
+            "title": "Programa ENAJU — Termo de Abertura e tramitação",
+            "project_id": "P01",
+            "responsible": "Igor",
+            "priority": "Prioritário",
+            "status_current": "Na SEP; acompanhamento prioritário",
+            "current_unit": "SEP",
+            "current_unit_verified": true,
+            "last_reported_unit": "SEP (documento exibido na captura de tela)",
+            "awaiting": "Acompanhar o andamento e o próximo encaminhamento da SEP relativo ao Programa ENAJU. O conteúdo e a providência solicitada no último despacho ainda não foram informados.",
+            "last_movement": "A captura mostra Termo de Abertura do Programa ENAJU (2852310), Parecer ECP (2857596) e Despacho SEP (2858441). O teor do despacho não foi disponibilizado.",
+            "last_movement_date": null,
+            "last_checked_at": "2026-11-13T20:44:34.613Z",
+            "last_verified_at": "2026-11-13T20:44:34.613Z",
+            "last_report_received_date": "2026-11-13",
+            "source": "Captura de tela do SEI 21372/2026 e informação direta da coordenação ENAJU em 13/11/2026.",
+            "evidence": "Imagem apresenta os documentos 2852310 (ECP), 2857596 (ECP) e 2858441 (SEP); Igor foi indicado expressamente como responsável e a SEP como unidade atual.",
+            "tracked_since": "2026-11-13",
+            "verification_method": "relato_direto_coordenacao_com_imagem",
+            "update_note": "O processo está classificado como prioritário por orientação expressa da coordenação. Não foi consultado o teor dos documentos."
+          }
+        },
+        {
+          "routine_id": "R09",
+          "before": {
+            "id": "R09",
+            "sei": "A identificar",
+            "project_id": "P01",
+            "action": "Verificar autuação do TAP e encaminhamento à ECP",
+            "last_report": "Lembrete histórico de 09/10 executado, sem prova de autuação",
+            "owner": "A confirmar",
+            "historical_date": null,
+            "due_date": null,
+            "due_kind": "Não confirmado",
+            "status_current": "A confirmar",
+            "verified_current": false,
+            "priority": "Verificar",
+            "source_ids": [
+              "S16"
+            ],
+            "owner_basis": "Não identificado",
+            "evidence": null,
+            "owner_suggested": "Fábio · Dr. Daniel",
+            "owner_assignment_basis": "Distribuição por frente; a validar"
+          },
+          "after": {
+            "id": "R09",
+            "sei": "21372/2026",
+            "project_id": "P01",
+            "action": "Acompanhar prioritariamente o andamento do Programa ENAJU (SEI 21372/2026) na SEP e registrar o próximo encaminhamento.",
+            "last_report": "Processo 21372/2026 informado como prioritário; responsável Igor; unidade SEP. Captura mostra Termo de Abertura 2852310, Parecer 2857596 e Despacho 2858441, sem acesso ao teor.",
+            "owner": "Igor",
+            "historical_date": "2026-11-13",
+            "due_date": null,
+            "due_kind": "Não confirmado",
+            "status_current": "Em execução",
+            "verified_current": true,
+            "priority": "Prioritário",
+            "source_ids": [
+              "S16",
+              "S21"
+            ],
+            "owner_basis": "Indicação direta da coordenação em 13/11/2026",
+            "evidence": "Captura do andamento SEI e relato do coordenador, 13/11/2026",
+            "owner_suggested": "Igor",
+            "owner_assignment_basis": "Confirmação expressa pelo coordenador ENAJU"
+          }
+        }
+      ]
+    },
     {
       "id": "SEI-UNIDADES-20261113-02",
       "type": "atualizacao_sei",
@@ -2240,6 +2324,29 @@
   ],
   "sei_tracking": [
     {
+      "id": "SEI-12",
+      "number": "21372/2026",
+      "title": "Programa ENAJU — Termo de Abertura e tramitação",
+      "project_id": "P01",
+      "responsible": "Igor",
+      "priority": "Prioritário",
+      "status_current": "Na SEP; acompanhamento prioritário",
+      "current_unit": "SEP",
+      "current_unit_verified": true,
+      "last_reported_unit": "SEP (documento exibido na captura de tela)",
+      "awaiting": "Acompanhar o andamento e o próximo encaminhamento da SEP relativo ao Programa ENAJU. O conteúdo e a providência solicitada no último despacho ainda não foram informados.",
+      "last_movement": "A captura mostra Termo de Abertura do Programa ENAJU (2852310), Parecer ECP (2857596) e Despacho SEP (2858441). O teor do despacho não foi disponibilizado.",
+      "last_movement_date": null,
+      "last_checked_at": "2026-11-13T20:44:34.613Z",
+      "last_verified_at": "2026-11-13T20:44:34.613Z",
+      "last_report_received_date": "2026-11-13",
+      "source": "Captura de tela do SEI 21372/2026 e informação direta da coordenação ENAJU em 13/11/2026.",
+      "evidence": "Imagem apresenta os documentos 2852310 (ECP), 2857596 (ECP) e 2858441 (SEP); Igor foi indicado expressamente como responsável e a SEP como unidade atual.",
+      "tracked_since": "2026-11-13",
+      "verification_method": "relato_direto_coordenacao_com_imagem",
+      "update_note": "O processo está classificado como prioritário por orientação expressa da coordenação. Não foi consultado o teor dos documentos."
+    },
+    {
       "id": "SEI-01",
       "number": "21240/2026",
       "title": "Credenciamento de cursos e Selo ENAJU de Qualidade",
@@ -2472,12 +2579,12 @@
     }
   ],
   "sei_tracking_policy": {
-    "scope": "Dez processos relativos à reestruturação da ENAJU, informados em 13/11/2026. Processo 08366/2026 retirado da lista prioritária e preservado em histórico.",
+    "scope": "Onze processos prioritários acompanhados, incluindo o SEI 21372/2026 (Programa ENAJU) informado em 13/11/2026; o SEI 08366/2026 permanece no histórico.",
     "not_live": "O painel ainda não possui integração autenticada com SEI; a unidade exibida reflete a informação recebida em 13/11/2026 e pode mudar após novas movimentações.",
     "public_notice": "O site é público. Não inserir dados pessoais sensíveis, documentos internos ou peças sigilosas.",
     "status": "Situação informada por relato da equipe em 13/11/2026, não validada pela leitura direta do SEI.",
     "movement_date": "Manter a data original de cada movimentação histórica separada da data do relato de atualização.",
-    "current_unit": "As 10 unidades foram informadas pelo coordenador ENAJU em 13/11/2026. current_unit_verified=true corresponde à confirmação declarada pela coordenação, não a consulta técnica direta ao SEI."
+    "current_unit": "Dez unidades informadas pela coordenação no acompanhamento inicial e SEP informada para o SEI 21372/2026; current_unit_verified=true corresponde à posição indicada pela coordenação, sem integração automática ao SEI."
   },
   "archived_sei_tracking": [
     {
