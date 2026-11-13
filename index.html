@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <meta name="description" content="Painel integrado de projetos, atividades e cronogramas da ENAJU.">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data: https://www.cnj.jus.br; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
   <title>ENAJU | Painel de Gestão Integrada</title>
   <link rel="icon" href="assets/enaju-favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="app.js?v=2" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Ir para o conteúdo</a>
@@ -18,7 +18,7 @@
       <div class="branding">
         <img src="assets/enaju-logo.png" alt="ENAJU — Escola Nacional do Judiciário" class="brandlogo">
         <span class="branddivider"></span>
-        <div class="cnjmark" aria-label="Conselho Nacional de Justiça"><strong>CNJ</strong><span>CONSELHO NACIONAL<br>DE JUSTIÇA</span></div>
+        <div class="cnjmark" aria-label="Conselho Nacional de Justiça"><img src="https://www.cnj.jus.br/wp-content/uploads/2023/09/logo-cnj-preta-2023.jpg" alt="Conselho Nacional de Justiça — marca institucional" class="cnjofficial"></div>
       </div>
       <div class="topbar-right">
         <span class="portfolio-year"><span class="dot"></span>Carteira 2026–2027</span>
@@ -39,7 +39,7 @@
       </div>
     </section>
     <nav class="mainnav" aria-label="Seções do painel" id="mainnav">
-      <button class="nav-btn active" data-view="overview" aria-current="page">◈ <span>Visão geral</span></button>
+      <button class="nav-btn active" data-view="overview" aria-current="page">◈ <span>Dashboard</span></button>
       <button class="nav-btn" data-view="projects">▦ <span>Projetos</span></button>
       <button class="nav-btn" data-view="routines">☷ <span>Demandas e rotinas</span></button>
       <button class="nav-btn" data-view="timeline">▤ <span>Cronograma</span></button>

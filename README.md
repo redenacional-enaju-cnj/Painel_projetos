@@ -16,6 +16,13 @@ Aplicação web estática com base versionada no GitHub, atualizada em 13/11/202
 
 **Estado da publicação (13/11/2026):** repositório público e GitHub Pages ativado; o workflow `pages build and deployment` [concluiu com sucesso](https://github.com/redenacional-enaju-cnj/Painel_projetos/actions/runs/43477696533). **Abrir o [painel publicado](https://redenacional-enaju-cnj.github.io/Painel_projetos/)**. O deploy foi confirmado pela plataforma; o carregamento da URL externa não pôde ser testado diretamente por esta sessão.
 
+## V2 — dashboard executivo institucional (13/11/2026)
+
+- Visão inicial agora apresenta indicadores reais da base, situação do portfólio, distribuição por eixo, acompanhamento de demandas e agenda.
+- Os gráficos são calculados no navegador a partir de `data/portfolio.json`, sem dados ilustrativos. Os filtros por situação e eixo abrem a carteira correspondente.
+- A marca textual improvisada do CNJ foi substituída pela imagem institucional disponibilizada no [portal de marcas do CNJ](https://www.cnj.jus.br/sobre-o-cnj/logotipos-e-marcas/). Para evitar uma reprodução apócrifa, não se redesenhou a marca; o recurso gráfico é carregado do domínio oficial do CNJ.
+- O endereço público do GitHub Pages permanece o mesmo. Nenhuma estrutura ou registro do JSON foi modificado neste redesign.
+
 ## O que está funcional
 
 - Dashboard com filtros, todos os projetos, eixos, responsáveis sugeridos e próximos passos.
