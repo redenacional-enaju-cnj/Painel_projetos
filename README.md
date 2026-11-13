@@ -16,6 +16,12 @@ Aplicação web estática com base versionada no GitHub, atualizada em 13/11/202
 
 **Estado da publicação (13/11/2026):** repositório público e GitHub Pages ativado; o workflow `pages build and deployment` [concluiu com sucesso](https://github.com/redenacional-enaju-cnj/Painel_projetos/actions/runs/43477696533). **Abrir o [painel publicado](https://redenacional-enaju-cnj.github.io/Painel_projetos/)**. O deploy foi confirmado pela plataforma; o carregamento da URL externa não pôde ser testado diretamente por esta sessão.
 
+## Ajustes executivos — 13/11/2026
+
+- A aba SEI apresenta a coluna **Unidade** e o estado do andamento diretamente, mantendo a fonte e a data da informação na base. A unidade é aquela informada pela coordenação, sem pretensão de consulta automática ao SEI.
+- O dashboard inclui o botão **Baixar base de dados**, que exporta o JSON com os dados atualmente carregados no navegador, inclusive atualizações locais ainda não enviadas; para obter a base oficial, use **Recarregar** antes do download.
+- Está em levantamento um catálogo de painéis, apresentações e arquivos HTML; os links **não serão publicados neste dashboard sem aprovação da coordenação**.
+
 ## Painel de acompanhamento SEI (13/11/2026)
 **Atualização de localização em 13/11/2026:** a coordenação informou as unidades atuais dos 10 SEIs: 21240/DIGN, 20736/DIGN, 20608/ENAJU-DG, 20650/DTI, 21997/SCS (para diagramação), 02704/Presidência (publicação autorizada, seguirá à COIN), 16537/DIGN, 15083/SCS, 18501/SCS e 20451/SEP (solicitação de Jailson, seguirá à SGP). **A fonte é o relato da coordenação, não uma consulta direta ao SEI**. Datas dos trâmites antigos foram preservadas.
 
