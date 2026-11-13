@@ -143,6 +143,13 @@
       "date": "2026-11-13",
       "type": "Mensagem da equipe repassada pelo coordenador ENAJU",
       "note": "Dez processos com respectivas movimentações históricas, unidades destinatárias e providências; usuário informou em 13/11/2026. Não é consulta em tempo real ao SEI."
+    },
+    {
+      "id": "S21",
+      "title": "Atualização de unidades atuais dos 10 SEIs pela coordenação ENAJU",
+      "date": "2026-11-13",
+      "type": "Relato direto da coordenação no chat",
+      "note": "10 posições informadas em 13/11/2026, incluindo autorização da Presidência para COIN e envio SEP → SGP. Não houve acesso autenticado à caixa SEI."
     }
   ],
   "projects": [
@@ -174,7 +181,7 @@
         "20608/2026"
       ],
       "scope": "Governança e normativos ENAJU: Conselho Superior, Comitê Executivo, instruções normativas, papéis, fluxos e acompanhamento de processos SEI.",
-      "note": "Não confundir minuta, assinatura parcial, envio e publicação. Atualização SEI de 13/11/2026: 20736/2026 — Minuta encaminhada à DIGN. Atualização SEI de 13/11/2026: 20608/2026 — Assinaturas registradas.",
+      "note": "Não confundir minuta, assinatura parcial, envio e publicação. Atualização SEI de 13/11/2026: 20736/2026 — Minuta encaminhada à DIGN. Atualização SEI de 13/11/2026: 20608/2026 — Assinaturas registradas. Informe da coordenação em 13/11/2026: Comitê Executivo na DIGN (20736/2026); ata Conselho Superior na ENAJU/DG (20608/2026).",
       "last_source_date": "2026-11-13",
       "checked_at": "2026-11-13",
       "target_label": "Horizonte proposto",
@@ -294,7 +301,7 @@
         "21240/2026"
       ],
       "scope": "Rede ENAJU: articulação nacional, encontros, contatos, boas práticas, agenda, credenciamento de cursos e Selo ENAJU; portal e cadastro permanecem no projeto P06.",
-      "note": "Data 11/11 é evento previsto, realização não comprovada. O nome Rede ENAJU é usado como referência do usuário. Atualização SEI de 13/11/2026: 21240/2026 — Encaminhado à DIGN.",
+      "note": "Data 11/11 é evento previsto, realização não comprovada. O nome Rede ENAJU é usado como referência do usuário. Atualização SEI de 13/11/2026: 21240/2026 — Encaminhado à DIGN. Informe da coordenação em 13/11/2026: Selo e credenciamento: último local informado DIGN (SEI 21240/2026).",
       "last_source_date": "2026-11-13",
       "checked_at": "2026-11-13",
       "target_label": "Horizonte proposto",
@@ -373,7 +380,7 @@
         "20650/2026"
       ],
       "scope": "O TAP E3.1 define formação tecnológica/digital, trilhas, parceiros e oferta piloto. O formulário F4 define requisitos educacionais e encaminhamento à DTI para modernização da gestão. Conciliar os instrumentos; plataforma, HUB e painéis são entregas tecnológicas associadas, mantidas em P06/P13/P12.",
-      "note": "Reunião recorrente CONFIRMADA: todas as segundas-feiras às 15h, próxima ocorrência 16/11/2026. 'PGP do SCP' foi mantido conforme expressão do coordenador, sem expandir siglas. Atualização SEI de 13/11/2026: 20650/2026 — DTI favorável com encaminhamentos.",
+      "note": "Reunião recorrente CONFIRMADA: todas as segundas-feiras às 15h, próxima ocorrência 16/11/2026. 'PGP do SCP' foi mantido conforme expressão do coordenador, sem expandir siglas. Atualização SEI de 13/11/2026: 20650/2026 — DTI favorável com encaminhamentos. Informe da coordenação em 13/11/2026: ENAJU Tech no DTI (20650/2026), com requisitos e plano técnico a consolidar.",
       "last_source_date": "2026-11-13",
       "checked_at": "2026-11-13",
       "target_label": "Horizonte proposto",
@@ -402,7 +409,7 @@
       "owner": "Fábio; Dr. Daniel; Assad",
       "historical_status": "Proposta",
       "last_report": "Mudança de sede provável entre dezembro e janeiro, dependente de confirmação.",
-      "next_action": "Acompanhar pedido de servidor TJDFT na SEP (SEI 20451/2026) e planejamento de sede, estúdio e equipe.",
+      "next_action": "Acompanhar solicitação de Jailson (TJDFT) na SEP para envio à SGP (SEI 20451/2026), além da sede, estúdio e equipe.",
       "target_date": "2027-01-31",
       "target_kind": "Proposto",
       "source_ids": [
@@ -414,7 +421,7 @@
         "20451/2026"
       ],
       "scope": "Nova Sede ENAJU (E2.7); estúdio multifuncional/acústica/equipamentos; equipe técnica, suporte e ocupação. Nova sede condicionada à decisão administrativa.",
-      "note": "Prazos distintos para equipe/estúdio; nenhuma contratação ou nomeação presumida. Atualização SEI de 13/11/2026: 20451/2026 — Encaminhado à SEP.",
+      "note": "Prazos distintos para equipe/estúdio; nenhuma contratação ou nomeação presumida. Atualização SEI de 13/11/2026: 20451/2026 — Encaminhado à SEP. Informe da coordenação em 13/11/2026: Solicitação de Jailson na SEP para envio à SGP (20451/2026).",
       "last_source_date": "2026-11-13",
       "checked_at": "2026-11-13",
       "target_label": "Janela provável",
@@ -443,7 +450,7 @@
       "owner": "Alana; Janilton",
       "historical_status": "Oferta relatada / planejamento",
       "last_report": "Carteira de cursos correntes separada do planejamento do PAC 2027.",
-      "next_action": "Obter aprovação do Relatório de Ações Formativas 2026 diagramado pela SCS (SEI 21997/2026) e acompanhar relatório dos cursos em andamento.",
+      "next_action": "Acompanhar cursos em andamento e diagramação pela SCS do Relatório sobre Ações Formativas 2026 (SEI 21997/2026).",
       "target_date": null,
       "target_kind": "Sem data",
       "source_ids": [
@@ -457,7 +464,7 @@
         "21997/2026"
       ],
       "scope": "Monitorar cursos em andamento, edições, ofertados, próximos cursos previstos, inscrições, certificação e entregas em execução, incluindo BPC, ELO, Família Acolhedora, assédio moral/eleitoral, Tribunal do Júri quando aplicável.",
-      "note": "Ações anteriores têm oferta relatada; confirmar continuidade e próximas edições; não reabrir cursos entregues como atrasados. Atualização SEI de 13/11/2026: 21997/2026 — Revisado e diagramado; aprovação solicitada.",
+      "note": "Ações anteriores têm oferta relatada; confirmar continuidade e próximas edições; não reabrir cursos entregues como atrasados. Atualização SEI de 13/11/2026: 21997/2026 — Revisado e diagramado; aprovação solicitada. Informe da coordenação em 13/11/2026: Relatório Ações Formativas 2026 na SCS para diagramação (21997/2026).",
       "last_source_date": "2026-11-13",
       "checked_at": "2026-11-13",
       "target_label": "Prazo a pactuar",
@@ -559,7 +566,7 @@
       "owner": "Alana Oliveira Viana",
       "historical_status": "Em andamento no plano",
       "last_report": "Curadoria/circulação em andamento no formulário de 08/10",
-      "next_action": "Acompanhar aprovação de publicação do diagnóstico (SEI 02704/2026) pela SEP/Presidência e ficha catalográfica e ISBN com COIN.",
+      "next_action": "Diagnóstico das Escolas: publicação autorizada pela Presidência; acompanhar envio do SEI 02704/2026 à COIN para ficha catalográfica e ISBN e divulgação do relatório.",
       "target_date": "2027-12-31",
       "target_kind": "Proposto",
       "source_ids": [
@@ -569,7 +576,7 @@
         "02704/2026"
       ],
       "scope": "Conteúdos, direitos de reutilização, compartilhamento e integração ao catálogo/HUB. HUB de conteúdos E2.5 é entrega tecnológica associada, distinta da rotina de curadoria.",
-      "note": "Frente operacional pode originar projetos de implantação; rotina de manutenção não vira projeto automaticamente. Atualização SEI de 13/11/2026: 02704/2026 — Aguardando retorno de aprovação.",
+      "note": "Frente operacional pode originar projetos de implantação; rotina de manutenção não vira projeto automaticamente. Atualização SEI de 13/11/2026: 02704/2026 — Aguardando retorno de aprovação. Informe da coordenação em 13/11/2026: Diagnóstico autorizado pela Presidência; seguir à COIN para ficha/ISBN (02704/2026).",
       "last_source_date": "2026-10-08",
       "checked_at": "2026-11-13",
       "target_label": "Horizonte proposto",
@@ -609,7 +616,7 @@
         "16537/2026"
       ],
       "scope": "Selo editorial amplo Edições ENAJU; Cadernos, relatórios, diagnósticos, manuais, anais e estudos.",
-      "note": "Primeira reunião com Pamela prevista para a semana de 16 a 20/11, ainda NÃO agendada. Atualização SEI de 13/11/2026: 16537/2026 — Minuta submetida à DIGN.",
+      "note": "Primeira reunião com Pamela prevista para a semana de 16 a 20/11, ainda NÃO agendada. Atualização SEI de 13/11/2026: 16537/2026 — Minuta submetida à DIGN. Informe da coordenação em 13/11/2026: Portaria Cadernos na DIGN (16537/2026).",
       "last_source_date": "2026-11-13",
       "checked_at": "2026-11-13",
       "target_label": "Prazo a pactuar",
@@ -637,7 +644,7 @@
       "owner": "Fábio; Dr. Daniel",
       "historical_status": "Lançamento relatado",
       "last_report": "Próximas providências de ENAJU Talks: agenda de gravações, articulação CJF, organização do YouTube.",
-      "next_action": "Revisar cronograma do ENAJU Talks conforme SAD/SOF (SEI 18501/2026), além de organizar agenda de gravações e contato com CJF.",
+      "next_action": "Acompanhar ENAJU Talks na SCS (SEI 18501/2026), realinhamento de cronograma e agenda de gravações.",
       "target_date": null,
       "target_kind": "Proposto",
       "source_ids": [
@@ -650,7 +657,7 @@
         "18501/2026"
       ],
       "scope": "Série audiovisual, roteiros, identidade, captação, publicação e métricas; referência de 8–12 episódios na proposta.",
-      "note": "O lançamento relatado não comprova gravação ou publicação do piloto. Horizonte mensal convertido ao último dia somente para organização visual, não prazo formal. Atualização SEI de 13/11/2026: 18501/2026 — Realinhamento de cronograma solicitado.",
+      "note": "O lançamento relatado não comprova gravação ou publicação do piloto. Horizonte mensal convertido ao último dia somente para organização visual, não prazo formal. Atualização SEI de 13/11/2026: 18501/2026 — Realinhamento de cronograma solicitado. Informe da coordenação em 13/11/2026: ENAJU Talks na SCS (18501/2026).",
       "last_source_date": "2026-11-13",
       "checked_at": "2026-11-13",
       "target_label": "Horizonte proposto",
@@ -690,7 +697,7 @@
         "15083/2026"
       ],
       "scope": "Fluxo institucional com SCS, manifestações em SEI e divulgação pelo grupo WhatsApp da Rede; Instagram e LinkedIn não devem ser ativados nesta etapa.",
-      "note": "Fevereiro/2027 é previsão relatada para contratação de redes sociais; não há dia nem compromisso contratual confirmado. Atualização SEI de 13/11/2026: 15083/2026 — Encaminhado à SCS.",
+      "note": "Fevereiro/2027 é previsão relatada para contratação de redes sociais; não há dia nem compromisso contratual confirmado. Atualização SEI de 13/11/2026: 15083/2026 — Encaminhado à SCS. Informe da coordenação em 13/11/2026: Plano de Comunicação na SCS (15083/2026).",
       "last_source_date": "2026-11-13",
       "checked_at": "2026-11-13",
       "target_label": "Prazo a pactuar",
@@ -710,21 +717,22 @@
       "id": "R01",
       "sei": "21240/2026",
       "project_id": "P05",
-      "action": "Acompanhar manifestação da DIGN sobre credenciamento e Selo ENAJU de Qualidade.",
-      "last_report": "A Secretaria-Geral (SG) encaminhou à DIGN para manifestação em 29/10/2026.",
+      "action": "Aguardar manifestação da DIGN sobre o credenciamento de cursos e o Selo ENAJU de Qualidade.",
+      "last_report": "Posição relatada pela coordenação em 13/11/2026: DIGN; Na DIGN; aguardando manifestação.",
       "owner": "Igor; Danielly",
-      "historical_date": "2026-10-29",
+      "historical_date": "2026-11-13",
       "due_date": null,
       "due_kind": "Não confirmado",
-      "status_current": "Em articulação",
+      "status_current": "Em execução",
       "verified_current": true,
       "priority": "Verificar",
       "source_ids": [
         "S05",
-        "S20"
+        "S20",
+        "S21"
       ],
       "owner_basis": "Responsáveis informados em 13/11/2026",
-      "evidence": null,
+      "evidence": "Informação direta da coordenação em 13/11/2026 (sem consulta direta ao SEI).",
       "owner_suggested": "Igor · Danielly",
       "owner_assignment_basis": "Confirmação direta do coordenador"
     },
@@ -732,21 +740,22 @@
       "id": "R02",
       "sei": "20736/2026",
       "project_id": "P01",
-      "action": "Acompanhar análise e retorno da DIGN sobre a minuta ajustada.",
-      "last_report": "ENAJU encaminhou à DIGN em 05/11/2026 a minuta com as alterações por ela solicitadas.",
+      "action": "Acompanhar análise/retorno da DIGN sobre a minuta do Comitê Executivo com ajustes enviados em 05/11.",
+      "last_report": "Posição relatada pela coordenação em 13/11/2026: DIGN; Na DIGN; minuta revisada encaminhada.",
       "owner": "Fábio",
-      "historical_date": "2026-11-05",
+      "historical_date": "2026-11-13",
       "due_date": null,
       "due_kind": "Não confirmado",
-      "status_current": "A confirmar",
-      "verified_current": false,
+      "status_current": "Em execução",
+      "verified_current": true,
       "priority": "Verificar",
       "source_ids": [
         "S05",
-        "S20"
+        "S20",
+        "S21"
       ],
       "owner_basis": "Histórico; confirmar atribuição atual",
-      "evidence": null,
+      "evidence": "Informação direta da coordenação em 13/11/2026 (sem consulta direta ao SEI).",
       "owner_suggested": "Fábio · Dr. Daniel",
       "owner_assignment_basis": "Distribuição por frente; a validar"
     },
@@ -754,21 +763,22 @@
       "id": "R03",
       "sei": "20608/2026",
       "project_id": "P01",
-      "action": "Verificar se ainda há assinaturas ou providências de juntada, envio ou encerramento.",
-      "last_report": "Constam assinaturas da Dra. Clara Mota, Dr. José Theodoro Carvalho, Dra. Camila Salmoria e Dr. Daniel. Data e unidade da tramitação não informadas.",
+      "action": "Acompanhar na ENAJU/DG as providências subsequentes à assinatura da ata do Conselho Superior.",
+      "last_report": "Posição relatada pela coordenação em 13/11/2026: ENAJU/DG; Na ENAJU/DG; ata com assinaturas relatadas.",
       "owner": "A confirmar",
-      "historical_date": null,
+      "historical_date": "2026-11-13",
       "due_date": null,
       "due_kind": "Não confirmado",
-      "status_current": "A confirmar",
-      "verified_current": false,
+      "status_current": "Em execução",
+      "verified_current": true,
       "priority": "Verificar",
       "source_ids": [
         "S05",
-        "S20"
+        "S20",
+        "S21"
       ],
       "owner_basis": "Não identificado",
-      "evidence": null,
+      "evidence": "Informação direta da coordenação em 13/11/2026 (sem consulta direta ao SEI).",
       "owner_suggested": "Igor · Danielly",
       "owner_assignment_basis": "Distribuição por frente; a validar"
     },
@@ -776,21 +786,22 @@
       "id": "R04",
       "sei": "20650/2026",
       "project_id": "P07",
-      "action": "ENAJU: consolidar versão única do projeto (observações da COAG), requisitos negociais priorizados e responsável pelo produto; DTI: designar ponto focal e arquiteto, depois realizar diagnóstico técnico e estimativa de esforço; posteriormente revisar cronograma e orçamento conforme Portfólio TIC e formalizar plano de trabalho ENAJU–DTI. Acompanhar manifestações das áreas SCS/Fundo.",
-      "last_report": "SEP concordou e enviou para DTI, SCS e Fundo de Modernização em 16/10; SCS encaminhou às áreas internas em 20/10. DTI manifestou-se favoravelmente, condicionando próximos passos à consolidação dos requisitos; a data dessa manifestação não foi informada.",
+      "action": "Acompanhar no DTI a tramitação da ENAJU Tech e consolidar pela ENAJU a versão única do projeto, requisitos negociais e indicação do responsável pelo produto; preservar as demais etapas técnicas já registradas.",
+      "last_report": "Posição relatada pela coordenação em 13/11/2026: DTI; No DTI; parecer favorável com encaminhamentos.",
       "owner": "A confirmar",
-      "historical_date": "2026-10-20",
+      "historical_date": "2026-11-13",
       "due_date": null,
       "due_kind": "Não confirmado",
-      "status_current": "A confirmar",
-      "verified_current": false,
+      "status_current": "Em execução",
+      "verified_current": true,
       "priority": "Verificar",
       "source_ids": [
         "S05",
-        "S20"
+        "S20",
+        "S21"
       ],
       "owner_basis": "Não identificado",
-      "evidence": null,
+      "evidence": "Informação direta da coordenação em 13/11/2026 (sem consulta direta ao SEI).",
       "owner_suggested": "Igor · Isley · Igor Guimarães",
       "owner_assignment_basis": "Distribuição por frente; a validar"
     },
@@ -798,10 +809,10 @@
       "id": "R05",
       "sei": "02704/2026",
       "project_id": "P13",
-      "action": "Acompanhar resposta da SEP/Presidência à solicitação de aprovação da publicação enviada em 04/11; acompanhar também ficha catalográfica e ISBN junto à COIN.",
-      "last_report": "Relatório encaminhado à COIN para solicitação de ficha catalográfica e ISBN; enviado à SEP, com vistas à Presidência, em 04/11 para aprovação da publicação. Até a atualização recebida em 13/11, não houve retorno informado.",
+      "action": "Providenciar/acompanhar o envio à COIN, após autorização da Presidência, para ficha catalográfica e ISBN; atualizar o acompanhamento editorial.",
+      "last_report": "Posição relatada pela coordenação em 13/11/2026: Presidência; Publicação autorizada pela Presidência; encaminhamento à COIN.",
       "owner": "Danielly; Igor",
-      "historical_date": "2026-11-04",
+      "historical_date": "2026-11-13",
       "due_date": null,
       "due_kind": "Não confirmado",
       "status_current": "Em execução",
@@ -809,10 +820,11 @@
       "priority": "Verificar",
       "source_ids": [
         "S16",
-        "S20"
+        "S20",
+        "S21"
       ],
       "owner_basis": "Histórico; confirmar atribuição atual",
-      "evidence": null,
+      "evidence": "Informação direta da coordenação em 13/11/2026 (sem consulta direta ao SEI).",
       "owner_suggested": "Igor · Danielly",
       "owner_assignment_basis": "Distribuição por frente; a validar"
     },
@@ -1283,105 +1295,110 @@
       "sei": "21997/2026",
       "project_id": "P09",
       "owner": "Alana · Janilton",
-      "action": "Obter decisão de aprovação da versão revista e diagramada pela SCS.",
-      "status_current": "A confirmar",
-      "verified_current": false,
+      "action": "Acompanhar a diagramação do Relatório sobre Ações Formativas 2026 pela Comunicação e depois verificar submissão à aprovação.",
+      "status_current": "Em execução",
+      "verified_current": true,
       "priority": "Verificar",
       "source_ids": [
-        "S20"
+        "S20",
+        "S21"
       ],
-      "historical_date": null,
+      "historical_date": "2026-11-13",
       "due_date": null,
       "due_kind": "Não confirmado",
       "owner_basis": "Equipe de projeto para acompanhamento; a validar atribuição processual",
       "owner_suggested": "Alana · Janilton",
       "owner_assignment_basis": "Projeto relacionado",
-      "evidence": null,
-      "last_report": "SCS concluiu revisão e diagramação do relatório e solicitou aprovação. Data do pedido e unidade destinatária não informadas."
+      "evidence": "Informação direta da coordenação em 13/11/2026 (sem consulta direta ao SEI).",
+      "last_report": "Posição relatada pela coordenação em 13/11/2026: SCS (Comunicação); Na SCS para diagramação."
     },
     {
       "id": "R31",
       "sei": "16537/2026",
       "project_id": "P14",
       "owner": "Fábio · Dr. Daniel",
-      "action": "Acompanhar análise e manifestação da DIGN sobre a minuta de portaria dos Cadernos ENAJU.",
-      "status_current": "A confirmar",
-      "verified_current": false,
+      "action": "Aguardar análise/manifestação da DIGN sobre a minuta de portaria dos Cadernos ENAJU.",
+      "status_current": "Em execução",
+      "verified_current": true,
       "priority": "Verificar",
       "source_ids": [
-        "S20"
+        "S20",
+        "S21"
       ],
-      "historical_date": "2026-09-29",
+      "historical_date": "2026-11-13",
       "due_date": null,
       "due_kind": "Não confirmado",
       "owner_basis": "Equipe de projeto para acompanhamento; a validar atribuição processual",
       "owner_suggested": "Fábio · Dr. Daniel",
       "owner_assignment_basis": "Projeto relacionado",
-      "evidence": null,
-      "last_report": "SG encaminhou à DIGN para análise da minuta de portaria em 29/09/2026."
+      "evidence": "Informação direta da coordenação em 13/11/2026 (sem consulta direta ao SEI).",
+      "last_report": "Posição relatada pela coordenação em 13/11/2026: DIGN; Na DIGN; portaria em acompanhamento."
     },
     {
       "id": "R32",
       "sei": "15083/2026",
       "project_id": "P17",
       "owner": "Fábio · Dr. Daniel",
-      "action": "Acompanhar manifestação da SCS e devolução do processo com aprovação, ajustes ou outras orientações.",
-      "status_current": "A confirmar",
-      "verified_current": false,
+      "action": "Acompanhar a manifestação da SCS sobre o Plano de Comunicação Institucional da ENAJU.",
+      "status_current": "Em execução",
+      "verified_current": true,
       "priority": "Verificar",
       "source_ids": [
-        "S20"
+        "S20",
+        "S21"
       ],
-      "historical_date": "2026-08-28",
+      "historical_date": "2026-11-13",
       "due_date": null,
       "due_kind": "Não confirmado",
       "owner_basis": "Equipe de projeto para acompanhamento; a validar atribuição processual",
       "owner_suggested": "Fábio · Dr. Daniel",
       "owner_assignment_basis": "Projeto relacionado",
-      "evidence": null,
-      "last_report": "SEP encaminhou à SCS para manifestação em 28/08/2026. Não há manifestação posterior informada nesta atualização."
+      "evidence": "Informação direta da coordenação em 13/11/2026 (sem consulta direta ao SEI).",
+      "last_report": "Posição relatada pela coordenação em 13/11/2026: SCS (Comunicação); Na SCS; manifestação de comunicação pendente."
     },
     {
       "id": "R33",
       "sei": "18501/2026",
       "project_id": "P16",
       "owner": "Fábio · Dr. Daniel",
-      "action": "ECP: realinhar o cronograma do ENAJU Talks e devolver versão ajustada; esclarecer se será necessária estimativa de despesa, à luz da manifestação da SOF.",
-      "status_current": "A confirmar",
-      "verified_current": false,
+      "action": "Acompanhar a tramitação do ENAJU Talks na SCS, mantendo a necessidade de realinhamento de cronograma levantada anteriormente até confirmação de sua resolução.",
+      "status_current": "Em execução",
+      "verified_current": true,
       "priority": "Verificar",
       "source_ids": [
-        "S20"
+        "S20",
+        "S21"
       ],
-      "historical_date": null,
+      "historical_date": "2026-11-13",
       "due_date": null,
       "due_kind": "Não confirmado",
       "owner_basis": "Equipe de projeto para acompanhamento; a validar atribuição processual",
       "owner_suggested": "Fábio · Dr. Daniel",
       "owner_assignment_basis": "Projeto relacionado",
-      "evidence": null,
-      "last_report": "SAD pediu ao ECP realinhamento de cronograma; DGE e DIPJ manifestaram-se favoravelmente e devolveram ao ECP. SOF informou não identificar estimativa de despesa no projeto e colocou-se à disposição; solicitou realinhamento e devolveu ao ECP. Datas não informadas."
+      "evidence": "Informação direta da coordenação em 13/11/2026 (sem consulta direta ao SEI).",
+      "last_report": "Posição relatada pela coordenação em 13/11/2026: SCS (Comunicação); Na SCS; ENAJU Talks em acompanhamento."
     },
     {
       "id": "R34",
       "sei": "20451/2026",
       "project_id": "P08",
       "owner": "Fábio · Dr. Daniel · Assad",
-      "action": "Acompanhar manifestação ou decisão da SEP sobre a solicitação de servidor do TJDFT.",
-      "status_current": "A confirmar",
-      "verified_current": false,
+      "action": "Acompanhar na SEP o envio à SGP da solicitação de Jailson, servidor do TJDFT.",
+      "status_current": "Em execução",
+      "verified_current": true,
       "priority": "Verificar",
       "source_ids": [
-        "S20"
+        "S20",
+        "S21"
       ],
-      "historical_date": "2026-11-05",
+      "historical_date": "2026-11-13",
       "due_date": null,
       "due_kind": "Não confirmado",
       "owner_basis": "Equipe de projeto para acompanhamento; a validar atribuição processual",
       "owner_suggested": "Fábio · Dr. Daniel · Assad",
       "owner_assignment_basis": "Projeto relacionado",
-      "evidence": null,
-      "last_report": "Solicitação de servidor do TJDFT encaminhada à SEP em 05/11/2026."
+      "evidence": "Informação direta da coordenação em 13/11/2026 (sem consulta direta ao SEI).",
+      "last_report": "Posição relatada pela coordenação em 13/11/2026: SEP; Na SEP; aguardando encaminhamento à SGP."
     }
   ],
   "rules": {
@@ -1665,10 +1682,180 @@
     "note": "Revisar dados antes de disponibilizar o repositório ou GitHub Pages publicamente. Não publicar informações pessoais/sigilosas.",
     "progress": "Por padrão nulo até pactuação do denominador e aceite comprovado."
   },
-  "revision": 3,
+  "revision": 4,
   "last_saved_at": "2026-11-13T16:36:00-03:00",
-  "last_saved_by": "Coordenação ENAJU — atualização a partir de relato da equipe",
+  "last_saved_by": "Coordenação ENAJU (posição dos processos repassada pelo chat)",
   "audit_history": [
+    {
+      "id": "SEI-UNIDADES-20261113-02",
+      "type": "atualizacao_sei",
+      "title": "Posições atuais informadas pela coordenação — 10 processos",
+      "at": "2026-11-13T16:36:00-03:00",
+      "actor": "Coordenação ENAJU",
+      "evidence": "Relato direto de 13/11/2026; não equivale a consulta ao SEI",
+      "changes": [
+        {
+          "number": "21240/2026",
+          "before": {
+            "current_unit": null,
+            "current_unit_verified": false,
+            "status_current": "Encaminhado à DIGN",
+            "awaiting": "Acompanhar manifestação da DIGN sobre credenciamento e Selo ENAJU de Qualidade.",
+            "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI."
+          },
+          "after": {
+            "current_unit": "DIGN",
+            "status_current": "Na DIGN; aguardando manifestação",
+            "awaiting": "Aguardar manifestação da DIGN sobre o credenciamento de cursos e o Selo ENAJU de Qualidade.",
+            "verified_from": "relato da coordenação"
+          }
+        },
+        {
+          "number": "20736/2026",
+          "before": {
+            "current_unit": null,
+            "current_unit_verified": false,
+            "status_current": "Minuta encaminhada à DIGN",
+            "awaiting": "Acompanhar análise e retorno da DIGN sobre a minuta ajustada.",
+            "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI."
+          },
+          "after": {
+            "current_unit": "DIGN",
+            "status_current": "Na DIGN; minuta revisada encaminhada",
+            "awaiting": "Acompanhar análise/retorno da DIGN sobre a minuta do Comitê Executivo com ajustes enviados em 05/11.",
+            "verified_from": "relato da coordenação"
+          }
+        },
+        {
+          "number": "20608/2026",
+          "before": {
+            "current_unit": null,
+            "current_unit_verified": false,
+            "status_current": "Assinaturas registradas",
+            "awaiting": "Verificar se ainda há assinaturas ou providências de juntada, envio ou encerramento.",
+            "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI."
+          },
+          "after": {
+            "current_unit": "ENAJU/DG",
+            "status_current": "Na ENAJU/DG; ata com assinaturas relatadas",
+            "awaiting": "Acompanhar na ENAJU/DG as providências subsequentes à assinatura da ata do Conselho Superior.",
+            "verified_from": "relato da coordenação"
+          }
+        },
+        {
+          "number": "20650/2026",
+          "before": {
+            "current_unit": null,
+            "current_unit_verified": false,
+            "status_current": "DTI favorável com encaminhamentos",
+            "awaiting": "ENAJU: consolidar versão única do projeto (observações da COAG), requisitos negociais priorizados e responsável pelo produto; DTI: designar ponto focal e arquiteto, depois realizar diagnóstico técnico e estimativa de esforço; posteriormente revisar cronograma e orçamento conforme Portfólio TIC e formalizar plano de trabalho ENAJU–DTI. Acompanhar manifestações das áreas SCS/Fundo.",
+            "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI."
+          },
+          "after": {
+            "current_unit": "DTI",
+            "status_current": "No DTI; parecer favorável com encaminhamentos",
+            "awaiting": "Acompanhar no DTI a tramitação da ENAJU Tech e consolidar pela ENAJU a versão única do projeto, requisitos negociais e indicação do responsável pelo produto; preservar as demais etapas técnicas já registradas.",
+            "verified_from": "relato da coordenação"
+          }
+        },
+        {
+          "number": "21997/2026",
+          "before": {
+            "current_unit": null,
+            "current_unit_verified": false,
+            "status_current": "Revisado e diagramado; aprovação solicitada",
+            "awaiting": "Obter decisão de aprovação da versão revista e diagramada pela SCS.",
+            "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI."
+          },
+          "after": {
+            "current_unit": "SCS (Comunicação)",
+            "status_current": "Na SCS para diagramação",
+            "awaiting": "Acompanhar a diagramação do Relatório sobre Ações Formativas 2026 pela Comunicação e depois verificar submissão à aprovação.",
+            "verified_from": "relato da coordenação"
+          }
+        },
+        {
+          "number": "02704/2026",
+          "before": {
+            "current_unit": null,
+            "current_unit_verified": false,
+            "status_current": "Aguardando retorno de aprovação",
+            "awaiting": "Acompanhar resposta da SEP/Presidência à solicitação de aprovação da publicação enviada em 04/11; acompanhar também ficha catalográfica e ISBN junto à COIN.",
+            "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI."
+          },
+          "after": {
+            "current_unit": "Presidência",
+            "status_current": "Publicação autorizada pela Presidência; encaminhamento à COIN",
+            "awaiting": "Providenciar/acompanhar o envio à COIN, após autorização da Presidência, para ficha catalográfica e ISBN; atualizar o acompanhamento editorial.",
+            "verified_from": "relato da coordenação"
+          }
+        },
+        {
+          "number": "16537/2026",
+          "before": {
+            "current_unit": null,
+            "current_unit_verified": false,
+            "status_current": "Minuta submetida à DIGN",
+            "awaiting": "Acompanhar análise e manifestação da DIGN sobre a minuta de portaria dos Cadernos ENAJU.",
+            "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI."
+          },
+          "after": {
+            "current_unit": "DIGN",
+            "status_current": "Na DIGN; portaria em acompanhamento",
+            "awaiting": "Aguardar análise/manifestação da DIGN sobre a minuta de portaria dos Cadernos ENAJU.",
+            "verified_from": "relato da coordenação"
+          }
+        },
+        {
+          "number": "15083/2026",
+          "before": {
+            "current_unit": null,
+            "current_unit_verified": false,
+            "status_current": "Encaminhado à SCS",
+            "awaiting": "Acompanhar manifestação da SCS e devolução do processo com aprovação, ajustes ou outras orientações.",
+            "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI."
+          },
+          "after": {
+            "current_unit": "SCS (Comunicação)",
+            "status_current": "Na SCS; manifestação de comunicação pendente",
+            "awaiting": "Acompanhar a manifestação da SCS sobre o Plano de Comunicação Institucional da ENAJU.",
+            "verified_from": "relato da coordenação"
+          }
+        },
+        {
+          "number": "18501/2026",
+          "before": {
+            "current_unit": null,
+            "current_unit_verified": false,
+            "status_current": "Realinhamento de cronograma solicitado",
+            "awaiting": "ECP: realinhar o cronograma do ENAJU Talks e devolver versão ajustada; esclarecer se será necessária estimativa de despesa, à luz da manifestação da SOF.",
+            "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI."
+          },
+          "after": {
+            "current_unit": "SCS (Comunicação)",
+            "status_current": "Na SCS; ENAJU Talks em acompanhamento",
+            "awaiting": "Acompanhar a tramitação do ENAJU Talks na SCS, mantendo a necessidade de realinhamento de cronograma levantada anteriormente até confirmação de sua resolução.",
+            "verified_from": "relato da coordenação"
+          }
+        },
+        {
+          "number": "20451/2026",
+          "before": {
+            "current_unit": null,
+            "current_unit_verified": false,
+            "status_current": "Encaminhado à SEP",
+            "awaiting": "Acompanhar manifestação ou decisão da SEP sobre a solicitação de servidor do TJDFT.",
+            "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI."
+          },
+          "after": {
+            "current_unit": "SEP",
+            "status_current": "Na SEP; aguardando encaminhamento à SGP",
+            "awaiting": "Acompanhar na SEP o envio à SGP da solicitação de Jailson, servidor do TJDFT.",
+            "verified_from": "relato da coordenação"
+          }
+        }
+      ]
+    },
     {
       "id": "SEI-REEST-20261113-01",
       "type": "atualizacao_sei",
@@ -2059,19 +2246,21 @@
       "project_id": "P05",
       "responsible": "Igor · Danielly",
       "priority": "Monitorar",
-      "status_current": "Encaminhado à DIGN",
-      "current_unit": null,
-      "current_unit_verified": false,
+      "status_current": "Na DIGN; aguardando manifestação",
+      "current_unit": "DIGN",
+      "current_unit_verified": true,
       "last_reported_unit": "DIGN (encaminhado pela SG)",
-      "awaiting": "Acompanhar manifestação da DIGN sobre credenciamento e Selo ENAJU de Qualidade.",
+      "awaiting": "Aguardar manifestação da DIGN sobre o credenciamento de cursos e o Selo ENAJU de Qualidade.",
       "last_movement": "A Secretaria-Geral (SG) encaminhou à DIGN para manifestação em 29/10/2026.",
       "last_movement_date": "2026-10-29",
-      "last_checked_at": null,
-      "last_verified_at": null,
-      "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI.",
-      "evidence": "Informe encaminhado à coordenação em 13/11/2026; eventos e destinos relatados com datas distintas.",
+      "last_checked_at": "2026-11-13T16:36:00-03:00",
+      "last_verified_at": "2026-11-13T16:36:00-03:00",
+      "source": "Atualização de localização informada diretamente pela coordenação ENAJU em 13/11/2026 (chat). Não houve consulta direta à caixa do SEI.",
+      "evidence": "Informação direta da coordenação sobre a unidade atual, situação e encaminhamento, recebida em 13/11/2026.",
       "tracked_since": "2026-11-13",
-      "last_report_received_date": "2026-11-13"
+      "last_report_received_date": "2026-11-13",
+      "verification_method": "relato_direto_coordenacao",
+      "update_note": "A unidade atual informada pela coordenação não foi confirmada por leitura direta da tramitação no sistema SEI."
     },
     {
       "id": "SEI-02",
@@ -2080,19 +2269,21 @@
       "project_id": "P01",
       "responsible": "Fábio · Dr. Daniel",
       "priority": "Monitorar",
-      "status_current": "Minuta encaminhada à DIGN",
-      "current_unit": null,
-      "current_unit_verified": false,
+      "status_current": "Na DIGN; minuta revisada encaminhada",
+      "current_unit": "DIGN",
+      "current_unit_verified": true,
       "last_reported_unit": "DIGN (minuta encaminhada pela ENAJU)",
-      "awaiting": "Acompanhar análise e retorno da DIGN sobre a minuta ajustada.",
+      "awaiting": "Acompanhar análise/retorno da DIGN sobre a minuta do Comitê Executivo com ajustes enviados em 05/11.",
       "last_movement": "ENAJU encaminhou à DIGN em 05/11/2026 a minuta com as alterações por ela solicitadas.",
       "last_movement_date": "2026-11-05",
-      "last_checked_at": null,
-      "last_verified_at": null,
-      "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI.",
-      "evidence": "Informe encaminhado à coordenação em 13/11/2026; eventos e destinos relatados com datas distintas.",
+      "last_checked_at": "2026-11-13T16:36:00-03:00",
+      "last_verified_at": "2026-11-13T16:36:00-03:00",
+      "source": "Atualização de localização informada diretamente pela coordenação ENAJU em 13/11/2026 (chat). Não houve consulta direta à caixa do SEI.",
+      "evidence": "Informação direta da coordenação sobre a unidade atual, situação e encaminhamento, recebida em 13/11/2026.",
       "tracked_since": "2026-11-13",
-      "last_report_received_date": "2026-11-13"
+      "last_report_received_date": "2026-11-13",
+      "verification_method": "relato_direto_coordenacao",
+      "update_note": "A unidade atual informada pela coordenação não foi confirmada por leitura direta da tramitação no sistema SEI."
     },
     {
       "id": "SEI-03",
@@ -2101,19 +2292,21 @@
       "project_id": "P01",
       "responsible": "Igor · Danielly",
       "priority": "Monitorar",
-      "status_current": "Assinaturas registradas",
-      "current_unit": null,
-      "current_unit_verified": false,
+      "status_current": "Na ENAJU/DG; ata com assinaturas relatadas",
+      "current_unit": "ENAJU/DG",
+      "current_unit_verified": true,
       "last_reported_unit": "Não informada",
-      "awaiting": "Verificar se ainda há assinaturas ou providências de juntada, envio ou encerramento.",
+      "awaiting": "Acompanhar na ENAJU/DG as providências subsequentes à assinatura da ata do Conselho Superior.",
       "last_movement": "Constam assinaturas da Dra. Clara Mota, Dr. José Theodoro Carvalho, Dra. Camila Salmoria e Dr. Daniel. Data e unidade da tramitação não informadas.",
       "last_movement_date": null,
-      "last_checked_at": null,
-      "last_verified_at": null,
-      "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI.",
-      "evidence": "Informe encaminhado à coordenação em 13/11/2026; eventos e destinos relatados com datas distintas.",
+      "last_checked_at": "2026-11-13T16:36:00-03:00",
+      "last_verified_at": "2026-11-13T16:36:00-03:00",
+      "source": "Atualização de localização informada diretamente pela coordenação ENAJU em 13/11/2026 (chat). Não houve consulta direta à caixa do SEI.",
+      "evidence": "Informação direta da coordenação sobre a unidade atual, situação e encaminhamento, recebida em 13/11/2026.",
       "tracked_since": "2026-11-13",
-      "last_report_received_date": "2026-11-13"
+      "last_report_received_date": "2026-11-13",
+      "verification_method": "relato_direto_coordenacao",
+      "update_note": "A unidade atual informada pela coordenação não foi confirmada por leitura direta da tramitação no sistema SEI."
     },
     {
       "id": "SEI-04",
@@ -2122,19 +2315,21 @@
       "project_id": "P07",
       "responsible": "Igor · Isley · Igor Guimarães",
       "priority": "Monitorar",
-      "status_current": "DTI favorável com encaminhamentos",
-      "current_unit": null,
-      "current_unit_verified": false,
+      "status_current": "No DTI; parecer favorável com encaminhamentos",
+      "current_unit": "DTI",
+      "current_unit_verified": true,
       "last_reported_unit": "DTI, SCS e Fundo de Modernização (destinatários); SCS distribuiu às suas áreas internas",
-      "awaiting": "ENAJU: consolidar versão única do projeto (observações da COAG), requisitos negociais priorizados e responsável pelo produto; DTI: designar ponto focal e arquiteto, depois realizar diagnóstico técnico e estimativa de esforço; posteriormente revisar cronograma e orçamento conforme Portfólio TIC e formalizar plano de trabalho ENAJU–DTI. Acompanhar manifestações das áreas SCS/Fundo.",
+      "awaiting": "Acompanhar no DTI a tramitação da ENAJU Tech e consolidar pela ENAJU a versão única do projeto, requisitos negociais e indicação do responsável pelo produto; preservar as demais etapas técnicas já registradas.",
       "last_movement": "SEP concordou e enviou para DTI, SCS e Fundo de Modernização em 16/10; SCS encaminhou às áreas internas em 20/10. DTI manifestou-se favoravelmente, condicionando próximos passos à consolidação dos requisitos; a data dessa manifestação não foi informada.",
       "last_movement_date": "2026-10-20",
-      "last_checked_at": null,
-      "last_verified_at": null,
-      "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI.",
-      "evidence": "Informe encaminhado à coordenação em 13/11/2026; eventos e destinos relatados com datas distintas.",
+      "last_checked_at": "2026-11-13T16:36:00-03:00",
+      "last_verified_at": "2026-11-13T16:36:00-03:00",
+      "source": "Atualização de localização informada diretamente pela coordenação ENAJU em 13/11/2026 (chat). Não houve consulta direta à caixa do SEI.",
+      "evidence": "Informação direta da coordenação sobre a unidade atual, situação e encaminhamento, recebida em 13/11/2026.",
       "tracked_since": "2026-11-13",
-      "last_report_received_date": "2026-11-13"
+      "last_report_received_date": "2026-11-13",
+      "verification_method": "relato_direto_coordenacao",
+      "update_note": "A unidade atual informada pela coordenação não foi confirmada por leitura direta da tramitação no sistema SEI."
     },
     {
       "id": "SEI-07",
@@ -2143,19 +2338,21 @@
       "project_id": "P09",
       "responsible": "Alana · Janilton",
       "priority": "Monitorar",
-      "status_current": "Revisado e diagramado; aprovação solicitada",
-      "current_unit": null,
-      "current_unit_verified": false,
+      "status_current": "Na SCS para diagramação",
+      "current_unit": "SCS (Comunicação)",
+      "current_unit_verified": true,
       "last_reported_unit": "SCS (revisão e diagramação); destinatário da aprovação não informado",
-      "awaiting": "Obter decisão de aprovação da versão revista e diagramada pela SCS.",
+      "awaiting": "Acompanhar a diagramação do Relatório sobre Ações Formativas 2026 pela Comunicação e depois verificar submissão à aprovação.",
       "last_movement": "SCS concluiu revisão e diagramação do relatório e solicitou aprovação. Data do pedido e unidade destinatária não informadas.",
       "last_movement_date": null,
-      "last_checked_at": null,
-      "last_verified_at": null,
+      "last_checked_at": "2026-11-13T16:36:00-03:00",
+      "last_verified_at": "2026-11-13T16:36:00-03:00",
       "last_report_received_date": "2026-11-13",
-      "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI.",
-      "evidence": "Informe encaminhado à coordenação em 13/11/2026; eventos e destinos relatados com datas distintas.",
-      "tracked_since": "2026-11-13"
+      "source": "Atualização de localização informada diretamente pela coordenação ENAJU em 13/11/2026 (chat). Não houve consulta direta à caixa do SEI.",
+      "evidence": "Informação direta da coordenação sobre a unidade atual, situação e encaminhamento, recebida em 13/11/2026.",
+      "tracked_since": "2026-11-13",
+      "verification_method": "relato_direto_coordenacao",
+      "update_note": "A unidade atual informada pela coordenação não foi confirmada por leitura direta da tramitação no sistema SEI. A informação anterior 'revisado e diagramado, aprovação solicitada' diverge da atualização de 13/11, que informa SCS para diagramação; prevalece a informação mais recente para acompanhamento, até conferir o SEI."
     },
     {
       "id": "SEI-05",
@@ -2164,19 +2361,22 @@
       "project_id": "P13",
       "responsible": "Igor · Danielly",
       "priority": "Monitorar",
-      "status_current": "Aguardando retorno de aprovação",
-      "current_unit": null,
-      "current_unit_verified": false,
+      "status_current": "Publicação autorizada pela Presidência; encaminhamento à COIN",
+      "current_unit": "Presidência",
+      "current_unit_verified": true,
       "last_reported_unit": "SEP, com vistas à Presidência (encaminhamento)",
-      "awaiting": "Acompanhar resposta da SEP/Presidência à solicitação de aprovação da publicação enviada em 04/11; acompanhar também ficha catalográfica e ISBN junto à COIN.",
-      "last_movement": "Relatório encaminhado à COIN para solicitação de ficha catalográfica e ISBN; enviado à SEP, com vistas à Presidência, em 04/11 para aprovação da publicação. Até a atualização recebida em 13/11, não houve retorno informado.",
+      "awaiting": "Providenciar/acompanhar o envio à COIN, após autorização da Presidência, para ficha catalográfica e ISBN; atualizar o acompanhamento editorial.",
+      "last_movement": "Atualização da coordenação em 13/11: Presidência autorizou a publicação e o processo está na Presidência para encaminhamento à COIN. Registro histórico: enviado à SEP/Presidência em 04/11.",
       "last_movement_date": "2026-11-04",
-      "last_checked_at": null,
-      "last_verified_at": null,
-      "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI.",
-      "evidence": "Informe encaminhado à coordenação em 13/11/2026; eventos e destinos relatados com datas distintas.",
+      "last_checked_at": "2026-11-13T16:36:00-03:00",
+      "last_verified_at": "2026-11-13T16:36:00-03:00",
+      "source": "Atualização de localização informada diretamente pela coordenação ENAJU em 13/11/2026 (chat). Não houve consulta direta à caixa do SEI.",
+      "evidence": "Informação direta da coordenação sobre a unidade atual, situação e encaminhamento, recebida em 13/11/2026.",
       "tracked_since": "2026-11-13",
-      "last_report_received_date": "2026-11-13"
+      "last_report_received_date": "2026-11-13",
+      "verification_method": "relato_direto_coordenacao",
+      "update_note": "A unidade atual informada pela coordenação não foi confirmada por leitura direta da tramitação no sistema SEI.",
+      "presidency_publication_approved": true
     },
     {
       "id": "SEI-08",
@@ -2185,19 +2385,21 @@
       "project_id": "P14",
       "responsible": "Fábio · Dr. Daniel",
       "priority": "Monitorar",
-      "status_current": "Minuta submetida à DIGN",
-      "current_unit": null,
-      "current_unit_verified": false,
+      "status_current": "Na DIGN; portaria em acompanhamento",
+      "current_unit": "DIGN",
+      "current_unit_verified": true,
       "last_reported_unit": "DIGN (encaminhado pela SG)",
-      "awaiting": "Acompanhar análise e manifestação da DIGN sobre a minuta de portaria dos Cadernos ENAJU.",
+      "awaiting": "Aguardar análise/manifestação da DIGN sobre a minuta de portaria dos Cadernos ENAJU.",
       "last_movement": "SG encaminhou à DIGN para análise da minuta de portaria em 29/09/2026.",
       "last_movement_date": "2026-09-29",
-      "last_checked_at": null,
-      "last_verified_at": null,
+      "last_checked_at": "2026-11-13T16:36:00-03:00",
+      "last_verified_at": "2026-11-13T16:36:00-03:00",
       "last_report_received_date": "2026-11-13",
-      "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI.",
-      "evidence": "Informe encaminhado à coordenação em 13/11/2026; eventos e destinos relatados com datas distintas.",
-      "tracked_since": "2026-11-13"
+      "source": "Atualização de localização informada diretamente pela coordenação ENAJU em 13/11/2026 (chat). Não houve consulta direta à caixa do SEI.",
+      "evidence": "Informação direta da coordenação sobre a unidade atual, situação e encaminhamento, recebida em 13/11/2026.",
+      "tracked_since": "2026-11-13",
+      "verification_method": "relato_direto_coordenacao",
+      "update_note": "A unidade atual informada pela coordenação não foi confirmada por leitura direta da tramitação no sistema SEI."
     },
     {
       "id": "SEI-09",
@@ -2206,19 +2408,21 @@
       "project_id": "P17",
       "responsible": "Fábio · Dr. Daniel",
       "priority": "Monitorar",
-      "status_current": "Encaminhado à SCS",
-      "current_unit": null,
-      "current_unit_verified": false,
+      "status_current": "Na SCS; manifestação de comunicação pendente",
+      "current_unit": "SCS (Comunicação)",
+      "current_unit_verified": true,
       "last_reported_unit": "SCS (encaminhado pela SEP)",
-      "awaiting": "Acompanhar manifestação da SCS e devolução do processo com aprovação, ajustes ou outras orientações.",
+      "awaiting": "Acompanhar a manifestação da SCS sobre o Plano de Comunicação Institucional da ENAJU.",
       "last_movement": "SEP encaminhou à SCS para manifestação em 28/08/2026. Não há manifestação posterior informada nesta atualização.",
       "last_movement_date": "2026-08-28",
-      "last_checked_at": null,
-      "last_verified_at": null,
+      "last_checked_at": "2026-11-13T16:36:00-03:00",
+      "last_verified_at": "2026-11-13T16:36:00-03:00",
       "last_report_received_date": "2026-11-13",
-      "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI.",
-      "evidence": "Informe encaminhado à coordenação em 13/11/2026; eventos e destinos relatados com datas distintas.",
-      "tracked_since": "2026-11-13"
+      "source": "Atualização de localização informada diretamente pela coordenação ENAJU em 13/11/2026 (chat). Não houve consulta direta à caixa do SEI.",
+      "evidence": "Informação direta da coordenação sobre a unidade atual, situação e encaminhamento, recebida em 13/11/2026.",
+      "tracked_since": "2026-11-13",
+      "verification_method": "relato_direto_coordenacao",
+      "update_note": "A unidade atual informada pela coordenação não foi confirmada por leitura direta da tramitação no sistema SEI."
     },
     {
       "id": "SEI-10",
@@ -2227,48 +2431,53 @@
       "project_id": "P16",
       "responsible": "Fábio · Dr. Daniel",
       "priority": "Monitorar",
-      "status_current": "Realinhamento de cronograma solicitado",
-      "current_unit": null,
-      "current_unit_verified": false,
+      "status_current": "Na SCS; ENAJU Talks em acompanhamento",
+      "current_unit": "SCS (Comunicação)",
+      "current_unit_verified": true,
       "last_reported_unit": "ECP (destinatário do retorno)",
-      "awaiting": "ECP: realinhar o cronograma do ENAJU Talks e devolver versão ajustada; esclarecer se será necessária estimativa de despesa, à luz da manifestação da SOF.",
+      "awaiting": "Acompanhar a tramitação do ENAJU Talks na SCS, mantendo a necessidade de realinhamento de cronograma levantada anteriormente até confirmação de sua resolução.",
       "last_movement": "SAD pediu ao ECP realinhamento de cronograma; DGE e DIPJ manifestaram-se favoravelmente e devolveram ao ECP. SOF informou não identificar estimativa de despesa no projeto e colocou-se à disposição; solicitou realinhamento e devolveu ao ECP. Datas não informadas.",
       "last_movement_date": null,
-      "last_checked_at": null,
-      "last_verified_at": null,
+      "last_checked_at": "2026-11-13T16:36:00-03:00",
+      "last_verified_at": "2026-11-13T16:36:00-03:00",
       "last_report_received_date": "2026-11-13",
-      "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI.",
-      "evidence": "Informe encaminhado à coordenação em 13/11/2026; eventos e destinos relatados com datas distintas.",
-      "tracked_since": "2026-11-13"
+      "source": "Atualização de localização informada diretamente pela coordenação ENAJU em 13/11/2026 (chat). Não houve consulta direta à caixa do SEI.",
+      "evidence": "Informação direta da coordenação sobre a unidade atual, situação e encaminhamento, recebida em 13/11/2026.",
+      "tracked_since": "2026-11-13",
+      "verification_method": "relato_direto_coordenacao",
+      "update_note": "A unidade atual informada pela coordenação não foi confirmada por leitura direta da tramitação no sistema SEI. O destino anterior registrado era ECP; novo local informado: SCS."
     },
     {
       "id": "SEI-11",
       "number": "20451/2026",
-      "title": "Solicitação de servidor do TJDFT",
+      "title": "Solicitação de Jailson — servidor do TJDFT",
       "project_id": "P08",
       "responsible": "Fábio · Dr. Daniel · Assad",
       "priority": "Monitorar",
-      "status_current": "Encaminhado à SEP",
-      "current_unit": null,
-      "current_unit_verified": false,
+      "status_current": "Na SEP; aguardando encaminhamento à SGP",
+      "current_unit": "SEP",
+      "current_unit_verified": true,
       "last_reported_unit": "SEP (encaminhado)",
-      "awaiting": "Acompanhar manifestação ou decisão da SEP sobre a solicitação de servidor do TJDFT.",
+      "awaiting": "Acompanhar na SEP o envio à SGP da solicitação de Jailson, servidor do TJDFT.",
       "last_movement": "Solicitação de servidor do TJDFT encaminhada à SEP em 05/11/2026.",
       "last_movement_date": "2026-11-05",
-      "last_checked_at": null,
-      "last_verified_at": null,
+      "last_checked_at": "2026-11-13T16:36:00-03:00",
+      "last_verified_at": "2026-11-13T16:36:00-03:00",
       "last_report_received_date": "2026-11-13",
-      "source": "Informe de acompanhamento de processos de reestruturação da ENAJU enviado à coordenação em 13/11/2026 (mensagem do usuário). Não equivale a consulta direta ao SEI.",
-      "evidence": "Informe encaminhado à coordenação em 13/11/2026; eventos e destinos relatados com datas distintas.",
-      "tracked_since": "2026-11-13"
+      "source": "Atualização de localização informada diretamente pela coordenação ENAJU em 13/11/2026 (chat). Não houve consulta direta à caixa do SEI.",
+      "evidence": "Informação direta da coordenação sobre a unidade atual, situação e encaminhamento, recebida em 13/11/2026.",
+      "tracked_since": "2026-11-13",
+      "verification_method": "relato_direto_coordenacao",
+      "update_note": "A unidade atual informada pela coordenação não foi confirmada por leitura direta da tramitação no sistema SEI."
     }
   ],
   "sei_tracking_policy": {
     "scope": "Dez processos relativos à reestruturação da ENAJU, informados em 13/11/2026. Processo 08366/2026 retirado da lista prioritária e preservado em histórico.",
-    "not_live": "Não há acesso autenticado à caixa SEI. A coluna Unidade atual fica NÃO VERIFICADA; unidades destinatárias são referências do último encaminhamento informado, nunca comprovação de permanência na unidade.",
-    "public_notice": "Site público: não incluir informações sigilosas ou dados pessoais sensíveis.",
+    "not_live": "O painel ainda não possui integração autenticada com SEI; a unidade exibida reflete a informação recebida em 13/11/2026 e pode mudar após novas movimentações.",
+    "public_notice": "O site é público. Não inserir dados pessoais sensíveis, documentos internos ou peças sigilosas.",
     "status": "Situação informada por relato da equipe em 13/11/2026, não validada pela leitura direta do SEI.",
-    "movement_date": "Data da movimentação individual quando fornecida. Campo vazio não autoriza atribuir a data do recebimento da atualização."
+    "movement_date": "Manter a data original de cada movimentação histórica separada da data do relato de atualização.",
+    "current_unit": "As 10 unidades foram informadas pelo coordenador ENAJU em 13/11/2026. current_unit_verified=true corresponde à confirmação declarada pela coordenação, não a consulta técnica direta ao SEI."
   },
   "archived_sei_tracking": [
     {
