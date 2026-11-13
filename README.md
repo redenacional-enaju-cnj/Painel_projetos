@@ -18,13 +18,15 @@ Aplicação web estática com base versionada no GitHub, atualizada em 13/11/202
 
 ## Painel de acompanhamento SEI (13/11/2026)
 
-- A página inicial ganhou um cartão **SEI prioritários**, e a navegação inclui **SEI prioritários** com número, situação, unidade atual (quando verificada), última unidade mencionada, o que está aguardando e data da informação.
+- A página inicial ganhou um cartão **SEI prioritários**, e a navegação inclui **SEI prioritários** com número, situação, unidade atual (quando verificada), última unidade ou destino informado, o que está aguardando e data da informação.
 - **Link direto para a aba:** https://redenacional-enaju-cnj.github.io/Painel_projetos/#sei
-- Foram incluídos **seis processos iniciais**: 21240/2026, 20736/2026, 20608/2026, 20650/2026, 02704/2026 e 08366/2026. A lista é provisória até validação de prioridades com a coordenação; o processo 02704 refere-se ao pós-diagnóstico e à publicação, não a um projeto ativo de diagnóstico.
+- **Lista atualizada (13/11/2026): dez processos de reestruturação** — 21240/2026, 20736/2026, 20608/2026, 20650/2026, 21997/2026, 02704/2026, 16537/2026, 15083/2026, 18501/2026 e 20451/2026. O SEI 08366/2026 saiu da lista prioritária e foi conservado no histórico, sem pressupor encerramento.
 - **Não há integração com a caixa SEI**: unidades e situações atuais ficam como não verificadas até registro de movimentação com fonte. Última tramitação histórica não comprova localização atual.
 - A edição no navegador é local até usar **Enviar alterações** com autenticação GitHub. Os dados ficam no mesmo arquivo `data/portfolio.json` e a URL pública permanece inalterada.
 - O acompanhamento de rotina no ChatGPT deve fazer a checagem diária nos dias úteis, comparar revisões documentadas e notificar somente alterações relevantes; não declarar que consultou a caixa SEI sem efetivamente ter acesso.
 - **Atenção:** este é um repositório e site públicos, portanto não inclua informação processual sigilosa ou dados pessoais sensíveis.
+**Evidência da rodada de 13/11:** lista recebida da equipe, com movimentações em datas entre 28/08 e 05/11 e algumas sem data individual. Os campos de unidade atual seguem não verificados porque o painel não consulta o SEI diretamente. As respostas aguardadas e as cinco providências apontadas pela DTI no processo 20650/2026 constam no JSON.
+
 
 ## V2 — dashboard executivo institucional (13/11/2026)
 
