@@ -52,3 +52,25 @@
 @media(max-width:1250px){.executive-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.exec-status-body{gap:14px}.exec-donut{width:135px;height:135px}.exec-donut>div{width:94px;height:94px}}
 @media(max-width:850px){.exec-grid{grid-template-columns:1fr}.executive-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.exec-intro{align-items:flex-start;flex-direction:column}.cnjmark .cnjofficial{width:130px;height:42px}.exec-kpi{min-height:108px}}
 @media(max-width:490px){.exec-status-body{flex-direction:column;align-items:stretch}.exec-donut{align-self:center}.exec-area{grid-template-columns:110px 1fr 20px}.exec-intro h2{font-size:21px}.cnjmark{display:none}}
+
+
+/* ENAJU V3 — acompanhamento SEI */
+.sei-dashboard{border:1px solid #c7dbea;border-left:5px solid #1c6390;background:linear-gradient(110deg,#f4f9fc,#fff);border-radius:13px;padding:23px 25px;margin:0 0 23px}
+.sei-dashboard-head{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.sei-dashboard-title{display:flex;align-items:center;gap:16px}
+.sei-card-icon{font-family:Georgia,serif;width:56px;height:56px;display:flex;align-items:center;justify-content:center;border-radius:13px;background:#e4eff7;font-size:36px;color:#124e7b}
+.sei-dashboard h3{font-size:21px;letter-spacing:-.025em;color:#153b60;margin:3px 0 4px}
+.sei-dashboard h3 small{font-size:13px;padding:4px 10px;border-radius:25px;background:#dae9f3;color:#124e7b;vertical-align:middle}
+.sei-dashboard p{color:#678198;font-size:12px;margin:0}
+.sei-mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.sei-mini-grid>div{border-top:1px solid #dfe8ef;padding:14px 0 0;display:flex;gap:8px;align-items:baseline}
+.sei-mini-grid strong{font-size:24px;color:#174c73}
+.sei-mini-grid span{font-size:11px;color:#698296}
+.sei-dashboard .sei-mini-footer{font-size:11px;color:#7b8da1;padding-top:15px}
+.sei-table-wrap{overflow:auto}.sei-table{min-width:1020px}.sei-table th{white-space:nowrap}
+.sei-process-link{font-weight:800!important;font-size:13px!important}
+.sei-historic{display:block;font-size:10px;line-height:1.5;color:#73879c;margin-top:5px}
+.sei-verified{font-weight:700;color:#24634e}.sei-unverified{font-weight:650;color:#916b28}
+.sei-await{min-width:270px;line-height:1.45;font-size:12px}
+@media(max-width:860px){.sei-dashboard-head{align-items:flex-start;flex-direction:column}.sei-mini-grid{grid-template-columns:1fr 1fr}.sei-mini-grid>div:last-child{grid-column:1/-1}}
+@media(max-width:470px){.sei-mini-grid{grid-template-columns:1fr}.sei-mini-grid>div:last-child{grid-column:auto}.sei-dashboard{padding:16px}.sei-dashboard-title{align-items:flex-start}.sei-card-icon{width:42px;height:42px;font-size:28px;flex:none}}

@@ -1536,10 +1536,24 @@
     "note": "Revisar dados antes de disponibilizar o repositório ou GitHub Pages publicamente. Não publicar informações pessoais/sigilosas.",
     "progress": "Por padrão nulo até pactuação do denominador e aceite comprovado."
   },
-  "revision": 1,
-  "last_saved_at": "2026-11-13T14:26:00-03:00",
-  "last_saved_by": "Atualização orientada pelo coordenador (chat ENAJU)",
+  "revision": 2,
+  "last_saved_at": "2026-11-13T15:29:00-03:00",
+  "last_saved_by": "Atualização solicitada pelo coordenador ENAJU",
   "audit_history": [
+    {
+      "id": "SEI-REG-20261113",
+      "type": "implantacao_acompanhamento_sei",
+      "title": "Acompanhamento SEI prioritários",
+      "at": "2026-11-13T15:29:00-03:00",
+      "actor": "Assistente (a pedido da coordenação)",
+      "evidence": "Seis processos extraídos de registros históricos; localização atual não inferida.",
+      "before": {
+        "sei_tracking": 0
+      },
+      "after": {
+        "sei_tracking": 6
+      }
+    },
     {
       "id": "VALIDACAO-20261113-01",
       "type": "revisao_carteira",
@@ -1880,5 +1894,132 @@
       "confirmed": false,
       "reason": "Projeto retirado da carteira ativa em 13/11/2026"
     }
-  ]
+  ],
+  "sei_tracking": [
+    {
+      "id": "SEI-01",
+      "number": "21240/2026",
+      "title": "Credenciamento de cursos e Selo ENAJU",
+      "project_id": "P05",
+      "responsible": "Igor · Danielly",
+      "priority": "Monitorar",
+      "status_current": "A verificar",
+      "current_unit": null,
+      "current_unit_verified": false,
+      "last_reported_unit": "SEP encaminhou para SG e gabinete da Presidência",
+      "awaiting": "Verificar manifestação/decisão sobre credenciamento e Selo.",
+      "last_movement": "Despacho relatado em 28/10: SEP anuiu e remeteu à SG e Presidência.",
+      "last_movement_date": "2026-10-27",
+      "last_checked_at": null,
+      "last_verified_at": null,
+      "source": "Histórico ENAJU; sem consulta direta à caixa SEI",
+      "evidence": null,
+      "tracked_since": "2026-11-13"
+    },
+    {
+      "id": "SEI-02",
+      "number": "20736/2026",
+      "title": "Comitê Executivo ENAJU",
+      "project_id": "P01",
+      "responsible": "Fábio",
+      "priority": "Monitorar",
+      "status_current": "A verificar",
+      "current_unit": null,
+      "current_unit_verified": false,
+      "last_reported_unit": "Caixa ENAJU: despacho para assinatura de Fábio",
+      "awaiting": "Confirmar assinatura e retorno à SG/DIPJ.",
+      "last_movement": "Em 28/10, despacho para assinatura e encaminhamento.",
+      "last_movement_date": "2026-10-28",
+      "last_checked_at": null,
+      "last_verified_at": null,
+      "source": "Histórico ENAJU; sem consulta direta à caixa SEI",
+      "evidence": null,
+      "tracked_since": "2026-11-13"
+    },
+    {
+      "id": "SEI-03",
+      "number": "20608/2026",
+      "title": "Ata do Conselho Superior",
+      "project_id": "P01",
+      "responsible": "Igor · Danielly",
+      "priority": "Monitorar",
+      "status_current": "A verificar",
+      "current_unit": null,
+      "current_unit_verified": false,
+      "last_reported_unit": "Não informada",
+      "awaiting": "Verificar tramitação, assinaturas restantes, juntada e encerramento.",
+      "last_movement": "Em 28/10, assinaturas de Clara, José Theodoro, Camila e Dr. Daniel; unidade não informada.",
+      "last_movement_date": "2026-10-28",
+      "last_checked_at": null,
+      "last_verified_at": null,
+      "source": "Histórico ENAJU; sem consulta direta à caixa SEI",
+      "evidence": null,
+      "tracked_since": "2026-11-13"
+    },
+    {
+      "id": "SEI-04",
+      "number": "20650/2026",
+      "title": "ENAJU Tech",
+      "project_id": "P07",
+      "responsible": "Igor · Isley · Igor Guimarães",
+      "priority": "Monitorar",
+      "status_current": "A verificar",
+      "current_unit": null,
+      "current_unit_verified": false,
+      "last_reported_unit": "Encaminhamento a DTI, SCS e Fundo de Modernização",
+      "awaiting": "Verificar manifestações das unidades e proposta básica de Isley.",
+      "last_movement": "Em 28/10, SEP concordou e encaminhou a DTI/SCS/Fundo; situação posterior não comprovada.",
+      "last_movement_date": "2026-10-28",
+      "last_checked_at": null,
+      "last_verified_at": null,
+      "source": "Histórico ENAJU; sem consulta direta à caixa SEI",
+      "evidence": null,
+      "tracked_since": "2026-11-13"
+    },
+    {
+      "id": "SEI-05",
+      "number": "02704/2026",
+      "title": "Diagnóstico das Escolas — publicação final",
+      "project_id": "P13",
+      "responsible": "Igor · Danielly",
+      "priority": "Monitorar",
+      "status_current": "A verificar",
+      "current_unit": null,
+      "current_unit_verified": false,
+      "last_reported_unit": "Não informada",
+      "awaiting": "Conferir publicação final, DOI, portal, divulgação e juntada ao SEI da reunião.",
+      "last_movement": "Diagnóstico concluído conforme coordenador em 13/11; tramitação do SEI não verificada.",
+      "last_movement_date": "2026-11-13",
+      "last_checked_at": null,
+      "last_verified_at": null,
+      "source": "Histórico ENAJU; sem consulta direta à caixa SEI",
+      "evidence": null,
+      "tracked_since": "2026-11-13"
+    },
+    {
+      "id": "SEI-06",
+      "number": "08366/2026",
+      "title": "Despacho à DIPJ — assunto a confirmar",
+      "project_id": null,
+      "responsible": "Fábio",
+      "priority": "Monitorar",
+      "status_current": "A verificar",
+      "current_unit": null,
+      "current_unit_verified": false,
+      "last_reported_unit": "Não informada",
+      "awaiting": "Confirmar assunto do processo, unidade atual e despacho de Fábio à DIPJ.",
+      "last_movement": "Orientação de 28/10 para despacho direto no SEI; assunto não comprovado.",
+      "last_movement_date": "2026-10-28",
+      "last_checked_at": null,
+      "last_verified_at": null,
+      "source": "Histórico ENAJU; sem consulta direta à caixa SEI",
+      "evidence": null,
+      "tracked_since": "2026-11-13"
+    }
+  ],
+  "sei_tracking_policy": {
+    "scope": "Lista inicial de seis processos SEI relacionados à ENAJU, a revisar com a coordenação.",
+    "not_live": "Sem conector direto ao SEI. Unidade atual deve ser preenchida apenas com informação verificada, com fonte.",
+    "public_notice": "Site público: não incluir informações sigilosas ou dados pessoais sensíveis."
+  }
 }
