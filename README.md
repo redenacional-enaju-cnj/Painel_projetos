@@ -16,6 +16,16 @@ Aplicação web estática com base versionada no GitHub, atualizada em 13/11/202
 
 **Estado da publicação (13/11/2026):** repositório público e GitHub Pages ativado; o workflow `pages build and deployment` [concluiu com sucesso](https://github.com/redenacional-enaju-cnj/Painel_projetos/actions/runs/43477696533). **Abrir o [painel publicado](https://redenacional-enaju-cnj.github.io/Painel_projetos/)**. O deploy foi confirmado pela plataforma; o carregamento da URL externa não pôde ser testado diretamente por esta sessão.
 
+## Painel de acompanhamento SEI (13/11/2026)
+
+- A página inicial ganhou um cartão **SEI prioritários**, e a navegação inclui **SEI prioritários** com número, situação, unidade atual (quando verificada), última unidade mencionada, o que está aguardando e data da informação.
+- **Link direto para a aba:** https://redenacional-enaju-cnj.github.io/Painel_projetos/#sei
+- Foram incluídos **seis processos iniciais**: 21240/2026, 20736/2026, 20608/2026, 20650/2026, 02704/2026 e 08366/2026. A lista é provisória até validação de prioridades com a coordenação; o processo 02704 refere-se ao pós-diagnóstico e à publicação, não a um projeto ativo de diagnóstico.
+- **Não há integração com a caixa SEI**: unidades e situações atuais ficam como não verificadas até registro de movimentação com fonte. Última tramitação histórica não comprova localização atual.
+- A edição no navegador é local até usar **Enviar alterações** com autenticação GitHub. Os dados ficam no mesmo arquivo `data/portfolio.json` e a URL pública permanece inalterada.
+- O acompanhamento de rotina no ChatGPT deve fazer a checagem diária nos dias úteis, comparar revisões documentadas e notificar somente alterações relevantes; não declarar que consultou a caixa SEI sem efetivamente ter acesso.
+- **Atenção:** este é um repositório e site públicos, portanto não inclua informação processual sigilosa ou dados pessoais sensíveis.
+
 ## V2 — dashboard executivo institucional (13/11/2026)
 
 - Visão inicial agora apresenta indicadores reais da base, situação do portfólio, distribuição por eixo, acompanhamento de demandas e agenda.
