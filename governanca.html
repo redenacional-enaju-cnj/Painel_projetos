@@ -1,32 +1,85 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Visão pública dos seis blocos de governança da ENAJU.">
-<title>ENAJU | Governança — seis blocos</title>
+<meta name="description" content="Mapa interativo das conexões entre processos SEI e referências de governança ENAJU.">
+<title>ENAJU | Rede de governança e processos SEI</title>
 <style>
-:root{--navy:#15316f;--cyan:#009fd4;--ink:#1e304c;--bg:#f4f7fc;--line:#d9e3ef}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Inter,system-ui,Arial,sans-serif}
-header{background:linear-gradient(110deg,#142d67,#28549a);color:#fff;padding:26px max(22px,calc((100vw - 1120px)/2))}
-.back{display:inline-block;border:1px solid #ffffff70;border-radius:8px;padding:9px 14px;text-decoration:none;color:#fff;margin-bottom:22px;font-weight:650}
-.kicker{font-size:12px;letter-spacing:.13em;color:#9fe8ff;font-weight:750;text-transform:uppercase}
-h1{font-size:clamp(26px,4vw,38px);margin:8px 0}header p{color:#d7e6fb;max-width:740px;margin:0}
-main{max-width:1160px;margin:28px auto;padding:0 20px}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.block{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;box-shadow:0 4px 20px #102a5409}
-.number{font-size:12px;font-weight:800;color:#0079a7;letter-spacing:.1em}
-.block h2{font-size:19px;line-height:1.3;margin:12px 0}
-.block p{color:#526580;font-size:14px;margin-bottom:0}
-.note{border-left:4px solid var(--cyan);background:#fff;padding:16px 20px;margin-top:24px;font-size:13px;color:#526580}
-footer{text-align:center;font-size:12px;color:#61718a;padding:26px}
-@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.grid{grid-template-columns:1fr}}
+:root{--navy:#122c68;--cyan:#009dd3;--ink:#1e3150;--line:#dbe4f0;--muted:#64758b}
+*{box-sizing:border-box}body{margin:0;font:14px/1.5 Inter,system-ui,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#f5f8fd}
+header{background:linear-gradient(110deg,#122b67,#23519c);color:white;padding:20px 24px;display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap}
+.kicker{color:#9bdffc;letter-spacing:.12em;text-transform:uppercase;font-size:11px;font-weight:750}
+h1{font-size:25px;margin:6px 0}header p{max-width:760px;color:#d6e5fb;margin:0;font-size:13px}
+.back{color:white;text-decoration:none;border:1px solid #ffffff79;padding:10px 14px;border-radius:9px;font-weight:650;white-space:nowrap}
+.toolbar{padding:12px 18px;display:flex;gap:9px;flex-wrap:wrap;align-items:center;background:#fff;border-bottom:1px solid var(--line)}
+input,button{font:inherit}input{min-width:230px;flex:1;max-width:420px;padding:10px 12px;border:1px solid #cbd6e8;border-radius:8px}
+button{border:1px solid #cedaeb;padding:9px 12px;border-radius:8px;background:#f4f7fc;color:#29466d;cursor:pointer}
+button.active{background:var(--navy);color:#fff}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 315px;min-height:670px}
+.map{min-width:0;background:radial-gradient(#e0e7f1 1px,transparent 1px) 0 0/24px 24px;overflow:hidden;position:relative}
+svg{width:100%;height:calc(100vh - 220px);min-height:680px;display:block;touch-action:none;user-select:none}
+.edge{fill:none;stroke:#b9c7d9;stroke-width:1.4;stroke-opacity:.45}
+.edge.related{stroke:#008fc9;stroke-width:3;stroke-opacity:1}
+.node{cursor:pointer}.node rect.main{fill:#fff;stroke:#ccd9e8;stroke-width:1.2;rx:9;filter:drop-shadow(0 2px 4px #10284d15)}
+.node.selected rect.main{stroke:#008fc9;stroke-width:3}
+.node.related rect.main{stroke:#47a4ce;stroke-width:2}
+.node.dim{opacity:.14}
+.node .title{font-size:12.5px;font-weight:750;fill:#203657}.node .sub{font-size:10px;fill:#677995}
+.details{background:#fff;border-left:1px solid var(--line);padding:21px;overflow:auto}
+.details h2{font-size:21px;margin:7px 0}.details h3{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:#66758b;margin-top:22px}
+.details p{color:#53647c}.details li{margin:8px 0}.details a{color:#006ea4}
+.meta{font-size:12px;color:#64758b}.legend{display:flex;gap:13px;flex-wrap:wrap;font-size:12px;color:#4f617d}
+.legend b{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px}
+.notice{font-size:12px;color:#687894;padding:10px 18px;background:white;border-top:1px solid var(--line)}
+@media(max-width:960px){.layout{grid-template-columns:1fr}.details{border-left:0;border-top:1px solid var(--line)}svg{height:600px;min-height:600px}}
 </style></head><body>
-<header><a class="back" href="./">← Voltar ao Painel de Gestão Integrada</a><div class="kicker">CNJ · Escola Nacional do Judiciário</div><h1>Governança ENAJU · seis blocos</h1>
-<p>Visão sintética das frentes de organização institucional, normativa, pedagógica e operacional que devem ser acompanhadas de forma coordenada.</p></header>
-<main><section class="grid" aria-label="Seis blocos de governança"><article class="block"><div class="number">01</div><h2>Institucionalização e governança</h2><p>Estrutura institucional, Conselho Superior, programa de consolidação e capacidade de funcionamento.</p></article>
-<article class="block"><div class="number">02</div><h2>Política e planejamento</h2><p>Política nacional de formação, projeto pedagógico, planejamento anual e harmonização normativa.</p></article>
-<article class="block"><div class="number">03</div><h2>Rede e credenciamento</h2><p>Arranjos de cooperação entre escolas, credenciamento e padrões de qualidade.</p></article>
-<article class="block"><div class="number">04</div><h2>Docência e contratação</h2><p>Regras para instrutores, colaboradores, remuneração e regimes de contratação.</p></article>
-<article class="block"><div class="number">05</div><h2>Execução e diagnóstico</h2><p>Oferta formativa, diagnóstico nacional e suporte tecnológico à aprendizagem.</p></article>
-<article class="block"><div class="number">06</div><h2>Produção e comunicação</h2><p>Cadernos, iniciativas de divulgação e comunicação institucional.</p></article></section>
-<aside class="note"><strong>Nota:</strong> esta é a visão pública resumida dos blocos. A correlação entre processos administrativos não implica apensamento formal, e as situações processuais internas não são publicadas nesta página.</aside></main>
-<footer>ENAJU · Governança e monitoramento · 2026</footer></body></html>
+<header><div><div class="kicker">CNJ · Escola Nacional do Judiciário</div><h1>Rede de governança e processos SEI</h1><p>Mapa de conexões entre processos administrativos, referências institucionais e instrumentos de gestão. Clique em uma caixa para destacar suas relações.</p></div><a class="back" href="./">← Voltar ao Painel de Projetos</a></header>
+<div class="toolbar"><input id="search" type="search" placeholder="Buscar número SEI ou assunto…" aria-label="Localizar processo SEI">
+<button data-group="all" class="active">Todos</button><button data-group="institucional">Institucional</button><button data-group="politica">Política</button><button data-group="execucao">Execução</button><button data-group="transversal">Suporte</button><button id="reset">Centralizar</button>
+<div class="legend"><span><b style="background:#5477ac"></b>Institucional</span><span><b style="background:#009dd3"></b>Política</span><span><b style="background:#826ab0"></b>Execução</span><span><b style="background:#8294a8"></b>Suporte</span></div></div>
+<div class="layout"><div class="map"><svg id="network" viewBox="0 0 1700 1090" aria-label="Diagrama de processos SEI conectados"><g id="canvas"><g id="lines"></g><g id="nodes"></g></g></svg></div>
+<aside class="details"><div class="meta" id="stats"></div><div id="detail"><p>Selecione uma caixa para consultar suas conexões.</p></div></aside></div>
+<div class="notice">As linhas representam relações funcionais, normativas ou de planejamento do mapa de trabalho de 16/11/2026; não comprovam apensamento formal nem tramitação entre unidades. Processos pendentes de identificação estão explicitamente sinalizados.</div>
+<script>
+"use strict";
+const N=[{"id":"res643","label":"Res. 643/2025","subtitle":"Fundamento ENAJU","group":"institucional"},{"id":"sep","label":"SEP","subtitle":"Coordenação institucional","group":"institucional"},{"id":"p257","label":"Portaria 257/2026","subtitle":"Estrutura e regimento","group":"institucional"},{"id":"conselho","label":"Conselho Superior","subtitle":"Deliberação estratégica","group":"institucional"},{"id":"s21372","label":"SEI 21372/2026","subtitle":"Programa ENAJU","group":"institucional"},{"id":"s16934","label":"SEI 16934/2025","subtitle":"Institucionalização","group":"institucional"},{"id":"s20608","label":"SEI 20608/2026","subtitle":"Ata do Conselho","group":"institucional"},{"id":"s18485","label":"SEI 18485/2025","subtitle":"GT de estruturação","group":"institucional"},{"id":"s06504","label":"SEI 06504/2023","subtitle":"Plano da Política","group":"politica"},{"id":"s02533","label":"SEI 02533/2026","subtitle":"Revisão da Política","group":"politica"},{"id":"s20736","label":"SEI 20736/2026","subtitle":"Comitê da Rede","group":"politica"},{"id":"s21240","label":"SEI 21240/2026","subtitle":"Credenciamento e Selo","group":"politica"},{"id":"ppi","label":"PPI · SEI a identificar","subtitle":"Projeto Pedagógico","group":"politica"},{"id":"novo","label":"SEI a autuar · proposta","subtitle":"Harmonização CEAJud/ENAJU","group":"politica"},{"id":"s04564","label":"SEI 04564/2026","subtitle":"Contratação de instrutores","group":"execucao"},{"id":"s20659","label":"SEI 20659/2026","subtitle":"GECC e colaboradores","group":"execucao"},{"id":"s03347","label":"SEI 03347/2026","subtitle":"Precedente jurídico","group":"execucao"},{"id":"pac","label":"PAC 2027 · SEI a verificar","subtitle":"Plano Anual de Capacitação","group":"execucao"},{"id":"s21997","label":"SEI 21997/2026","subtitle":"Ações formativas 2026","group":"execucao"},{"id":"s02704","label":"SEI 02704/2026","subtitle":"Diagnóstico das escolas","group":"execucao"},{"id":"s16537","label":"SEI 16537/2026","subtitle":"Cadernos ENAJU","group":"transversal"},{"id":"s20650","label":"SEI 20650/2026","subtitle":"ENAJU Tech","group":"transversal"},{"id":"s15083","label":"SEI 15083/2026","subtitle":"Comunicação institucional","group":"transversal"},{"id":"s18501","label":"SEI 18501/2026","subtitle":"ENAJU Talks","group":"transversal"},{"id":"s20451","label":"SEI 20451/2026","subtitle":"Apoio de pessoal","group":"transversal"}];
+const E=[{"from":"res643","to":"p257","type":"fundamenta"},{"from":"p257","to":"conselho","type":"institui"},{"from":"sep","to":"s21372","type":"coordena"},{"from":"p257","to":"s16934","type":"origem"},{"from":"s16934","to":"s18485","type":"antecedente"},{"from":"conselho","to":"s20608","type":"deliberações"},{"from":"conselho","to":"ppi","type":"orienta"},{"from":"conselho","to":"s06504","type":"acompanha"},{"from":"s21372","to":"s06504","type":"planejamento"},{"from":"s21372","to":"s20736","type":"rede"},{"from":"s21372","to":"s21240","type":"qualidade"},{"from":"s21372","to":"ppi","type":"pedagogia"},{"from":"s21372","to":"s04564","type":"docência"},{"from":"s21372","to":"s20659","type":"remuneração"},{"from":"s21372","to":"pac","type":"oferta"},{"from":"s21372","to":"novo","type":"harmonização"},{"from":"s06504","to":"s02533","type":"política"},{"from":"s06504","to":"pac","type":"planejamento"},{"from":"s06504","to":"ppi","type":"orienta"},{"from":"s06504","to":"s02704","type":"evidências"},{"from":"s06504","to":"s21997","type":"monitoramento"},{"from":"s06504","to":"s20736","type":"rede"},{"from":"s06504","to":"s21240","type":"qualidade"},{"from":"s06504","to":"novo","type":"compatibilização"},{"from":"s20736","to":"s21240","type":"cooperação"},{"from":"ppi","to":"s21240","type":"referencial"},{"from":"ppi","to":"s04564","type":"docência"},{"from":"ppi","to":"pac","type":"desenho"},{"from":"ppi","to":"s20650","type":"tecnologia"},{"from":"s21240","to":"s16537","type":"partilha"},{"from":"s04564","to":"s20659","type":"articulação normativa"},{"from":"s03347","to":"s04564","type":"referência jurídica"},{"from":"s03347","to":"s20659","type":"remuneração"},{"from":"s20659","to":"novo","type":"harmonização"},{"from":"s04564","to":"novo","type":"harmonização"},{"from":"s02704","to":"pac","type":"subsídio"},{"from":"s21997","to":"pac","type":"histórico"},{"from":"s16537","to":"s18501","type":"difusão"},{"from":"s15083","to":"s18501","type":"comunicação"},{"from":"s15083","to":"s20736","type":"divulgação"},{"from":"s20650","to":"pac","type":"infraestrutura"},{"from":"s20451","to":"s21372","type":"equipe"},{"from":"s20608","to":"s20736","type":"diretrizes"},{"from":"s20608","to":"s21240","type":"diretrizes"},{"from":"novo","to":"sep","type":"encaminhamento"},{"from":"novo","to":"s16934","type":"compatibilização"},{"from":"novo","to":"p257","type":"regimento"}];
+const colors={institucional:"#5477ac",politica:"#009dd3",execucao:"#826ab0",transversal:"#8294a8"};
+const columns={institucional:65,politica:485,execucao:905,transversal:1325};
+const groups=["institucional","politica","execucao","transversal"];
+groups.forEach(g=>{const arr=N.filter(n=>n.group===g);arr.forEach((n,i)=>{n.x=columns[g]+(i%2)*14;n.y=55+i*113})});
+const byId=Object.fromEntries(N.map(n=>[n.id,n]));
+let selected="s21372",group="all",query="",zoom=1,tx=0,ty=0,drag=null;
+const svg=document.getElementById("network"),canvas=document.getElementById("canvas");
+function el(tag,attrs={},value){const x=document.createElementNS("http://www.w3.org/2000/svg",tag);Object.entries(attrs).forEach(([k,v])=>x.setAttribute(k,v));if(value!==undefined)x.textContent=value;return x}
+function neighbors(id){return E.filter(e=>e.from===id||e.to===id).map(e=>({id:e.from===id?e.to:e.from,type:e.type}))}
+function highlighted(){const ids=new Set([selected,...neighbors(selected).map(x=>x.id)]);return ids}
+function visible(n){return (group==="all"||group===n.group)&&(!query||(n.label+" "+n.subtitle).toLowerCase().includes(query))}
+function draw(){
+ const lg=document.getElementById("lines"),ng=document.getElementById("nodes");lg.replaceChildren();ng.replaceChildren();
+ const hits=N.filter(visible).map(n=>n.id),active=new Set(hits);
+ if(group!=="all"||query){for(const e of E){if(active.has(e.from))active.add(e.to);if(active.has(e.to))active.add(e.from)}}
+ for(const e of E){const a=byId[e.from],b=byId[e.to];let x1=a.x+104,y1=a.y+32,x2=b.x+104,y2=b.y+32,dx=x2-x1;
+ const path=el("path",{d:"M "+x1+" "+y1+" C "+(x1+dx*.42)+" "+y1+", "+(x2-dx*.42)+" "+y2+", "+x2+" "+y2,class:"edge"+((e.from===selected||e.to===selected)?" related":"")});
+ if(!active.has(e.from)||!active.has(e.to))path.setAttribute("opacity",".08");lg.appendChild(path)}
+ const related=highlighted();
+ for(const n of N){const g=el("g",{class:"node"+(n.id===selected?" selected":related.has(n.id)?" related":"")+(!active.has(n.id)?" dim":""),transform:"translate("+n.x+" "+n.y+")",tabindex:"0",role:"button","aria-label":n.label});
+ g.append(el("rect",{class:"main",width:211,height:67}),el("rect",{width:6,height:67,rx:3,fill:colors[n.group]}),el("text",{x:15,y:25,class:"title"},n.label),el("text",{x:15,y:45,class:"sub"},n.subtitle));
+ g.addEventListener("click",()=>pick(n.id));g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();pick(n.id)}});
+ g.addEventListener("pointerdown",e=>{if(e.button!==0)return;drag={id:n.id,x:e.clientX,y:e.clientY,ox:n.x,oy:n.y};g.setPointerCapture(e.pointerId)});
+ ng.appendChild(g)}
+ const n=byId[selected];const d=document.getElementById("detail");d.replaceChildren();
+ const h=document.createElement("h2");h.textContent=n.label;d.append(h);
+ const p=document.createElement("p");p.textContent=n.subtitle;d.append(p);
+ const heading=document.createElement("h3");heading.textContent="Conexões do processo ("+neighbors(selected).length+")";d.append(heading);
+ const list=document.createElement("ul");for(const r of neighbors(selected)){const li=document.createElement("li"),a=document.createElement("a");a.href="#"+r.id;a.textContent=byId[r.id].label+" — "+r.type;a.addEventListener("click",ev=>{ev.preventDefault();pick(r.id)});li.append(a);list.append(li)}d.append(list);
+ document.getElementById("stats").textContent=N.filter(x=>x.id.startsWith("s")).length+" processos SEI numerados · "+N.length+" caixas · "+E.length+" conexões";
+}
+function pick(id){selected=id;draw()}
+function transform(){canvas.setAttribute("transform","translate("+tx+" "+ty+") scale("+zoom+")")}
+document.getElementById("search").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();draw()});
+document.querySelectorAll("button[data-group]").forEach(b=>b.addEventListener("click",()=>{group=b.dataset.group;document.querySelectorAll("button[data-group]").forEach(x=>x.classList.toggle("active",x===b));draw()}));
+document.getElementById("reset").addEventListener("click",()=>{zoom=1;tx=ty=0;transform();draw()});
+svg.addEventListener("pointermove",e=>{if(!drag)return;const bb=svg.getBoundingClientRect(),k=1700/bb.width/zoom,n=byId[drag.id];n.x=drag.ox+(e.clientX-drag.x)*k;n.y=drag.oy+(e.clientY-drag.y)*k;draw()});
+svg.addEventListener("pointerup",()=>{drag=null});svg.addEventListener("pointercancel",()=>{drag=null});
+svg.addEventListener("wheel",e=>{e.preventDefault();zoom=Math.max(.45,Math.min(2.2,zoom*(e.deltaY<0?1.08:.92)));transform()},{passive:false});
+draw();
+</script></body></html>
