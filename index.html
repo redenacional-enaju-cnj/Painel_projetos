@@ -8,8 +8,8 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; img-src 'self' data: https://www.cnj.jus.br; font-src 'self'; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests">
   <title>ENAJU | Painel de Gestão Integrada</title>
   <link rel="icon" href="assets/enaju-favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=4">
-  <script src="app.js?v=5" defer></script>
+  <link rel="stylesheet" href="styles.css?v=5">
+  <script src="app.js?v=6" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Ir para o conteúdo</a>
@@ -45,9 +45,20 @@
       <button class="nav-btn" data-view="owners">♙ <span>Por responsável</span></button>
       <button class="nav-btn" data-view="seis">▣ <span>SEI prioritários</span></button>
       <a class="nav-btn" href="governanca.html" title="Abrir o painel de governança com os seis blocos" aria-label="Abrir Governança — 6 blocos">⬡ <span>Governança · 6 blocos ↗</span></a>
+      <a class="nav-btn" href="https://redenacional-enaju-cnj.github.io/rede-escolas-enaju/index.html" target="_blank" rel="noopener noreferrer" title="Abrir Portal da Rede ENAJU em uma nova aba">◎ <span>Portal da Rede ENAJU ↗</span></a>
       <button class="nav-btn" data-view="timeline">▤ <span>Cronograma</span></button>
       <button class="nav-btn" data-view="history">◷ <span>Atualizações</span></button>
     </nav>
+    <section class="quick-find-area" role="search" aria-label="Pesquisa rápida no painel">
+      <label class="quick-find-label" for="quickSearch">Pesquisa rápida</label>
+      <div class="quick-find-control">
+        <span class="quick-find-icon" aria-hidden="true">⌕</span>
+        <input id="quickSearch" type="search" placeholder="Buscar projetos, demandas, SEI, responsáveis ou marcos…" aria-label="Pesquisar em todo o painel" aria-controls="quickResults" aria-expanded="false" autocomplete="off">
+        <span class="quick-find-shortcut" aria-hidden="true">Ctrl + K</span>
+        <button id="quickClear" class="quick-find-clear" type="button" hidden aria-label="Limpar pesquisa">Limpar ×</button>
+      </div>
+      <div id="quickResults" class="quick-results" aria-live="polite" aria-label="Resultados da pesquisa rápida" hidden></div>
+    </section>
     <main id="main">
       <div id="banner" class="banner" hidden></div>
       <div class="content" id="viewRoot"><div class="loading">Carregando a carteira da ENAJU…</div></div>
