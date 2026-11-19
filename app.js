@@ -6,7 +6,7 @@
   const API=`https://api.github.com/repos/${REPO}/contents/${DATA_PATH}`;
   const STATUS=['A confirmar','Planejamento','Em articulação','Em execução','Em revisão','Em atenção','Bloqueado','Concluído','Suspenso'];
   const $=q=>document.querySelector(q);
-  const state={data:null,sha:null,token:null,githubUser:null,dirty:false,changes:0,view:(window.location.hash==='#sei'?'seis':window.location.hash==='#responsaveis'?'owners':'overview'),search:'',group:'',owner:'',responsibleName:'',status:'',baseLocal:null};
+  const state={data:null,sha:null,token:null,githubUser:null,dirty:false,changes:0,view:(window.location.hash==='#sei'?'seis':window.location.hash==='#responsaveis'?'owners':'overview'),search:'',group:'',owner:'',responsibleName:'',status:'',quickQuery:'',baseLocal:null};
   let toastTimer;
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const dateBR=d=>{if(!d)return 'Sem prazo';const x=/^(\d{4})-(\d{2})-(\d{2})/.exec(String(d));return x?`${x[3]}/${x[2]}/${x[1]}`:String(d)};
@@ -188,6 +188,76 @@
   function derivePriority(x){if(x.status_current==='Concluído'&&x.verified_current)return 'Concluído';if(!x.verified_current)return 'Verificar';if(x.status_current==='Bloqueado')return 'Crítico';if(x.priority==='Prioritário')return 'Prioritário';if(x.due_kind!=='Confirmado'||!x.due_date)return 'Em dia';const d=new Date(x.due_date+'T12:00:00'),today=new Date();today.setHours(12,0,0,0);let diff=Math.round((d-today)/864e5);return diff<=2?'Crítico':diff<=7?'Atenção':'Em dia'}
   function timeline(){const months=[];for(let y=2026;y<=2027;y++)for(let m=1;m<=12;m++){const key=`${y}-${String(m).padStart(2,'0')}`;if(key>='2026-08'&&key<='2027-12')months.push(key)}const hs=`<div class="timeline-head"><span class="timeline-title">Marco previsto (planejamento)</span>${months.map(m=>`<span>${monthLabel(m)}</span>`).join('')}</div>`;let rows=state.data.milestones.map(m=>`<div class="timeline-row"><span class="milestone-name" title="${esc(m.name)}">${esc(m.name)}</span>${months.map(n=>`<span class="timecell">${n>=m.start_month&&n<=m.end_month?'<i class="timebar proposed" title="Horizonte proposto, não confirmado"></i>':''}</span>`).join('')}</div>`).join('');return `<div class="toolbar"><div><h2 class="section-title">Cronograma consolidado</h2><p>${state.data.milestones.length} marcos preliminares, separados das datas oficialmente confirmadas.</p></div></div><section class="panel"><div class="timeline-wrapper">${hs}${rows}</div><p class="timeline-legend">▧ Barras hachuradas = horizonte de planejamento. Uma barra não implica compromisso aprovado, realização nem atraso.</p></section>`}
   function history(){const entries=(state.data.audit_history||[]);return `<div class="toolbar"><div><h2 class="section-title">Histórico de atualizações</h2><p>Registro auditável das alterações efetuadas e encaminhadas à base.</p></div><div class="toolbar-right"><span class="count-chip">Revisão ${Number(state.data.revision)||0}</span><button class="btn btn-outline" data-action="export">Exportar base</button></div></div><section class="panel">${entries.length?entries.map(e=>`<div class="history-entry"><strong>${esc(e.title||e.entity_id)}</strong> <span class="pill">${esc(e.type)}</span><p>Registro: ${esc(e.evidence||'—')}</p><time>${fmtTime(e.at)} · ${esc(e.actor)}</time></div>`).join(''):`<div class="empty-state"><h3>Nenhuma edição registrada nesta base</h3><p>O histórico começará quando você salvar alterações de projetos ou demandas.</p></div>`}</section><div style="height:15px"></div><div class="callout">Um envio confirmado cria novo commit no GitHub; a API recusa sobrescritas se outra pessoa tiver alterado a versão remota. O histórico de commits também permanece no repositório.</div>`}
+
+  const quickNorm=v=>String(v??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
+  function quickItems(){
+    if(!state.data)return [];
+    const d=state.data, out=[];
+    const names=new Map(d.projects.map(p=>[p.id,p.name]));
+    const add=(kind,id,title,detail,extra='')=>{
+      const item={kind,id:String(id),title:String(title||''),detail:String(detail||'')};
+      item.search=quickNorm([item.id,item.title,item.detail,extra].join(' '));
+      item.titleNorm=quickNorm(item.title);
+      item.idNorm=quickNorm(item.id);
+      out.push(item);
+    };
+    for(const p of d.projects||[])
+      add('Projeto',p.id,p.name,[p.group,p.owner_display,p.status_current].filter(Boolean).join(' · '),[p.owner,p.scope,p.next_action,p.note,p.last_report,(p.sei||[]).join(' ')].join(' '));
+    for(const r of d.routines||[])
+      add('Demanda',r.id,r.action,[names.get(r.project_id)||r.project_id||'Sem projeto',r.owner==='A confirmar'?r.owner_suggested:r.owner,r.sei||''].filter(Boolean).join(' · '),[r.status_current,r.priority,r.last_report,r.evidence].join(' '));
+    for(const s of d.sei_tracking||[])
+      add('SEI',s.id,s.number+' — '+s.title,[s.current_unit,s.responsible,s.status_current].filter(Boolean).join(' · '),[s.number,s.last_reported_unit,s.awaiting,s.last_movement,s.evidence].join(' '));
+    for(const m of d.milestones||[])
+      add('Marco',m.id,m.name,[names.get(m.project_id)||m.project_id||'Sem projeto',m.start_month,m.end_month].filter(Boolean).join(' · '),[m.note,m.date_kind].join(' '));
+    const owners=dedupe((d.routines||[]).flatMap(r=>routineAssignees(r).names)).filter(n=>n!=='A confirmar');
+    for(const name of owners){
+      const total=d.routines.filter(r=>routineAssignees(r).names.includes(name)).length;
+      add('Responsável',name,name,total+' demanda(s) vinculada(s)','pessoa equipe servidor');
+    }
+    return out;
+  }
+  function quickMatches(query){
+    const q=quickNorm(query);
+    if(q.length<2)return [];
+    const terms=q.split(/\s+/).filter(Boolean);
+    return quickItems().filter(x=>terms.every(w=>x.search.includes(w))).map(x=>{
+      let score=x.idNorm===q?100:x.titleNorm===q?90:x.idNorm.startsWith(q)?80:x.titleNorm.startsWith(q)?70:x.titleNorm.includes(q)?50:20;
+      if(x.kind==='SEI'&&/\d/.test(q))score+=15;
+      return {...x,score};
+    }).sort((a,b)=>b.score-a.score||a.kind.localeCompare(b.kind,'pt-BR')||a.title.localeCompare(b.title,'pt-BR'));
+  }
+  function showQuickResults(){
+    const box=$('#quickResults'),input=$('#quickSearch'),clear=$('#quickClear');
+    if(!box||!input)return;
+    const q=state.quickQuery.trim();
+    clear.hidden=!q;input.setAttribute('aria-expanded',String(Boolean(q)));
+    if(!q){box.hidden=true;box.innerHTML='';return}
+    box.hidden=false;
+    if(quickNorm(q).length<2){box.innerHTML='<p class="quick-result-empty">Digite pelo menos dois caracteres.</p>';return}
+    const found=quickMatches(q),shown=found.slice(0,40);
+    const items=shown.map(x=>'<button type="button" class="quick-result-item" data-action="quick-open" data-kind="'+esc(x.kind)+'" data-id="'+esc(x.id)+'"><span class="quick-result-kind">'+esc(x.kind)+'</span><span class="quick-result-text"><strong>'+esc(x.title)+'</strong><small>'+esc(x.detail)+'</small></span><span class="quick-result-arrow" aria-hidden="true">↗</span></button>').join('');
+    box.innerHTML='<div class="quick-result-header"><strong>'+found.length+' resultado(s)</strong><span>'+(found.length>40?'Exibindo 40; refine a pesquisa':'Clique para abrir o registro')+'</span></div>'+(items?'<div class="quick-result-list">'+items+'</div>':'<p class="quick-result-empty">Nenhum registro encontrado. Tente outra palavra ou número SEI.</p>');
+  }
+  function closeQuickResults(){
+    state.quickQuery='';
+    const input=$('#quickSearch');
+    if(input)input.value='';
+    showQuickResults();
+  }
+  function openQuickResult(kind,id){
+    closeQuickResults();
+    if(kind==='Projeto'){view('projects');projectDetails(id);return}
+    if(kind==='Demanda'){view('routines');editRoutine(id);return}
+    if(kind==='SEI'){view('seis');seiDetails(id);return}
+    if(kind==='Responsável'){state.responsibleName=id;view('owners');return}
+    if(kind==='Marco'){
+      const m=(state.data.milestones||[]).find(x=>x.id===id);
+      if(!m)return;
+      const p=state.data.projects.find(x=>x.id===m.project_id);
+      view('timeline');
+      openModal('Marco: '+m.name,'<div class="detail-grid"><div class="detail-field"><label>Projeto</label><p>'+esc(p?.name||m.project_id||'A definir')+'</p></div><div class="detail-field"><label>Período registrado</label><p>'+esc(m.start_month||'—')+' a '+esc(m.end_month||'—')+'</p></div><div class="detail-field"><label>Natureza</label><p>'+esc(m.date_kind||'Planejamento')+'</p></div></div><p>'+esc(m.note||'Sem observações adicionais.')+'</p>');
+    }
+  }
   function render(){if(!state.data)return;document.querySelectorAll('[data-view]').forEach(b=>{let active=b.dataset.view===state.view;b.classList.toggle('active',active);active?b.setAttribute('aria-current','page'):b.removeAttribute('aria-current')});let root=$('#viewRoot');root.innerHTML=({overview,projects,routines,owners:ownersView,seis,timeline,history}[state.view]||overview)();updateSyncUI();bindFilters()}
   function bindFilters(){const q=$('#q'),g=$('#groupFilter'),s=$('#statusFilter'),o=$('#ownerFilter');if(q)q.addEventListener('input',e=>{state.search=e.target.value;refreshTableOnly()});if(g)g.addEventListener('change',e=>{state.group=e.target.value;render()});if(s)s.addEventListener('change',e=>{state.status=e.target.value;render()});if(o)o.addEventListener('change',e=>{state.owner=e.target.value;render()})}
   function refreshTableOnly(){const old=$('.table-wrap');if(old){old.outerHTML=projectTable(state.view==='overview');}}
@@ -207,8 +277,15 @@
   async function reload(){if(state.dirty&&!confirm('Há alterações locais não enviadas. Deseja descartá-las ao recarregar?'))return;try{if(state.token){const remote=await apiGet(state.token);state.data=validateBase(JSON.parse(decodeBase64(remote.content)));state.sha=remote.sha}else{const r=await fetch('data/portfolio.json',{cache:'no-store'});if(!r.ok)throw Error(`HTTP ${r.status}`);state.data=validateBase(await r.json())}state.baseLocal=structuredClone(state.data);state.dirty=false;state.changes=0;render();showToast('Base recarregada.') }catch(e){showToast('Falha ao recarregar: '+e.message)}}
   function exportJSON(){const blob=new Blob([JSON.stringify(state.data,null,2)+'\n'],{type:'application/json;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`ENAJU_Base_${new Date().toISOString().slice(0,10)}.json`;a.click();URL.revokeObjectURL(url);showToast('Cópia JSON exportada. O arquivo não foi enviado ao GitHub.')}
   async function importJSON(file){if(!file)return;try{if(file.size>5*1024*1024)throw Error('O arquivo supera 5 MB.');let data=validateBase(JSON.parse(await file.text()));if(!confirm(`Importar ${data.projects.length} projetos, ${data.routines.length} demandas e ${data.milestones.length} marcos? A base carregada será substituída localmente; o envio remoto exigirá confirmação e conexão GitHub.`))return;state.data=data;state.dirty=true;state.changes++;render();showToast('Base importada localmente. Use Enviar alterações após revisar os dados.') }catch(e){showToast('Falha na importação: '+e.message)}finally{$('#importInput').value=''}}
-  document.addEventListener('click',e=>{const n=e.target.closest('[data-action]');if(!n)return;const action=n.dataset.action,id=n.dataset.id||'';if(action==='close-modal')closeModal();if(action==='detail-project')projectDetails(id);if(action==='detail-sei')seiDetails(id);if(action==='edit-sei')editSei(id);if(action==='new-sei')editSei('');if(action==='edit-project')editProject(id);if(action==='new-project')editProject('');if(action==='select-owner'){state.responsibleName=n.dataset.owner||'';view('owners')}if(action==='edit-routine')editRoutine(id);if(action==='new-routine')editRoutine('');if(action==='navigate')view(n.dataset.target);if(action==='dash-status'){state.search='';state.group='';state.owner='';state.status=n.dataset.filter||'';view('projects')}if(action==='dash-group'){state.search='';state.group=n.dataset.filter||'';state.owner='';state.status='';view('projects')}if(action==='export')exportJSON()});
+  document.addEventListener('click',e=>{const n=e.target.closest('[data-action]');if(!n)return;const action=n.dataset.action,id=n.dataset.id||'';if(action==='close-modal')closeModal();if(action==='detail-project')projectDetails(id);if(action==='detail-sei')seiDetails(id);if(action==='edit-sei')editSei(id);if(action==='new-sei')editSei('');if(action==='edit-project')editProject(id);if(action==='new-project')editProject('');if(action==='select-owner'){state.responsibleName=n.dataset.owner||'';view('owners')}if(action==='quick-open')openQuickResult(n.dataset.kind||'',id);if(action==='edit-routine')editRoutine(id);if(action==='new-routine')editRoutine('');if(action==='navigate')view(n.dataset.target);if(action==='dash-status'){state.search='';state.group='';state.owner='';state.status=n.dataset.filter||'';view('projects')}if(action==='dash-group'){state.search='';state.group=n.dataset.filter||'';state.owner='';state.status='';view('projects')}if(action==='export')exportJSON()});
   $('#mainnav').addEventListener('click',e=>{const button=e.target.closest('[data-view]');if(button)view(button.dataset.view)});
+  $('#quickSearch').addEventListener('input',e=>{state.quickQuery=e.target.value;showQuickResults()});
+  $('#quickSearch').addEventListener('focus',()=>{if(state.quickQuery)showQuickResults()});
+  $('#quickSearch').addEventListener('keydown',e=>{if(e.key==='Enter'){const first=quickMatches(state.quickQuery)[0];if(first){e.preventDefault();openQuickResult(first.kind,first.id)}}else if(e.key==='Escape'){e.preventDefault();closeQuickResults();$('#quickSearch').blur()}});
+  $('#quickClear').addEventListener('click',()=>{closeQuickResults();$('#quickSearch').focus()});
+  document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='k'){e.preventDefault();$('#quickSearch').focus();$('#quickSearch').select()}});
+  document.addEventListener('click',e=>{if(!e.target.closest('.quick-find-area')&&state.quickQuery){$('#quickResults').hidden=true;$('#quickSearch').setAttribute('aria-expanded','false')}});
+
   $('#closeModal').addEventListener('click',closeModal);
   $('#btnConnect').addEventListener('click',connect);
   $('#btnSend').addEventListener('click',sendChanges);
