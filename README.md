@@ -116,3 +116,9 @@ docs/CLOUDFLARE_DEPLOY.md
 - A aba **Por responsável** reúne os cards das demandas em cada pessoa e permite abrir/editar a demanda, consultar o projeto e acompanhar status, prioridade e prazo.
 - Demandas compartilhadas aparecem para cada participante sem duplicação na base. Atribuições ainda sugeridas são identificadas como tais.
 - O **SEI 21372/2026** foi incluído como prioritário, unidade atual **SEP**, responsabilidade **Igor**, com vínculo à demanda **R09** do projeto **P01**. Referência de fonte **S22** (captura do SEI e atualização da coordenação).
+
+## Pesquisa rápida e Portal da Rede ENAJU — 19/11/2026
+
+- Campo de **Pesquisa rápida** abaixo do menu: resultados imediatos em projetos, demandas, processos SEI, responsáveis e marcos. Pesquisa sem acentos, por números ou palavras, e abre diretamente o item selecionado. Atalho **Ctrl+K** (ou **Cmd+K**).
+- Menu com link para o [Portal da Rede ENAJU](https://redenacional-enaju-cnj.github.io/rede-escolas-enaju/index.html), aberto em nova aba.
+- Busca inteiramente no JSON carregado, sem novos serviços e sem alterar a base gerencial ou as permissões do GitHub.
