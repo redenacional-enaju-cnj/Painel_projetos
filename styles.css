@@ -158,3 +158,107 @@
 .sei-updates-history li strong{color:#345a76;font-size:11px}
 .sei-updates-history li p{white-space:pre-wrap;overflow-wrap:anywhere;margin:6px 0 0;color:#38566f;line-height:1.5}
 
+
+/* Layout responsivo: iPhone/Android em orientação vertical, sem tabelas horizontais. */
+@media (max-width:720px){
+  html{width:100%;-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:12px}
+  body,.app{width:100%;max-width:100%;min-width:0;overflow-x:clip}
+  .app{box-shadow:none}
+  .topbar{display:flex;flex-direction:column;align-items:stretch;gap:12px;padding:14px 14px 12px}
+  .branding{width:100%;min-width:0}
+  .brandlogo{display:block;height:auto;max-height:48px;max-width:min(290px,78vw);object-fit:contain}
+  .branddivider,.cnjmark{display:none}
+  .topbar-right{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;width:100%;min-width:0;white-space:normal}
+  .topbar-right .portfolio-year{grid-column:1/-1}
+  .topbar-right .btn{display:flex;align-items:center;justify-content:center;min-width:0;width:100%;min-height:44px;padding:10px 6px;white-space:normal;text-align:center;line-height:1.25}
+  #btnSend{grid-column:1/-1}
+  .headband{display:flex;flex-direction:column;align-items:stretch;padding:20px 15px;gap:15px}
+  .headband h1{font-size:clamp(21px,6.1vw,26px)}
+  .headband p{line-height:1.5}
+  .headband-portal{display:flex;width:100%;justify-content:center;white-space:normal;text-align:center}
+  .sync-info{width:100%;min-width:0}
+  .mainnav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;padding:9px 12px;overflow:visible}
+  .mainnav .nav-btn{display:flex;justify-content:flex-start;align-items:center;min-width:0;width:100%;min-height:44px;padding:9px;border:1px solid #e2eaf2;border-radius:8px;text-align:left;white-space:normal;overflow-wrap:anywhere;font-size:11px;line-height:1.35;gap:7px}
+  .mainnav .nav-btn.active{border:1px solid #078bcd;box-shadow:inset 3px 0 #078bcd}
+  .quick-find-area{padding:11px 14px}
+  .quick-find-control{min-height:46px}
+  .quick-find-control input{font-size:16px}
+  .quick-results{max-height:min(62vh,420px);overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+  .content{padding:16px 12px 24px;min-width:0}
+  .banner{margin:12px 12px 0;overflow-wrap:anywhere}
+  .toolbar{gap:12px;align-items:stretch}
+  .toolbar>div:first-child{min-width:0}
+  .toolbar-right{gap:8px}
+  .toolbar-right .btn{min-height:44px}
+  .metric-grid,.executive-metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .metric,.exec-kpi{min-width:0;padding:14px 11px;min-height:105px}
+  .metric{gap:10px}
+  .metric-icon{flex:0 0 36px;height:38px;font-size:20px}
+  .metric-value{font-size:clamp(20px,6vw,27px)}
+  .metric-label{font-size:11px;overflow-wrap:anywhere}
+  .exec-kpi strong{font-size:clamp(23px,8vw,31px)}
+  .exec-grid,.section-grid,.grid2,.intro-options,.form-grid,.detail-grid{grid-template-columns:minmax(0,1fr)}
+  .side-stack{grid-template-columns:minmax(0,1fr)}
+  .exec-intro{flex-direction:column;align-items:stretch}
+  .exec-intro-actions{width:100%}
+  .exec-intro-actions .btn{flex:1 1 auto;min-height:44px}
+  .exec-status-body{flex-direction:column;align-items:stretch;padding:16px}
+  .exec-donut{align-self:center}
+  .exec-area{grid-template-columns:minmax(86px,1.15fr) minmax(50px,1fr) 25px;gap:8px}
+  .exec-area,.exec-task,.exec-next-row,.priority-row{overflow-wrap:anywhere}
+  .panel,.soft-card,.owner-demand-card,.sei-dashboard{min-width:0}
+  .panel-header{gap:9px}
+  .panel-header .btn{min-height:44px}
+  .form-grid .full{grid-column:1}
+  .field input,.field select,.field textarea,.filterbar input,.filterbar select{font-size:16px;min-height:44px;max-width:100%}
+  .filterbar{align-items:stretch}
+  .filterbar select,.searchbox,.filterbar .searchbox{max-width:none;flex:1 1 100%}
+  .table-wrap,.sei-table-wrap{width:100%;overflow:visible}
+  .data-table,.sei-table{display:block;width:100%;min-width:0!important;table-layout:auto}
+  /* Mantém os cabeçalhos no DOM para leitores de tela; os rótulos são repetidos nos cartões. */
+  .data-table thead{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+  .data-table tbody{display:grid;grid-template-columns:minmax(0,1fr);gap:12px;width:100%;padding:12px;background:#f7fafe}
+  .data-table tbody tr{display:block;width:100%;min-width:0;border:1px solid #d8e6f1;border-radius:11px;background:white;overflow:hidden;box-shadow:0 1px 7px #12395710}
+  .data-table tbody tr td,.data-table tbody tr td:first-child,.data-table tbody tr td:last-child{display:block;width:100%;min-width:0;max-width:100%;padding:11px 13px;white-space:normal;overflow-wrap:anywhere;border:0;border-bottom:1px solid #edf2f6;vertical-align:top;background:transparent}
+  .data-table tbody tr td:last-child{border-bottom:0}
+  .data-table tbody tr td:first-child{padding-top:14px}
+  .data-table tbody tr td:not(:first-child)[data-mobile-label]::before{content:attr(data-mobile-label);display:block;text-transform:uppercase;letter-spacing:.035em;font-size:10px;font-weight:800;color:#627f96;margin:0 0 5px}
+  .data-table tbody tr td[data-mobile-action="true"]{padding-top:5px}
+  .data-table tbody tr td[colspan]{padding:18px}
+  .data-table .project-name{max-width:100%}
+  .data-table .nowrap{white-space:normal}
+  .data-table .text-button{min-height:40px;text-align:left}
+  .sei-update-cell{width:100%!important;min-width:0!important;max-width:none!important}
+  .sei-update-compose{gap:8px}
+  .sei-update-compose textarea{width:100%;font-size:16px;min-height:88px}
+  .sei-update-compose button{min-height:44px;align-self:stretch}
+  .sei-await{min-width:0;overflow-wrap:anywhere}
+  .sei-dashboard-head{align-items:stretch}
+  .sei-dashboard-head .btn{width:100%;min-height:44px}
+  .sei-mini-grid{min-width:0}
+  .sei-mini-grid>div{min-width:0}
+  .footer{padding:17px 14px;align-items:flex-start;gap:12px}
+  .footer>div{min-width:0;display:flex;flex-wrap:wrap;gap:8px}
+  .footer .text-button{min-height:44px}
+  .modal-layer{align-items:center;padding:8px}
+  .modal-card{width:100%;max-width:100%;max-height:calc(100dvh - 16px);border-radius:13px;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+  .modal-header{padding:13px 15px}
+  .modal-content{padding:16px}
+  .modal-header h2{font-size:17px;overflow-wrap:anywhere}
+  .form-actions{flex-wrap:wrap;align-items:stretch;justify-content:flex-end}
+  .form-actions .btn{min-height:44px;flex:1 1 130px}
+  .owner-cards{grid-template-columns:1fr}
+  .owner-list{grid-template-columns:1fr}
+  .owner-results,.owner-panel{min-width:0}
+  .toast{bottom:max(12px,env(safe-area-inset-bottom));left:12px;right:12px;max-width:none;overflow-wrap:anywhere}
+  button,a,input,select,textarea{-webkit-tap-highlight-color:rgba(0,123,190,.12)}
+}
+@media(max-width:350px){
+  .metric-grid,.executive-metrics{grid-template-columns:1fr}
+  .mainnav{gap:4px}
+  .mainnav .nav-btn{font-size:10px;padding:7px}
+}
+@supports not (height:100dvh){
+  @media(max-width:720px){.modal-card{max-height:calc(100vh - 16px)}}
+}
+
