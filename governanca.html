@@ -30,12 +30,34 @@ svg{width:100%;height:calc(100vh - 220px);min-height:680px;display:block;touch-a
 .legend b{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px}
 .notice{font-size:12px;color:#687894;padding:10px 18px;background:white;border-top:1px solid var(--line)}
 @media(max-width:960px){.layout{grid-template-columns:1fr}.details{border-left:0;border-top:1px solid var(--line)}svg{height:600px;min-height:600px}}
+
+.mobile-access{display:none}
+@media(max-width:720px){
+  html,body{max-width:100%;overflow-x:hidden;-webkit-text-size-adjust:100%}
+  header{padding:17px 15px;gap:12px}
+  header h1{font-size:22px;line-height:1.25}
+  .back{display:inline-flex;align-items:center;justify-content:center;max-width:100%;min-height:44px;white-space:normal}
+  .toolbar{padding:12px;gap:7px}
+  .toolbar input{min-width:0;max-width:none;width:100%;flex:1 1 100%;font-size:16px;min-height:44px}
+  .toolbar button{min-height:44px;flex:1 1 auto}
+  .legend{flex:1 1 100%;gap:8px}
+  .mobile-access{display:grid;gap:7px;padding:12px 14px;background:#eff8ff;border-bottom:1px solid #d0e6f2}
+  .mobile-access label{font-size:12px;font-weight:750;color:#164f7d}
+  .mobile-access select{min-height:46px;max-width:100%;width:100%;border:1px solid #a8cce6;border-radius:8px;background:white;padding:9px;font-size:16px;color:#123d61}
+  .mobile-access small{font-size:11px;line-height:1.45;color:#55758d}
+  .layout{display:block;min-height:0}
+  .map{display:block;width:100%;max-width:100vw;overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+  svg{display:block;width:1120px;min-width:1120px;height:720px;min-height:720px;touch-action:pan-x pan-y}
+  .details{padding:17px;min-width:0}
+  .details p,.details li,.notice{overflow-wrap:anywhere}
+  .notice{padding:13px 14px}
+}
 </style></head><body>
 <header><div><div class="kicker">CNJ · Escola Nacional do Judiciário</div><h1>Rede de governança e processos SEI</h1><p>Mapa de conexões entre processos administrativos, referências institucionais e instrumentos de gestão. Clique em uma caixa para destacar suas relações.</p></div><a class="back" href="./">← Voltar ao Painel de Projetos</a></header>
 <div class="toolbar"><input id="search" type="search" placeholder="Buscar número SEI ou assunto…" aria-label="Localizar processo SEI">
 <button data-group="all" class="active">Todos</button><button data-group="institucional">Institucional</button><button data-group="politica">Política</button><button data-group="execucao">Execução</button><button data-group="transversal">Suporte</button><button id="reset">Centralizar</button>
 <div class="legend"><span><b style="background:#5477ac"></b>Institucional</span><span><b style="background:#009dd3"></b>Política</span><span><b style="background:#826ab0"></b>Execução</span><span><b style="background:#8294a8"></b>Suporte</span></div></div>
-<div class="layout"><div class="map"><svg id="network" viewBox="0 0 1700 1090" aria-label="Diagrama de processos SEI conectados"><g id="canvas"><g id="lines"></g><g id="nodes"></g></g></svg></div>
+<div class="mobile-access"><label for="mobileProcess">Localizar um processo no celular</label><select id="mobileProcess"><option value="">Selecione uma referência ou processo SEI</option></select><small>Selecione para abrir os detalhes abaixo. No mapa, deslize o dedo para navegar horizontalmente.</small></div><div class="layout"><div class="map"><svg id="network" viewBox="0 0 1700 1090" aria-label="Diagrama de processos SEI conectados"><g id="canvas"><g id="lines"></g><g id="nodes"></g></g></svg></div>
 <aside class="details"><div class="meta" id="stats"></div><div id="detail"><p>Selecione uma caixa para consultar suas conexões.</p></div></aside></div>
 <div class="notice">As linhas representam relações funcionais, normativas ou de planejamento do mapa de trabalho de 16/11/2026; não comprovam apensamento formal nem tramitação entre unidades. Processos pendentes de identificação estão explicitamente sinalizados.</div>
 <script>
@@ -75,6 +97,9 @@ function draw(){
 }
 function pick(id){selected=id;draw()}
 function transform(){canvas.setAttribute("transform","translate("+tx+" "+ty+") scale("+zoom+")")}
+const mobileSelect=document.getElementById("mobileProcess");
+for(const item of N){const opt=document.createElement("option");opt.value=item.id;opt.textContent=item.label+" — "+item.subtitle;mobileSelect.append(opt)}
+mobileSelect.addEventListener("change",e=>{if(!e.target.value)return;pick(e.target.value);document.querySelector(".details").scrollIntoView({behavior:"smooth",block:"start"})});
 document.getElementById("search").addEventListener("input",e=>{query=e.target.value.trim().toLowerCase();draw()});
 document.querySelectorAll("button[data-group]").forEach(b=>b.addEventListener("click",()=>{group=b.dataset.group;document.querySelectorAll("button[data-group]").forEach(x=>x.classList.toggle("active",x===b));draw()}));
 document.getElementById("reset").addEventListener("click",()=>{zoom=1;tx=ty=0;transform();draw()});
