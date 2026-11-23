@@ -141,3 +141,20 @@
 .exec-link:hover{text-decoration:underline}
 @media(max-width:800px){.headband-portal{margin-top:12px}}
 @media(max-width:480px){.headband-portal{padding:10px 12px;font-size:12px}}
+
+/* Atualização rápida dos processos SEI: registro manual e envio autenticado. */
+.sei-table{min-width:1380px}
+.sei-update-cell{min-width:300px;max-width:360px;vertical-align:top!important}
+.sei-update-compose{display:flex;flex-direction:column;align-items:stretch;gap:8px}
+.sei-update-compose label{color:#42627d;font-weight:700;font-size:11px}
+.sei-update-compose textarea{display:block;width:100%;min-height:66px;resize:vertical;padding:9px 10px;border:1px solid #cadbea;background:#fff;border-radius:8px;line-height:1.45;color:#243f5b;font-size:12px}
+.sei-update-compose textarea:focus{outline:2px solid #57b5df;outline-offset:1px}
+.sei-update-compose button{align-self:flex-start}
+.sei-update-last{padding:8px 10px;background:#f3f8fc;border:1px solid #e1ecf5;border-radius:8px;overflow-wrap:anywhere}
+.sei-update-last strong{color:#336182;font-size:10px;line-height:1.4}
+.sei-update-last p{color:#536b7e;font-size:11px;line-height:1.5;margin:4px 0 0;white-space:pre-wrap}
+.sei-updates-history{list-style-position:inside;padding:0;margin:0}
+.sei-updates-history li{padding:11px 0;border-bottom:1px solid #e5edf4;font-size:12px}
+.sei-updates-history li strong{color:#345a76;font-size:11px}
+.sei-updates-history li p{white-space:pre-wrap;overflow-wrap:anywhere;margin:6px 0 0;color:#38566f;line-height:1.5}
+
