@@ -171,6 +171,13 @@
       "date": "2026-11-23",
       "type": "Orientação direta da coordenação",
       "note": "Reuniões semanais às quartas-feiras, às 15h, no horário de Brasília."
+    },
+    {
+      "id": "S25",
+      "title": "Alinhamento estratégico ENAJU — prioridades e SEIs, 23/11/2026",
+      "date": "2026-11-23",
+      "type": "Registro de coordenação no chat",
+      "note": "Pauta executiva consolidada em 23/11: Rede ENAJU, portal/Meu ENAJU, Tech, Cadernos, Talks, diagnóstico, PAC 2027, gestão por responsáveis e revisão dos SEIs. Sem comprovação de conclusão ou movimentações novas da caixa SEI."
     }
   ],
   "projects": [
@@ -187,8 +194,8 @@
       "owner_display": "Igor · Danielly",
       "owner": "Igor Caires Machado; Danielly dos Santos Queiros",
       "historical_status": "Proposta / implantação relatada",
-      "last_report": "Em 13/11, responsável definido: Igor e Danielly; próxima ação é revisão e acompanhamento dos processos SEI.",
-      "next_action": "Acompanhar a análise da DIGN sobre o Comitê Executivo (SEI 20736/2026), validar situação da ata do Conselho Superior (20608/2026) e revisar demais processos de governança.",
+      "last_report": "Em 23/11, consolidada pauta de alinhamento estratégico e operacional com revisão dos SEIs; não houve nova consulta direta à caixa SEI.",
+      "next_action": "Revisar com Fábio e Dr. Daniel o andamento documentado dos SEIs 21372/2026 (Programa ENAJU), 20736/2026 (Comitê Executivo) e 20608/2026 (Conselho Superior). Confirmar movimentação atual em SEI antes de alterar unidade ou status.",
       "target_date": "2026-12-31",
       "target_kind": "Proposto",
       "source_ids": [
@@ -308,8 +315,8 @@
       "owner_display": "Fábio · Dr. Daniel",
       "owner": "Fábio Lopes Fernandes Ramos",
       "historical_status": "Implantação relatada",
-      "last_report": "Credenciamento e Selo ENAJU integrados como atividade do projeto único Rede ENAJU.",
-      "next_action": "Acompanhar a manifestação da DIGN no SEI 21240/2026 sobre credenciamento e Selo ENAJU de Qualidade, além das demais ações da Rede.",
+      "last_report": "Em 23/11, reforçada prioridade de execução da Rede ENAJU e seus desdobramentos; a realização de novas entregas ainda depende de validação.",
+      "next_action": "Consolidar encaminhamentos da 1ª Reunião das Escolas, calendário da Rede ENAJU, governança e boas práticas; conferir credenciamento e Selo ENAJU (SEI 21240/2026).",
       "target_date": "2027-06-30",
       "target_kind": "Proposto",
       "source_ids": [
@@ -349,8 +356,8 @@
       "owner_display": "Fábio",
       "owner": "Fábio",
       "historical_status": "Desenvolvimento solicitado",
-      "last_report": "Fábio responsável pelo portal; integrar espaços da Rede e da pesquisa sem criar projetos independentes.",
-      "next_action": "Evoluir o portal com melhorias, espaços da Rede ENAJU e de pesquisa.",
+      "last_report": "Em 23/11, pauta executiva confirmou evolução do portal e cadastro Meu ENAJU como frentes prioritárias; funcionalidades não marcadas como entregues.",
+      "next_action": "Priorizar melhorias do Portal Rede ENAJU: agenda integrada, boas práticas, cadastro Meu ENAJU e banco de instrutores; definir escopo, responsáveis, proteção dos dados pessoais e critérios de implantação.",
       "target_date": null,
       "target_kind": "Sem data",
       "source_ids": [
@@ -386,8 +393,8 @@
       "owner_display": "Igor · Isley · Igor Guimarães",
       "owner": "Igor Caires Machado; Isley; Igor Guimarães",
       "historical_status": "Trâmite / desenvolvimento relatado",
-      "last_report": "Primeira reunião realizada em 12/11/2026; Isley documentará a proposta básica. Em 23/11, a coordenação confirmou as reuniões semanais às quartas-feiras, às 15h (Brasília).",
-      "next_action": "Consolidar versão única do ENAJU Tech com requisitos negociais priorizados e responsável pelo produto, atendendo à DTI/COAG (SEI 20650/2026); aguardar a documentação de Isley.",
+      "last_report": "Em 23/11, a coordenação confirmou reuniões semanais às quartas-feiras, 15h; os demais encaminhamentos técnicos seguem pendentes de comprovação.",
+      "next_action": "Preparar reunião recorrente de quarta-feira às 15h (Brasília), a partir de 25/11; consolidar requisitos negociais, responsável pelo produto e documentação do ENAJU Tech para o SEI 20650/2026.",
       "target_date": null,
       "target_kind": "Proposto",
       "source_ids": [
@@ -473,7 +480,7 @@
       "owner": "Alana; Janilton",
       "historical_status": "Oferta relatada / planejamento",
       "last_report": "Carteira de cursos correntes separada do planejamento do PAC 2027.",
-      "next_action": "Acompanhar cursos em andamento e diagramação pela SCS do Relatório sobre Ações Formativas 2026 (SEI 21997/2026).",
+      "next_action": "Atualizar carteira de cursos, inscrições e certificados; verificar diagramação do Relatório de Ações Formativas 2026 no SEI 21997/2026; preparar prioridades educacionais de encerramento do ano.",
       "target_date": null,
       "target_kind": "Sem data",
       "source_ids": [
@@ -515,7 +522,7 @@
       "owner": "Alana; Igor Caires Machado; Fábio",
       "historical_status": "Desenvolvimento relatado",
       "last_report": "Antigo projeto 'Novos cursos nacionais' incorporado e ampliado no Plano de Capacitação 2027; novos cursos deixam de ser frente independente.",
-      "next_action": "Resgatar levantamento de 2026, planejar nova consulta às unidades para 2027 e conversar com Dr. Daniel na semana de 16 a 20/11.",
+      "next_action": "Pactuar com Dr. Daniel a metodologia, os responsáveis e o cronograma do PAC 2027, incluindo recuperação do levantamento anterior e nova consulta às unidades; nenhum prazo novo confirmado.",
       "target_date": "2026-11-16",
       "target_kind": "Proposto",
       "source_ids": [
@@ -589,7 +596,7 @@
       "owner": "Alana Oliveira Viana",
       "historical_status": "Em andamento no plano",
       "last_report": "Curadoria/circulação em andamento no formulário de 08/10",
-      "next_action": "Diagnóstico das Escolas: publicação autorizada pela Presidência; acompanhar envio do SEI 02704/2026 à COIN para ficha catalográfica e ISBN e divulgação do relatório.",
+      "next_action": "Verificar publicação do Diagnóstico Nacional das Escolas, ficha catalográfica/ISBN, comunicação institucional e juntada documental ao SEI 02704/2026; não inferir total nacional de cursos e certificados a partir de bases inconsistentes.",
       "target_date": "2027-12-31",
       "target_kind": "Proposto",
       "source_ids": [
@@ -1425,6 +1432,66 @@
       "owner_assignment_basis": "Confirmação direta do coordenador.",
       "evidence": "Indicação direta da coordenação de Rodrigo Pereira para acompanhar; unidade atual do processo segue SEP, conforme informe anterior.",
       "last_report": "Posição relatada pela coordenação em 13/11/2026: SEP; Na SEP; aguardando encaminhamento à SGP."
+    },
+    {
+      "id": "R35",
+      "project_id": "P01",
+      "sei": "21372/2026",
+      "action": "Após reunião de alinhamento, registrar decisões, cinco entregas prioritárias dos próximos 30 dias, responsáveis, prazos pactuados e fontes de comprovação no Painel Integrado.",
+      "owner": "Igor; Fábio; Dr. Daniel",
+      "owner_suggested": "Igor · Fábio · Dr. Daniel",
+      "status_current": "A planejar",
+      "verified_current": false,
+      "priority": "Alta",
+      "historical_date": "2026-11-23",
+      "due_date": null,
+      "due_kind": "Não confirmado",
+      "last_report": "Pauta executiva preparada para segunda-feira, 23/11; decisões e realização não confirmadas.",
+      "evidence": "Alinhamento solicitado em conversa ENAJU de 23/11/2026.",
+      "source_ids": [
+        "S25"
+      ],
+      "owner_basis": "Distribuição gerencial proposta; validar na reunião"
+    },
+    {
+      "id": "R36",
+      "project_id": "P06",
+      "sei": "",
+      "action": "Definir backlog priorizado do Portal Rede ENAJU e Meu ENAJU: agenda, boas práticas, cadastro de servidor e banco de instrutores; validar requisitos e tratamento de dados pessoais.",
+      "owner": "Igor; Danielly",
+      "owner_suggested": "Igor · Danielly",
+      "status_current": "A planejar",
+      "verified_current": false,
+      "priority": "Alta",
+      "historical_date": "2026-11-23",
+      "due_date": null,
+      "due_kind": "Não confirmado",
+      "last_report": "Prioridade reafirmada na pauta de alinhamento de 23/11; implementação ainda não confirmada.",
+      "evidence": "Pauta executiva ENAJU de 23/11/2026.",
+      "source_ids": [
+        "S25"
+      ],
+      "owner_basis": "Distribuição de acompanhamento sugerida; validar na reunião"
+    },
+    {
+      "id": "R37",
+      "project_id": "P05",
+      "sei": "",
+      "action": "Organizar desdobramentos da 1ª Reunião Nacional das Escolas: rede de contatos, agenda dos próximos encontros, propostas de compartilhamento e plano de engajamento.",
+      "owner": "Igor; Danielly",
+      "owner_suggested": "Igor · Danielly",
+      "status_current": "A planejar",
+      "verified_current": false,
+      "priority": "Alta",
+      "historical_date": "2026-11-23",
+      "due_date": null,
+      "due_kind": "Não confirmado",
+      "last_report": "Frente selecionada para impulsionamento na pauta de 23/11.",
+      "evidence": "Pauta executiva ENAJU de 23/11/2026.",
+      "source_ids": [
+        "S25"
+      ],
+      "owner_basis": "Responsável operacional a pactuar"
     }
   ],
   "rules": {
@@ -1708,10 +1775,82 @@
     "note": "Revisar dados antes de disponibilizar o repositório ou GitHub Pages publicamente. Não publicar informações pessoais/sigilosas.",
     "progress": "Por padrão nulo até pactuação do denominador e aceite comprovado."
   },
-  "revision": 8,
-  "last_saved_at": "2026-11-23T16:31:51Z",
-  "last_saved_by": "Coordenação ENAJU",
+  "revision": 9,
+  "last_saved_at": "2026-11-23T15:10:00-03:00",
+  "last_saved_by": "Atualização do ChatGPT sob solicitação da coordenação",
   "audit_history": [
+    {
+      "id": "ALINHAMENTO-20261123",
+      "type": "atualizacao_portfolio",
+      "title": "Pauta executiva e prioridades do portfólio — 23/11/2026",
+      "at": "2026-11-23T15:10:00-03:00",
+      "actor": "Coordenação ENAJU / ChatGPT",
+      "evidence": "Conversa de 23/11/2026 e base versionada do painel; sem consulta direta ao SEI.",
+      "changes": [
+        {
+          "id": "P01",
+          "fields": [
+            "next_action",
+            "last_report"
+          ]
+        },
+        {
+          "id": "P05",
+          "fields": [
+            "next_action",
+            "last_report"
+          ]
+        },
+        {
+          "id": "P06",
+          "fields": [
+            "next_action",
+            "last_report"
+          ]
+        },
+        {
+          "id": "P07",
+          "fields": [
+            "next_action",
+            "last_report"
+          ]
+        },
+        {
+          "id": "P09",
+          "fields": [
+            "next_action"
+          ]
+        },
+        {
+          "id": "P10",
+          "fields": [
+            "next_action"
+          ]
+        },
+        {
+          "id": "P13",
+          "fields": [
+            "next_action"
+          ]
+        },
+        {
+          "added_routines": [
+            "R35",
+            "R36",
+            "R37"
+          ]
+        },
+        {
+          "added_source": "S25"
+        },
+        {
+          "sei_tracking": "Mantidos os 11 processos com informações históricas; sem confirmação de nova movimentação"
+        },
+        {
+          "progress": "Sem alterações; percentuais sem denominador e evidência permanecem vazios"
+        }
+      ]
+    },
     {
       "id": "ENAJUTECH-AGENDA-20261123",
       "type": "atualizacao_agenda",
