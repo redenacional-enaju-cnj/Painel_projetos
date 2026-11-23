@@ -1,6 +1,6 @@
 {
   "title": "ENAJU • Painel único",
-  "as_of": "2026-11-13",
+  "as_of": "2026-11-23",
   "timezone": "America/Sao_Paulo",
   "coverage": "14 frentes de carteira principal após validação do coordenador em 13/11/2026; backlog e itens excluídos mantidos separados para rastreabilidade. Percentuais continuam não homologados.",
   "sources": [
@@ -164,6 +164,13 @@
       "date": "2026-11-13",
       "type": "Indicação direta do coordenador",
       "note": "SAD é a Secretaria de Administração do CNJ, não uma pessoa. Rodrigo Pereira foi definido para acompanhamento. Mantidas as unidades atuais dos processos, sem inferência de nova tramitação."
+    },
+    {
+      "id": "S24",
+      "title": "Recorrência das reuniões do ENAJU Tech",
+      "date": "2026-11-23",
+      "type": "Orientação direta da coordenação",
+      "note": "Reuniões semanais às quartas-feiras, às 15h, no horário de Brasília."
     }
   ],
   "projects": [
@@ -379,7 +386,7 @@
       "owner_display": "Igor · Isley · Igor Guimarães",
       "owner": "Igor Caires Machado; Isley; Igor Guimarães",
       "historical_status": "Trâmite / desenvolvimento relatado",
-      "last_report": "Primeira reunião realizada em 12/11/2026; Isley documentará a proposta básica. Reuniões semanais às segundas-feiras, 15h.",
+      "last_report": "Primeira reunião realizada em 12/11/2026; Isley documentará a proposta básica. Em 23/11, a coordenação confirmou as reuniões semanais às quartas-feiras, às 15h (Brasília).",
       "next_action": "Consolidar versão única do ENAJU Tech com requisitos negociais priorizados e responsável pelo produto, atendendo à DTI/COAG (SEI 20650/2026); aguardar a documentação de Isley.",
       "target_date": null,
       "target_kind": "Proposto",
@@ -388,15 +395,16 @@
         "S03",
         "S05",
         "S01",
-        "S19"
+        "S19",
+        "S24"
       ],
       "sei": [
         "20650/2026"
       ],
       "scope": "O TAP E3.1 define formação tecnológica/digital, trilhas, parceiros e oferta piloto. O formulário F4 define requisitos educacionais e encaminhamento à DTI para modernização da gestão. Conciliar os instrumentos; plataforma, HUB e painéis são entregas tecnológicas associadas, mantidas em P06/P13/P12.",
-      "note": "Reunião recorrente CONFIRMADA: todas as segundas-feiras às 15h, próxima ocorrência 16/11/2026. 'PGP do SCP' foi mantido conforme expressão do coordenador, sem expandir siglas. Atualização SEI de 13/11/2026: 20650/2026 — DTI favorável com encaminhamentos. Informe da coordenação em 13/11/2026: ENAJU Tech no DTI (20650/2026), com requisitos e plano técnico a consolidar.",
-      "last_source_date": "2026-11-13",
-      "checked_at": "2026-11-13",
+      "note": "Reunião semanal às quartas-feiras, às 15h (Brasília). A próxima ocorrência após a confirmação de 23/11 é 25/11/2026. 'PGP do SCP' foi mantido conforme expressão do coordenador, sem expandir siglas. Atualização SEI de 13/11/2026: 20650/2026 — DTI favorável com encaminhamentos. Informe da coordenação em 13/11/2026: ENAJU Tech no DTI (20650/2026), com requisitos e plano técnico a consolidar.",
+      "last_source_date": "2026-11-23",
+      "checked_at": "2026-11-23",
       "target_label": "Horizonte proposto",
       "horizon_display": "Escopo e prazo a conciliar",
       "target_note": "TAP: out/2026–jun/2027, formação tecnológica. Formulário: até dez/2027, requisitos e encaminhamento à DTI. Escopo/prazo não reconciliados.",
@@ -1078,20 +1086,21 @@
     {
       "id": "R19",
       "project_id": "P07",
-      "action": "Reuniões semanais ENAJU Tech às segundas-feiras, 15h",
+      "action": "Reunião semanal do ENAJU Tech às quartas-feiras, às 15h (Brasília)",
       "owner": "Igor · Isley · Igor Guimarães",
       "sei": "A identificar",
-      "historical_date": "2026-11-13",
-      "due_date": "2026-11-16",
+      "historical_date": "2026-11-23",
+      "due_date": "2026-11-25",
       "due_kind": "Agenda recorrente confirmada",
       "status_current": "Agendada",
       "verified_current": true,
       "priority": "Verificar",
       "source_ids": [
-        "S19"
+        "S19",
+        "S24"
       ],
       "owner_basis": "Designação informada em 13/11/2026",
-      "evidence": "Recorrência às segundas 15h confirmada pelo coordenador; primeira ocorrência futura 16/11.",
+      "evidence": "A coordenação confirmou a recorrência em 23/11/2026. Próxima ocorrência em 25/11/2026, às 15h de Brasília.",
       "owner_suggested": "Igor · Isley · Igor Guimarães",
       "owner_assignment_basis": "Informação direta do coordenador",
       "due_confirmed": true
@@ -1448,7 +1457,7 @@
     ],
     "initial_validation": [
       "Confirmar data da reunião da Política Nacional após consulta de Igor ao WhatsApp.",
-      "Aguardar proposta básica de Isley para ENAJU Tech e realizar reuniões semanais segundas 15h.",
+      "Aguardar proposta básica de Isley para ENAJU Tech e realizar reuniões semanais às quartas-feiras, às 15h (Brasília).",
       "Iniciar revisão do Plano Pedagógico e discutir PAC 2027 na semana de 16 a 20/11.",
       "Conferir manifestação da Comunicação no SEI e agenda com Pamela dos Cadernos ENAJU."
     ],
@@ -1690,7 +1699,7 @@
     }
   ],
   "version": "1.0",
-  "last_review_date": "2026-11-13",
+  "last_review_date": "2026-11-23",
   "alert_history": [],
   "schema_version": "1.0",
   "repository": "redenacional-enaju-cnj/Painel_projetos",
@@ -1699,10 +1708,37 @@
     "note": "Revisar dados antes de disponibilizar o repositório ou GitHub Pages publicamente. Não publicar informações pessoais/sigilosas.",
     "progress": "Por padrão nulo até pactuação do denominador e aceite comprovado."
   },
-  "revision": 7,
-  "last_saved_at": "2026-11-13T21:44:04.342Z",
-  "last_saved_by": "Atualização da Coordenação ENAJU — correção SAD/Rodrigo Pereira",
+  "revision": 8,
+  "last_saved_at": "2026-11-23T16:31:51Z",
+  "last_saved_by": "Coordenação ENAJU",
   "audit_history": [
+    {
+      "id": "ENAJUTECH-AGENDA-20261123",
+      "type": "atualizacao_agenda",
+      "title": "Reuniões do ENAJU Tech às quartas-feiras",
+      "at": "2026-11-23T16:31:51Z",
+      "actor": "Coordenação ENAJU",
+      "evidence": "Confirmação da coordenação em 23/11/2026 (S24).",
+      "changes": [
+        {
+          "id": "R19",
+          "before": {
+            "action": "Reuniões semanais ENAJU Tech às segundas-feiras, 15h",
+            "due_date": "2026-11-16"
+          },
+          "after": {
+            "action": "Reunião semanal do ENAJU Tech às quartas-feiras, às 15h (Brasília)",
+            "due_date": "2026-11-25"
+          }
+        },
+        {
+          "id": "P07",
+          "after": {
+            "recorrencia": "Quartas-feiras, às 15h de Brasília."
+          }
+        }
+      ]
+    },
     {
       "id": "RESP-SAD-RODRIGO-20261113",
       "type": "correcao_responsavel",
