@@ -15,6 +15,12 @@
 
 No GitHub, use Settings → Developer settings → Personal access tokens → Fine-grained tokens → Generate new token. Configure o owner adequado, selecione **somente** `Painel_projetos`, conceda **Contents: Read and write** e mantenha o prazo de validade restrito. Se a organização bloquear tokens pessoais, a alternativa é um backend institucional (GitHub App, Firebase ou outro serviço autorizado).
 
+## Ordem dos processos SEI
+
+A aba **SEI prioritários** traz primeiro os registros dos dias mais recentes, no horário de Brasília. No mesmo dia, novos processos e andamentos alterados precedem registros livres e simples reconfirmações. O painel sinaliza essas diferenças na rodada mais recente. A data da movimentação no SEI continua separada da data do registro ou do informe.
+
+A edição pela interface grava essa classificação automaticamente. Ao atualizar a base por informe ou commit, mantenha em cada processo `last_update_at` (data e hora do registro), `last_update_channel` (`informe` ou `painel`) e `last_update_kind` (`novo`, `alterado`, `registro` ou `confirmado`). Em uma rodada, reserve `alterado` para mudanças de andamento e use `confirmado` quando o informe apenas repete o que já constava.
+
 ## Responsáveis por área
 
 - Pesquisa: Danielly e Igor.

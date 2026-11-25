@@ -93,6 +93,60 @@
 
   function seiUnit(s){return s.current_unit||'—'}
   const seiReportIsLatest=s=>Boolean(s.last_report_received_date&&s.last_report_received_date>(s.last_verified_at||'').slice(0,10));
+  // Ordenar pelo registro no painel, não pela data do despacho relatado.
+  const seiDateFormatter=new Intl.DateTimeFormat('pt-BR',{timeZone:'America/Sao_Paulo',year:'numeric',month:'2-digit',day:'2-digit'});
+  const seiKindRank={novo:3,alterado:2,registro:1,confirmado:0};
+  function seiDateStamp(value){
+    if(typeof value!=='string'||!value)return null;
+    const time=Date.parse(value);
+    if(!Number.isFinite(time))return null;
+    if(/^\d{4}-\d{2}-\d{2}$/.test(value))return {day:value,time:0,hasTime:false};
+    const parts=Object.fromEntries(seiDateFormatter.formatToParts(new Date(time)).map(p=>[p.type,p.value]));
+    return {day:parts.year+'-'+parts.month+'-'+parts.day,time,hasTime:true};
+  }
+  function seiActivity(s){
+    const candidates=[
+      [s.last_update_at,s.last_update_kind||'registro',s.last_update_channel||'painel'],
+      ...(s.updates||[]).map(x=>[x.at,x.kind||'registro',x.channel||'painel']),
+      [s.last_verified_at,'registro','painel'],
+      [s.last_report_received_date,'confirmado','informe']
+    ];
+    let latest=null;
+    for(const [date,kind,channel] of candidates){
+      const stamp=seiDateStamp(date);
+      if(stamp&&(!latest||stamp.day>latest.day||(stamp.day===latest.day&&stamp.time>latest.time))){
+        latest={...stamp,date,kind,channel};
+      }
+    }
+    if(latest)return latest;
+    for(const [date,channel] of [[s.tracked_since,'cadastro'],[s.last_movement_date,'movimentacao']]){
+      const stamp=seiDateStamp(date);
+      if(stamp)return {...stamp,date,kind:null,channel};
+    }
+    return {day:'',time:0,kind:null,channel:null};
+  }
+  function orderedSeis(items){
+    return items.map(s=>({s,activity:seiActivity(s)})).sort((a,b)=>
+      b.activity.day.localeCompare(a.activity.day)
+      || (seiKindRank[b.activity.kind]??-1)-(seiKindRank[a.activity.kind]??-1)
+      || b.activity.time-a.activity.time);
+  }
+  function seiBadge(activity,latestDay){
+    if(!latestDay||activity.day!==latestDay)return '';
+    switch(activity.kind){
+      case 'novo':return ' <span class="badge verified">Novo no painel</span>';
+      case 'alterado':return ' <span class="badge planning">Andamento atualizado</span>';
+      case 'registro':return ' <span class="badge planning">Novo registro</span>';
+      case 'confirmado':return ' <span class="badge neutral">Reconfirmado</span>';
+      default:return '';
+    }
+  }
+  function seiRegistry(activity){
+    const names={informe:'Data do informe',painel:'Registro no painel',cadastro:'Cadastro no painel',movimentacao:'Data da movimentação'};
+    if(!activity.date)return '—';
+    const time=activity.channel==='painel'&&activity.hasTime?fmtTime(activity.date):dateBR(activity.day);
+    return esc(time)+'<small class="sei-historic">'+esc(names[activity.channel]||'Último registro')+'</small>';
+  }
   function seiSummaryCard(){
     const a=state.data.sei_tracking||[],units=new Set(a.map(s=>s.current_unit).filter(Boolean)).size;
     return '<section class="sei-dashboard"><div class="sei-dashboard-head"><div class="sei-dashboard-title"><span class="sei-card-icon">§</span><div><span class="exec-overline">ACOMPANHAMENTO PROCESSUAL</span><h3>SEI prioritários <small>'+a.length+'</small></h3><p>Localização, situação e pendência de cada processo.</p></div></div><button class="btn btn-solid" data-action="navigate" data-target="seis">Abrir acompanhamento SEI →</button></div><div class="sei-mini-grid"><div><strong>'+a.length+'</strong><span>processos em acompanhamento</span></div><div><strong>'+units+'</strong><span>unidades envolvidas</span></div><div><strong>'+esc(dateBR(state.data.last_review_date||state.data.as_of))+'</strong><span>atualização da carteira</span></div></div><p class="sei-mini-footer">Posição de acompanhamento informada pela coordenação ENAJU · última atualização: 13/11/2026.</p></section>';
@@ -118,9 +172,11 @@
     if(state.dirty){showToast('Existem alterações locais pendentes. Envie-as pelo botão superior antes de registrar uma nova atualização de SEI.');return}
     if(!confirm('Esta atualização será publicada na base pública do painel ENAJU. Confirma o envio sem informações sigilosas?'))return;
     const before=clone(s);
-    const record={id:'SEI-UPD-'+Date.now(),at:new Date().toISOString(),actor:state.githubUser||'Conta GitHub autenticada',text:note,source:'Informação manual da coordenação; não verificada automaticamente no SEI'};
+    const record={id:'SEI-UPD-'+Date.now(),at:new Date().toISOString(),kind:'registro',channel:'painel',actor:state.githubUser||'Conta GitHub autenticada',text:note,source:'Informação manual da coordenação; não verificada automaticamente no SEI'};
     s.updates=[record,...(s.updates||[])];
     s.last_update_at=record.at;
+    s.last_update_kind=record.kind;
+    s.last_update_channel=record.channel;
     s.last_update_note=record.text;
     delete state.seiDrafts[id];
     appendAudit('sei',s.id,'Atualização de acompanhamento SEI '+s.number,before,clone(s),record.source);
@@ -128,9 +184,9 @@
     await sendChanges();
   }
   function seis(){
-    const a=state.data.sei_tracking||[];
-    const rows=a.map(s=>'<tr><td><button class="text-button sei-process-link" data-action="detail-sei" data-id="'+esc(s.id)+'">'+esc(s.number)+'</button>'+(s.priority==='Prioritário'?' <span class="badge planning">Prioritário</span>':'')+'<small class="sei-historic">'+esc(s.title)+'</small></td><td><span class="'+(s.current_unit_verified&&s.current_unit?'sei-verified':'sei-unverified')+'">'+esc(seiUnit(s))+'</span><small class="sei-historic">Destinatário do encaminhamento anterior: '+esc(s.last_reported_unit||'Não disponível')+'</small></td><td><span class="badge neutral">'+esc(s.status_current||'A verificar')+'</span></td><td class="sei-await">'+esc(s.awaiting||'A confirmar')+'</td><td>'+esc(seiReportIsLatest(s)?dateBR(s.last_report_received_date):s.last_verified_at?fmtTime(s.last_verified_at):s.last_movement_date?dateBR(s.last_movement_date):'—')+'<small class="sei-historic">'+(seiReportIsLatest(s)?'Data do informe':s.last_verified_at?'Atualizado em':'Data da movimentação')+'</small></td>'+seiUpdateCell(s)+'<td><button class="text-button" data-action="detail-sei" data-id="'+esc(s.id)+'">Detalhes</button></td></tr>').join('');
-    return '<div class="toolbar"><div><h2 class="section-title">SEI prioritários</h2><p>Posição dos processos acompanhada pela coordenação ENAJU, com registro das últimas atualizações.</p></div><div class="toolbar-right"><span class="count-chip">'+a.length+' processos</span><button class="btn btn-solid" data-action="new-sei">+ Processo</button></div></div><section class="panel"><div class="sei-table-wrap"><table class="data-table sei-table"><thead><tr><th>Processo SEI</th><th>Última unidade informada</th><th>Situação informada</th><th>O que está aguardando</th><th>Último registro</th><th>Registrar atualização</th><th></th></tr></thead><tbody>'+rows+'</tbody></table></div><p class="footnote">Posições registradas com base nas atualizações da coordenação ENAJU. O site é público: não inclua informações sigilosas.</p></section>';
+    const a=orderedSeis(state.data.sei_tracking||[]),latestDay=a[0]?.activity.day;
+    const rows=a.map(({s,activity})=>'<tr><td><button class="text-button sei-process-link" data-action="detail-sei" data-id="'+esc(s.id)+'">'+esc(s.number)+'</button>'+(s.priority==='Prioritário'?' <span class="badge planning">Prioritário</span>':'')+seiBadge(activity,latestDay)+'<small class="sei-historic">'+esc(s.title)+'</small></td><td><span class="'+(s.current_unit_verified&&s.current_unit?'sei-verified':'sei-unverified')+'">'+esc(seiUnit(s))+'</span><small class="sei-historic">Destinatário do encaminhamento anterior: '+esc(s.last_reported_unit||'Não disponível')+'</small></td><td><span class="badge neutral">'+esc(s.status_current||'A verificar')+'</span></td><td class="sei-await">'+esc(s.awaiting||'A confirmar')+'</td><td>'+seiRegistry(activity)+'</td>'+seiUpdateCell(s)+'<td><button class="text-button" data-action="detail-sei" data-id="'+esc(s.id)+'">Detalhes</button></td></tr>').join('');
+    return '<div class="toolbar"><div><h2 class="section-title">SEI prioritários</h2><p>Registros mais recentes no topo. No mesmo dia, novos processos e mudanças de andamento aparecem antes das reconfirmações.</p></div><div class="toolbar-right"><span class="count-chip">'+a.length+' processos</span><button class="btn btn-solid" data-action="new-sei">+ Processo</button></div></div><section class="panel"><div class="sei-table-wrap"><table class="data-table sei-table"><thead><tr><th>Processo SEI</th><th>Última unidade informada</th><th>Situação informada</th><th>O que está aguardando</th><th>Último registro</th><th>Registrar atualização</th><th></th></tr></thead><tbody>'+rows+'</tbody></table></div><p class="footnote">Posições registradas com base nas atualizações da coordenação ENAJU. O site é público: não inclua informações sigilosas.</p></section>';
   }
   function seiDetails(id){
     const s=(state.data.sei_tracking||[]).find(x=>x.id===id);if(!s)return;
@@ -153,6 +209,11 @@
       if((state.data.sei_tracking||[]).some(x=>x.number===number&&x.id!==s.id)){showToast('Processo já cadastrado.');return}
       const before=original?clone(original):null;
       const curr={...s,number,title,project_id:String(f.get('project_id')||'')||null,responsible:String(f.get('responsible')||'').trim(),current_unit:checked?unit:null,current_unit_verified:checked,status_current:checked?String(f.get('status_current')):'A verificar',awaiting:String(f.get('awaiting')||'').trim(),last_movement:String(f.get('last_movement')||'').trim(),last_reported_unit:String(f.get('last_reported_unit')||'').trim(),last_movement_date:String(f.get('last_movement_date')||'')||null,last_checked_at:checked?new Date().toISOString():s.last_checked_at,last_verified_at:checked?new Date().toISOString():null,source:ev||s.source,evidence:checked?ev:null};
+      const fields=['number','title','project_id','responsible','current_unit','current_unit_verified','status_current','awaiting','last_movement','last_reported_unit','last_movement_date'];
+      const changed=Boolean(before&&fields.some(key=>String(before[key]??'')!==String(curr[key]??'')));
+      curr.last_update_kind=!before?'novo':changed?'alterado':checked?'confirmado':'registro';
+      curr.last_update_at=new Date().toISOString();
+      curr.last_update_channel='painel';
       if(original)Object.assign(original,curr);else(state.data.sei_tracking=state.data.sei_tracking||[]).push(curr);
       appendAudit('sei',s.id,'Processo SEI '+number,before,curr,ev||'Atualização sem validação de unidade');
       closeModal();render();showToast('Edição local salva. Clique em Enviar alterações para gravar no GitHub.');
