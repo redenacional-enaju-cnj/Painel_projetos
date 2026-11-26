@@ -262,3 +262,8 @@
   @media(max-width:720px){.modal-card{max-height:calc(100vh - 16px)}}
 }
 
+
+/* Cronograma dentro dos detalhes de um processo SEI */
+.data-table.sei-schedule-table{min-width:0}
+.sei-schedule-table th{position:static}
+@media(min-width:721px){.sei-schedule-table td:last-child{white-space:nowrap}}

@@ -1,6 +1,6 @@
 {
   "title": "ENAJU • Painel único",
-  "as_of": "2026-11-25",
+  "as_of": "2026-11-26",
   "timezone": "America/Sao_Paulo",
   "coverage": "14 frentes de carteira principal após validação do coordenador em 13/11/2026; backlog e itens excluídos mantidos separados para rastreabilidade. Percentuais continuam não homologados.",
   "sources": [
@@ -185,6 +185,13 @@
       "date": "2026-11-25",
       "type": "Informe fornecido pela coordenação",
       "note": "Doze processos atualizados ou corroborados. Sem consulta direta à caixa SEI. Datas de tramitação separadas da data do informe."
+    },
+    {
+      "id": "S27",
+      "title": "Atualização de acompanhamento SEI e calendário de encerramento do exercício de 2026",
+      "date": "2026-11-26",
+      "type": "Informe fornecido pela coordenação",
+      "note": "Informa a assinatura e o envio dos despachos de 02704/2026 e 21997/2026, o ISBN na ficha do diagnóstico, uma questão editorial dos Cadernos sem decisão de adiamento e o cronograma do novo SEI 24582/2026. Parte do informe repete registros de 25/11."
     }
   ],
   "projects": [
@@ -491,8 +498,8 @@
       "owner_display": "Alana · Janilton",
       "owner": "Alana; Janilton",
       "historical_status": "Oferta relatada / planejamento",
-      "last_report": "Carteira de cursos correntes separada do PAC 2027. No informe de 25/11, correção do Relatório de Ações Formativas 2026 realizada e aprovação solicitada pela DIMM.",
-      "next_action": "Atualizar carteira de cursos, inscrições e certificados. Acompanhar a aprovação do relatório corrigido (SEI 21997/2026) e preparar prioridades educacionais de encerramento do ano.",
+      "last_report": "Carteira de cursos correntes separada do PAC 2027. O despacho de aprovação da diagramação da DIMM do Relatório sobre Ações Formativas 2026 foi assinado e enviado (21997/2026).",
+      "next_action": "Atualizar carteira de cursos, inscrições e certificados. Acompanhar o encaminhamento da versão diagramada do relatório (21997/2026) e preparar prioridades educacionais de encerramento do ano.",
       "target_date": null,
       "target_kind": "Sem data",
       "source_ids": [
@@ -501,15 +508,16 @@
         "S12",
         "S01",
         "S19",
-        "S26"
+        "S26",
+        "S27"
       ],
       "sei": [
         "21997/2026"
       ],
       "scope": "Monitorar cursos em andamento, edições, ofertados, próximos cursos previstos, inscrições, certificação e entregas em execução, incluindo BPC, ELO, Família Acolhedora, assédio moral/eleitoral, Tribunal do Júri quando aplicável.",
       "note": "Ações anteriores têm oferta relatada; confirmar continuidade e próximas edições; não reabrir cursos entregues como atrasados. Atualização SEI de 13/11/2026: 21997/2026 — Revisado e diagramado; aprovação solicitada. Informe da coordenação em 13/11/2026: Relatório Ações Formativas 2026 na SCS para diagramação (21997/2026).",
-      "last_source_date": "2026-11-25",
-      "checked_at": "2026-11-25",
+      "last_source_date": "2026-11-26",
+      "checked_at": "2026-11-26",
       "target_label": "Prazo a pactuar",
       "horizon_display": "Relatório — prazo a definir",
       "target_note": "Sem data informada para entrega do relatório; horizonte 2027 antes associado ao PAC não deve ser usado como prazo dos cursos atuais.",
@@ -608,21 +616,22 @@
       "owner_display": "Alana · Jan",
       "owner": "Alana Oliveira Viana",
       "historical_status": "Em andamento no plano",
-      "last_report": "Informe de 25/11: ficha catalográfica recebida da COIN, com despacho à SCS para publicação do Diagnóstico das Escolas.",
-      "next_action": "Acompanhar a publicação e confirmar o ISBN no SEI 02704/2026. Manter as ressalvas metodológicas na divulgação e não inferir total nacional de cursos e certificados a partir de bases inconsistentes.",
+      "last_report": "Despacho solicitando aplicação da ficha catalográfica e publicação do Diagnóstico das Escolas assinado e enviado (02704/2026). O ISBN consta na ficha. Publicação ainda não confirmada.",
+      "next_action": "Acompanhar a aplicação da ficha e a publicação pela SCS (02704/2026). Manter as ressalvas metodológicas na divulgação e não inferir total nacional de cursos e certificados a partir de bases inconsistentes.",
       "target_date": "2027-12-31",
       "target_kind": "Proposto",
       "source_ids": [
         "S02",
-        "S26"
+        "S26",
+        "S27"
       ],
       "sei": [
         "02704/2026"
       ],
       "scope": "Conteúdos, direitos de reutilização, compartilhamento e integração ao catálogo/HUB. HUB de conteúdos E2.5 é entrega tecnológica associada, distinta da rotina de curadoria.",
       "note": "Frente operacional pode originar projetos de implantação; rotina de manutenção não vira projeto automaticamente. Atualização SEI de 13/11/2026: 02704/2026 — Aguardando retorno de aprovação. Informe da coordenação em 13/11/2026: Diagnóstico autorizado pela Presidência; seguir à COIN para ficha/ISBN (02704/2026).",
-      "last_source_date": "2026-11-25",
-      "checked_at": "2026-11-25",
+      "last_source_date": "2026-11-26",
+      "checked_at": "2026-11-26",
       "target_label": "Horizonte proposto",
       "horizon_display": "Horizonte proposto: 12/2027",
       "target_note": "Previsão de planejamento; não corresponde a prazo confirmado do próximo marco.",
@@ -647,15 +656,16 @@
       "owner_display": "Fábio · Dr. Daniel",
       "owner": "",
       "historical_status": "Lançamento relatado",
-      "last_report": "Informe de 25/11: minuta de portaria encaminhada à DIGN. OJS previsto em 15 dias sem data-base informada, ISSN a partir da segunda edição e sem números de DOI em 2026, com possibilidade em 2027.",
-      "next_action": "Acompanhar a análise da minuta (16537/2026), confirmar a data-base do OJS (24452/2026) e alinhar os marcos editoriais ao edital de chamamento. Acompanhar também a articulação para migração editorial, sem presumir reunião realizada.",
+      "last_report": "Minuta de portaria encaminhada à DIGN. OJS previsto em 15 dias sem data-base informada. ISSN a partir da segunda edição. Não há números de DOI em 2026 e não há decisão registrada de adiar os Cadernos para 2027.",
+      "next_action": "Acompanhar análise da minuta (16537/2026), confirmar a data-base do OJS (24452/2026) e definir o calendário editorial sem presumir adiamento. Alinhar os marcos ao edital de chamamento e acompanhar a articulação da migração editorial.",
       "target_date": null,
       "target_kind": "Sem data",
       "source_ids": [
         "S03",
         "S18",
         "S19",
-        "S26"
+        "S26",
+        "S27"
       ],
       "sei": [
         "16537/2026",
@@ -663,8 +673,8 @@
       ],
       "scope": "Selo editorial amplo Edições ENAJU; Cadernos, relatórios, diagnósticos, manuais, anais e estudos.",
       "note": "Primeira reunião com Pamela prevista para a semana de 16 a 20/11, ainda NÃO agendada. Atualização SEI de 13/11/2026: 16537/2026 — Minuta submetida à DIGN. Informe da coordenação em 13/11/2026: Portaria Cadernos na DIGN (16537/2026).",
-      "last_source_date": "2026-11-25",
-      "checked_at": "2026-11-25",
+      "last_source_date": "2026-11-26",
+      "checked_at": "2026-11-26",
       "target_label": "Prazo a pactuar",
       "horizon_display": "Prazo a pactuar",
       "target_note": "Previsão de planejamento; não corresponde a prazo confirmado do próximo marco.",
@@ -861,10 +871,10 @@
       "id": "R05",
       "sei": "02704/2026",
       "project_id": "P13",
-      "action": "Acompanhar a publicação junto à SCS e confirmar separadamente a atribuição do ISBN.",
-      "last_report": "Ficha catalográfica recebida; despacho à SCS para publicação.",
+      "action": "Acompanhar a aplicação da ficha ao relatório e a publicação pela SCS. Registrar o link somente quando a publicação estiver disponível.",
+      "last_report": "Assinatura e envio do despacho para aplicação da ficha catalográfica e publicação confirmados no informe. ISBN já consta na ficha. Publicação ainda não confirmada.",
       "owner": "Danielly; Igor",
-      "historical_date": "2026-11-25",
+      "historical_date": "2026-11-26",
       "due_date": null,
       "due_kind": "Não confirmado",
       "status_current": "Em execução",
@@ -874,10 +884,11 @@
         "S16",
         "S20",
         "S21",
-        "S26"
+        "S26",
+        "S27"
       ],
       "owner_basis": "Histórico; confirmar atribuição atual",
-      "evidence": "Informe de acompanhamento processual fornecido pela coordenação em 25/11/2026. Sem consulta direta ao SEI.",
+      "evidence": "Atualização de acompanhamento compartilhada pela coordenação em 26/11/2026, sem consulta direta ao SEI.",
       "owner_suggested": "Igor · Danielly",
       "owner_assignment_basis": "Distribuição por frente; a validar"
     },
@@ -1351,23 +1362,24 @@
       "sei": "21997/2026",
       "project_id": "P09",
       "owner": "Alana · Janilton",
-      "action": "Acompanhar a aprovação da versão corrigida, sem registrar aprovação ou publicação como concluídas.",
+      "action": "Acompanhar o encaminhamento da versão diagramada após o envio do despacho. O informe não confirma publicação do relatório.",
       "status_current": "Em execução",
       "verified_current": true,
       "priority": "Verificar",
       "source_ids": [
         "S20",
         "S21",
-        "S26"
+        "S26",
+        "S27"
       ],
-      "historical_date": "2026-11-25",
+      "historical_date": "2026-11-26",
       "due_date": null,
       "due_kind": "Não confirmado",
       "owner_basis": "Equipe de projeto para acompanhamento; a validar atribuição processual",
       "owner_suggested": "Alana · Janilton",
       "owner_assignment_basis": "Projeto relacionado",
-      "evidence": "Informe de acompanhamento processual fornecido pela coordenação em 25/11/2026. Sem consulta direta ao SEI.",
-      "last_report": "Relatório corrigido; aprovação solicitada pela DIMM."
+      "evidence": "Atualização de acompanhamento compartilhada pela coordenação em 26/11/2026, sem consulta direta ao SEI.",
+      "last_report": "Assinatura e envio do despacho que aprova a diagramação da DIMM confirmados no informe."
     },
     {
       "id": "R31",
@@ -1527,19 +1539,39 @@
       "sei": "24452/2026",
       "project_id": "P14",
       "owner": "A confirmar",
-      "action": "Confirmar a data-base dos 15 dias e acompanhar a liberação do OJS. Tratar separadamente o ISSN a partir da segunda edição e a eventual disponibilização de DOI em 2027.",
+      "action": "Confirmar a data-base dos 15 dias do OJS e definir o calendário editorial. O ISSN está previsto a partir da segunda edição. Não há números de DOI disponíveis em 2026, e eventual disponibilização em 2027 segue a confirmar. A ausência de DOI em 2026 não equivale a decisão de adiar a publicação.",
       "status_current": "Em execução",
       "verified_current": true,
       "priority": "Verificar",
       "source_ids": [
-        "S26"
+        "S26",
+        "S27"
       ],
-      "historical_date": "2026-11-25",
+      "historical_date": "2026-11-26",
       "due_date": null,
       "due_kind": "Prazo relativo sem data-base",
       "owner_basis": "Responsável operacional não informado",
-      "evidence": "Informe de acompanhamento processual fornecido pela coordenação em 25/11/2026. Sem consulta direta ao SEI.",
-      "last_report": "OJS previsto em 15 dias; data-base não informada."
+      "evidence": "Atualização de acompanhamento compartilhada pela coordenação em 26/11/2026, sem consulta direta ao SEI.",
+      "last_report": "Permanece sem previsão confirmada de DOI em 2026. Foi levantada a possibilidade de publicar os Cadernos em 2027, sem decisão editorial registrada."
+    },
+    {
+      "id": "R39",
+      "sei": "24582/2026",
+      "project_id": null,
+      "action": "Conferir quais atividades se aplicam à ENAJU. Verificar, em especial, processos de pagamento à SOF, devoluções de TED e pedidos de reforço ou anulação de empenho com prazo institucional de 16/12/2026.",
+      "last_report": "Cronograma recebido com 13 atividades, de 01/12/2026 a 29/01/2027. Para gestores, o envio de processos de pagamento à SOF, as devoluções de TED não executadas e a solicitação de reforço ou anulação de empenho têm prazo de 16/12, quando aplicáveis.",
+      "owner": "A confirmar",
+      "historical_date": "2026-11-26",
+      "due_date": null,
+      "due_kind": "Cronograma institucional informado. Aplicação à ENAJU a verificar.",
+      "status_current": "Em execução",
+      "verified_current": true,
+      "priority": "Verificar",
+      "source_ids": [
+        "S27"
+      ],
+      "owner_basis": "Sem atribuição específica da ENAJU no levantamento recebido.",
+      "evidence": "Atualização de acompanhamento compartilhada pela coordenação em 26/11/2026, sem consulta direta ao SEI."
     }
   ],
   "rules": {
@@ -1814,7 +1846,7 @@
     }
   ],
   "version": "1.0",
-  "last_review_date": "2026-11-25",
+  "last_review_date": "2026-11-26",
   "alert_history": [],
   "schema_version": "1.0",
   "repository": "redenacional-enaju-cnj/Painel_projetos",
@@ -1823,10 +1855,128 @@
     "note": "Revisar dados antes de disponibilizar o repositório ou GitHub Pages publicamente. Não publicar informações pessoais/sigilosas.",
     "progress": "Por padrão nulo até pactuação do denominador e aceite comprovado."
   },
-  "revision": 11,
-  "last_saved_at": "2026-11-25T20:41:28.847Z",
+  "revision": 12,
+  "last_saved_at": "2026-11-26T16:54:48.657Z",
   "last_saved_by": "Atualização sob solicitação da coordenação ENAJU",
   "audit_history": [
+    {
+      "id": "SEI-ATUALIZACAO-20261126",
+      "type": "atualizacao_sei",
+      "title": "Despachos enviados e cronograma de encerramento do exercício de 2026",
+      "at": "2026-11-26T16:54:48.657Z",
+      "actor": "Atualização sob solicitação da coordenação ENAJU",
+      "evidence": "Atualização de acompanhamento compartilhada pela coordenação em 26/11/2026, sem consulta direta ao SEI.",
+      "changes": [
+        {
+          "id": "SEI-05",
+          "number": "02704/2026",
+          "before": {
+            "status_current": "Ficha catalográfica recebida; despacho à SCS para publicação",
+            "awaiting": "Acompanhar a publicação junto à SCS e confirmar separadamente a atribuição do ISBN.",
+            "last_report_received_date": "2026-11-25"
+          },
+          "after": {
+            "status_current": "Despacho assinado e enviado, com ISBN na ficha catalográfica",
+            "last_report_received_date": "2026-11-26",
+            "update_kind": "alterado"
+          }
+        },
+        {
+          "id": "SEI-07",
+          "number": "21997/2026",
+          "before": {
+            "status_current": "Relatório corrigido; aprovação solicitada pela DIMM",
+            "awaiting": "Acompanhar a aprovação da versão corrigida, sem registrar aprovação ou publicação como concluídas.",
+            "last_report_received_date": "2026-11-25"
+          },
+          "after": {
+            "status_current": "Despacho de aprovação da diagramação assinado e enviado",
+            "last_report_received_date": "2026-11-26",
+            "update_kind": "alterado"
+          }
+        },
+        {
+          "id": "SEI-13",
+          "number": "24452/2026",
+          "before": {
+            "status_current": "OJS previsto em 15 dias; data-base não informada",
+            "awaiting": "Confirmar a data-base dos 15 dias e acompanhar a liberação do OJS. Tratar separadamente o ISSN a partir da segunda edição e a eventual disponibilização de DOI em 2027.",
+            "last_report_received_date": "2026-11-25"
+          },
+          "after": {
+            "status_current": "OJS previsto em 15 dias; data-base não informada",
+            "last_report_received_date": "2026-11-26",
+            "update_kind": "registro"
+          }
+        },
+        {
+          "id": "SEI-14",
+          "number": "24582/2026",
+          "after": {
+            "status_current": "Recebido o cronograma de encerramento do exercício financeiro de 2026",
+            "last_report_received_date": "2026-11-26",
+            "update_kind": "novo",
+            "schedule_items": 13
+          }
+        },
+        {
+          "id": "R05",
+          "fields": [
+            "action",
+            "last_report",
+            "source_ids"
+          ]
+        },
+        {
+          "id": "R30",
+          "fields": [
+            "action",
+            "last_report",
+            "source_ids"
+          ]
+        },
+        {
+          "id": "R38",
+          "fields": [
+            "action",
+            "last_report",
+            "source_ids"
+          ]
+        },
+        {
+          "id": "R39",
+          "fields": [
+            "action",
+            "last_report",
+            "source_ids"
+          ]
+        },
+        {
+          "id": "P09",
+          "fields": [
+            "last_report",
+            "next_action",
+            "source_ids"
+          ]
+        },
+        {
+          "id": "P13",
+          "fields": [
+            "last_report",
+            "next_action",
+            "source_ids"
+          ]
+        },
+        {
+          "id": "P14",
+          "fields": [
+            "last_report",
+            "next_action",
+            "source_ids"
+          ]
+        }
+      ]
+    },
     {
       "id": "SEI-ORDEM-20261125",
       "type": "melhoria_painel",
@@ -2890,6 +3040,224 @@
   ],
   "sei_tracking": [
     {
+      "id": "SEI-14",
+      "number": "24582/2026",
+      "title": "Encerramento do exercício financeiro de 2026",
+      "project_id": null,
+      "responsible": "A confirmar na ENAJU",
+      "priority": "Monitorar",
+      "status_current": "Recebido o cronograma de encerramento do exercício financeiro de 2026",
+      "current_unit": null,
+      "current_unit_verified": false,
+      "last_reported_unit": "Unidade de tramitação não informada",
+      "awaiting": "Conferir quais atividades se aplicam à ENAJU. Verificar, em especial, processos de pagamento à SOF, devoluções de TED e pedidos de reforço ou anulação de empenho com prazo institucional de 16/12/2026.",
+      "last_movement": "Recebido o SEI com o cronograma institucional de encerramento do exercício financeiro de 2026. As 13 atividades e os responsáveis indicados constam no cronograma deste processo.",
+      "last_movement_date": null,
+      "last_verified_at": null,
+      "tracked_since": "2026-11-26",
+      "schedule": [
+        {
+          "item": 1,
+          "action": "Indicação, pelo Ordenador de Despesas, dos empenhos que serão inscritos em Restos a Pagar Não Processados a Liquidar no sistema SIAFI.",
+          "owner": "Ordenador de Despesas",
+          "start_date": "2026-12-01",
+          "due_date": "2027-01-06"
+        },
+        {
+          "item": 3,
+          "action": "Pagamento de Guia de Recolhimento da União - GRU no PagTesouro.",
+          "owner": "Todos",
+          "due_date": "2026-12-15"
+        },
+        {
+          "item": 2,
+          "action": "Envio dos processos para pagamento à SOF.",
+          "owner": "Gestores",
+          "due_date": "2026-12-16"
+        },
+        {
+          "item": 4,
+          "action": "Devoluções de valores orçamentários e financeiros que não serão executados de Termo de Execução Descentralizada.",
+          "owner": "Gestores",
+          "due_date": "2026-12-16"
+        },
+        {
+          "item": 5,
+          "action": "Prazo final para solicitação de reforço ou anulação de nota de empenho, por meio de formulário.\n\nApós essa data, os créditos orçamentários não empenhados serão automaticamente remanejados para a execução de ações estratégicas, inclusive aqueles associados a processos de emissão de nota de empenho que não tiverem sido encaminhados à SOF até 16/12/2026.\n\n",
+          "owner": "Coordenadores de Ação/Gestores",
+          "due_date": "2026-12-16"
+        },
+        {
+          "item": 6,
+          "action": "Realização dos compromissos relativos aos DARFs Agregados na transação INCAGREG, para processamento ainda no exercício de 2026.",
+          "owner": "COEX",
+          "due_date": "2026-12-30"
+        },
+        {
+          "item": 7,
+          "action": "Emissão de Ordens Bancárias.",
+          "owner": "SOF",
+          "due_date": "2026-12-30"
+        },
+        {
+          "item": 8,
+          "action": "Emissão de Nota de Empenho 2026.",
+          "owner": "COGO",
+          "due_date": "2026-12-31"
+        },
+        {
+          "item": 9,
+          "action": "Envio à SCONT dos Relatórios de Bens Móveis (RMB), Intangíveis (RMI) e Almoxarifado (RMA), referentes ao mês de dezembro/26.",
+          "owner": "SEMAP",
+          "due_date": "2027-01-05"
+        },
+        {
+          "item": 10,
+          "action": "Envio à SCONT da conciliação bancária das contas vinculadas dos contratos de mão de obra terceirizada.",
+          "owner": "COSF",
+          "due_date": "2027-01-05"
+        },
+        {
+          "item": 11,
+          "action": "Conformidade de Registro de Gestão.",
+          "owner": "NUCO",
+          "due_date": "2027-01-15"
+        },
+        {
+          "item": 12,
+          "action": "Conformidade Contábil (UG, Órgão e Órgão Superior).",
+          "owner": "SCONT",
+          "start_date": "2027-01-20",
+          "due_date": "2027-01-22"
+        },
+        {
+          "item": 13,
+          "action": "Publicação de Notas Explicativas.",
+          "owner": "SCONT",
+          "due_date": "2027-01-29"
+        }
+      ],
+      "last_checked_at": "2026-11-26T16:54:48.657Z",
+      "last_report_received_date": "2026-11-26",
+      "source": "Atualização de acompanhamento compartilhada pela coordenação em 26/11/2026, sem consulta direta ao SEI.",
+      "evidence": "Cronograma recebido com 13 atividades, de 01/12/2026 a 29/01/2027. Para gestores, o envio de processos de pagamento à SOF, as devoluções de TED não executadas e a solicitação de reforço ou anulação de empenho têm prazo de 16/12, quando aplicáveis.",
+      "verification_method": "informe_coordenacao_sem_consulta_direta_ao_sei",
+      "update_note": "Prazos e atribuições institucionais reproduzidos do cronograma informado. Não houve indicação de responsável operacional específico da ENAJU.",
+      "source_id": "S27",
+      "last_update_at": "2026-11-26T16:54:48.657Z",
+      "last_update_kind": "novo",
+      "last_update_channel": "informe",
+      "last_update_note": "Cronograma recebido com 13 atividades, de 01/12/2026 a 29/01/2027. Para gestores, o envio de processos de pagamento à SOF, as devoluções de TED não executadas e a solicitação de reforço ou anulação de empenho têm prazo de 16/12, quando aplicáveis.",
+      "updates": [
+        {
+          "id": "SEI-UPD-20261126-24582",
+          "at": "2026-11-26T16:54:48.657Z",
+          "kind": "novo",
+          "channel": "informe",
+          "actor": "Coordenação ENAJU (informe registrado)",
+          "text": "Cronograma recebido com 13 atividades, de 01/12/2026 a 29/01/2027. Para gestores, o envio de processos de pagamento à SOF, as devoluções de TED não executadas e a solicitação de reforço ou anulação de empenho têm prazo de 16/12, quando aplicáveis.",
+          "source": "Atualização de acompanhamento compartilhada pela coordenação em 26/11/2026, sem consulta direta ao SEI."
+        }
+      ]
+    },
+    {
+      "id": "SEI-05",
+      "number": "02704/2026",
+      "title": "Diagnóstico das Escolas — relatório e autorização de publicação",
+      "project_id": "P13",
+      "responsible": "Igor · Danielly",
+      "priority": "Monitorar",
+      "status_current": "Despacho assinado e enviado, com ISBN na ficha catalográfica",
+      "current_unit": null,
+      "current_unit_verified": false,
+      "last_reported_unit": "SCS (publicação solicitada)",
+      "awaiting": "Acompanhar a aplicação da ficha ao relatório e a publicação pela SCS. Registrar o link somente quando a publicação estiver disponível.",
+      "last_movement": "A ficha catalográfica enviada pela COIN já contém o ISBN. O despacho que solicita a aplicação da ficha ao relatório e a publicação do Diagnóstico das Escolas foi assinado e enviado, segundo o informe.",
+      "last_movement_date": null,
+      "last_checked_at": "2026-11-26T16:54:48.657Z",
+      "last_verified_at": null,
+      "source": "Atualização de acompanhamento compartilhada pela coordenação em 26/11/2026, sem consulta direta ao SEI.",
+      "evidence": "Assinatura e envio do despacho para aplicação da ficha catalográfica e publicação confirmados no informe. ISBN já consta na ficha. Publicação ainda não confirmada.",
+      "tracked_since": "2026-11-13",
+      "last_report_received_date": "2026-11-26",
+      "verification_method": "informe_coordenacao_sem_consulta_direta_ao_sei",
+      "update_note": "A data formal do envio, o recebimento pela SCS e a publicação não foram informados.",
+      "presidency_publication_approved": true,
+      "source_id": "S27",
+      "updates": [
+        {
+          "id": "SEI-UPD-20261126-02704",
+          "at": "2026-11-26T16:54:48.657Z",
+          "kind": "alterado",
+          "channel": "informe",
+          "actor": "Coordenação ENAJU (informe registrado)",
+          "text": "Assinatura e envio do despacho para aplicação da ficha catalográfica e publicação confirmados no informe. ISBN já consta na ficha. Publicação ainda não confirmada.",
+          "source": "Atualização de acompanhamento compartilhada pela coordenação em 26/11/2026, sem consulta direta ao SEI."
+        },
+        {
+          "id": "SEI-UPD-20261125-02704",
+          "at": "2026-11-25T20:17:32.154Z",
+          "actor": "Coordenação ENAJU (informe registrado)",
+          "text": "Após autorização de publicação registrada na rodada anterior, o relatório foi enviado à COIN para solicitação de ficha catalográfica e ISBN. A COIN enviou a ficha e houve despacho à SCS para publicação. A atribuição do ISBN e a efetiva publicação não foram confirmadas no informe.",
+          "source": "Informe de acompanhamento processual fornecido pela coordenação em 25/11/2026. Sem consulta direta ao SEI.",
+          "kind": "alterado",
+          "channel": "informe"
+        }
+      ],
+      "last_update_at": "2026-11-26T16:54:48.657Z",
+      "last_update_note": "Assinatura e envio do despacho para aplicação da ficha catalográfica e publicação confirmados no informe. ISBN já consta na ficha. Publicação ainda não confirmada.",
+      "last_update_kind": "alterado",
+      "last_update_channel": "informe"
+    },
+    {
+      "id": "SEI-07",
+      "number": "21997/2026",
+      "title": "Relatório sobre Ações Formativas 2026",
+      "project_id": "P09",
+      "responsible": "Alana · Janilton",
+      "priority": "Monitorar",
+      "status_current": "Despacho de aprovação da diagramação assinado e enviado",
+      "current_unit": null,
+      "current_unit_verified": false,
+      "last_reported_unit": "Destino após o envio não informado",
+      "awaiting": "Acompanhar o encaminhamento da versão diagramada após o envio do despacho. O informe não confirma publicação do relatório.",
+      "last_movement": "Após a correção do Relatório sobre Ações Formativas 2026, foi assinado e enviado o despacho que aprova a diagramação apresentada pela DIMM.",
+      "last_movement_date": null,
+      "last_checked_at": "2026-11-26T16:54:48.657Z",
+      "last_verified_at": null,
+      "last_report_received_date": "2026-11-26",
+      "source": "Atualização de acompanhamento compartilhada pela coordenação em 26/11/2026, sem consulta direta ao SEI.",
+      "evidence": "Assinatura e envio do despacho que aprova a diagramação da DIMM confirmados no informe.",
+      "tracked_since": "2026-11-13",
+      "verification_method": "informe_coordenacao_sem_consulta_direta_ao_sei",
+      "update_note": "A aprovação informada refere-se à diagramação. Data formal do envio e unidade atual não informadas.",
+      "source_id": "S27",
+      "updates": [
+        {
+          "id": "SEI-UPD-20261126-21997",
+          "at": "2026-11-26T16:54:48.657Z",
+          "kind": "alterado",
+          "channel": "informe",
+          "actor": "Coordenação ENAJU (informe registrado)",
+          "text": "Assinatura e envio do despacho que aprova a diagramação da DIMM confirmados no informe.",
+          "source": "Atualização de acompanhamento compartilhada pela coordenação em 26/11/2026, sem consulta direta ao SEI."
+        },
+        {
+          "id": "SEI-UPD-20261125-21997",
+          "at": "2026-11-25T20:17:32.154Z",
+          "actor": "Coordenação ENAJU (informe registrado)",
+          "text": "A correção do Relatório sobre Ações Formativas 2026 foi realizada, e a DIMM solicitou sua aprovação. A data e o destinatário do pedido não foram informados.",
+          "source": "Informe de acompanhamento processual fornecido pela coordenação em 25/11/2026. Sem consulta direta ao SEI.",
+          "kind": "alterado",
+          "channel": "informe"
+        }
+      ],
+      "last_update_at": "2026-11-26T16:54:48.657Z",
+      "last_update_note": "Assinatura e envio do despacho que aprova a diagramação da DIMM confirmados no informe.",
+      "last_update_kind": "alterado",
+      "last_update_channel": "informe"
+    },
+    {
       "id": "SEI-13",
       "number": "24452/2026",
       "title": "Cadernos ENAJU — plataforma OJS, ISSN e DOI",
@@ -2901,18 +3269,27 @@
       "current_unit": null,
       "current_unit_verified": false,
       "last_reported_unit": "Unidade não informada",
-      "awaiting": "Confirmar a data-base dos 15 dias e acompanhar a liberação do OJS. Tratar separadamente o ISSN a partir da segunda edição e a eventual disponibilização de DOI em 2027.",
+      "awaiting": "Confirmar a data-base dos 15 dias do OJS e definir o calendário editorial. O ISSN está previsto a partir da segunda edição. Não há números de DOI disponíveis em 2026, e eventual disponibilização em 2027 segue a confirmar. A ausência de DOI em 2026 não equivale a decisão de adiar a publicação.",
       "last_movement": "O OJS será disponibilizado em 15 dias, sem data-base informada. ISSN será liberado somente a partir da segunda edição. Não há números de DOI disponíveis em 2026 e a disponibilização poderá ocorrer em 2027, ainda sem confirmação.",
       "last_movement_date": null,
-      "last_checked_at": "2026-11-25T20:17:32.154Z",
+      "last_checked_at": "2026-11-26T16:54:48.657Z",
       "last_verified_at": null,
-      "last_report_received_date": "2026-11-25",
-      "source": "Informe de acompanhamento processual fornecido pela coordenação em 25/11/2026. Sem consulta direta ao SEI.",
-      "evidence": "OJS previsto em 15 dias; data-base não informada.",
+      "last_report_received_date": "2026-11-26",
+      "source": "Atualização de acompanhamento compartilhada pela coordenação em 26/11/2026, sem consulta direta ao SEI.",
+      "evidence": "Permanece sem previsão confirmada de DOI em 2026. Foi levantada a possibilidade de publicar os Cadernos em 2027, sem decisão editorial registrada.",
       "verification_method": "informe_coordenacao_sem_consulta_direta_ao_sei",
-      "update_note": "Não houve nova confirmação da unidade atual neste informe.",
-      "source_id": "S26",
+      "update_note": "O informe traz uma questão editorial, não uma nova movimentação do SEI ou uma data confirmada para publicação.",
+      "source_id": "S27",
       "updates": [
+        {
+          "id": "SEI-UPD-20261126-24452",
+          "at": "2026-11-26T16:54:48.657Z",
+          "kind": "registro",
+          "channel": "informe",
+          "actor": "Coordenação ENAJU (informe registrado)",
+          "text": "Permanece sem previsão confirmada de DOI em 2026. Foi levantada a possibilidade de publicar os Cadernos em 2027, sem decisão editorial registrada.",
+          "source": "Atualização de acompanhamento compartilhada pela coordenação em 26/11/2026, sem consulta direta ao SEI."
+        },
         {
           "id": "SEI-UPD-20261125-24452",
           "at": "2026-11-25T20:17:32.154Z",
@@ -2923,9 +3300,9 @@
           "channel": "informe"
         }
       ],
-      "last_update_at": "2026-11-25T20:17:32.154Z",
-      "last_update_note": "O OJS será disponibilizado em 15 dias, sem data-base informada. ISSN será liberado somente a partir da segunda edição. Não há números de DOI disponíveis em 2026 e a disponibilização poderá ocorrer em 2027, ainda sem confirmação.",
-      "last_update_kind": "novo",
+      "last_update_at": "2026-11-26T16:54:48.657Z",
+      "last_update_note": "Permanece sem previsão confirmada de DOI em 2026. Foi levantada a possibilidade de publicar os Cadernos em 2027, sem decisão editorial registrada.",
+      "last_update_kind": "registro",
       "last_update_channel": "informe"
     },
     {
@@ -3003,85 +3380,6 @@
       ],
       "last_update_at": "2026-11-25T20:17:32.154Z",
       "last_update_note": "A SCS informou que seu apoio se limita às atividades técnicas de gravação e edição, sem assumir as rotinas editoriais. Indicou a necessidade de repactuar as entregas originalmente previstas de 19/10 a 30/11/2026 e o início da temporada previsto para 01/12/2026. O acúmulo de entregas de fim de exercício impede absorver de imediato o escopo original.",
-      "last_update_kind": "alterado",
-      "last_update_channel": "informe"
-    },
-    {
-      "id": "SEI-07",
-      "number": "21997/2026",
-      "title": "Relatório sobre Ações Formativas 2026",
-      "project_id": "P09",
-      "responsible": "Alana · Janilton",
-      "priority": "Monitorar",
-      "status_current": "Relatório corrigido; aprovação solicitada pela DIMM",
-      "current_unit": null,
-      "current_unit_verified": false,
-      "last_reported_unit": "Destinatário da aprovação não informado",
-      "awaiting": "Acompanhar a aprovação da versão corrigida, sem registrar aprovação ou publicação como concluídas.",
-      "last_movement": "A correção do Relatório sobre Ações Formativas 2026 foi realizada, e a DIMM solicitou sua aprovação. A data e o destinatário do pedido não foram informados.",
-      "last_movement_date": null,
-      "last_checked_at": "2026-11-25T20:17:32.154Z",
-      "last_verified_at": null,
-      "last_report_received_date": "2026-11-25",
-      "source": "Informe de acompanhamento processual fornecido pela coordenação em 25/11/2026. Sem consulta direta ao SEI.",
-      "evidence": "Relatório corrigido; aprovação solicitada pela DIMM.",
-      "tracked_since": "2026-11-13",
-      "verification_method": "informe_coordenacao_sem_consulta_direta_ao_sei",
-      "update_note": "Não houve nova confirmação da unidade atual neste informe.",
-      "source_id": "S26",
-      "updates": [
-        {
-          "id": "SEI-UPD-20261125-21997",
-          "at": "2026-11-25T20:17:32.154Z",
-          "actor": "Coordenação ENAJU (informe registrado)",
-          "text": "A correção do Relatório sobre Ações Formativas 2026 foi realizada, e a DIMM solicitou sua aprovação. A data e o destinatário do pedido não foram informados.",
-          "source": "Informe de acompanhamento processual fornecido pela coordenação em 25/11/2026. Sem consulta direta ao SEI.",
-          "kind": "alterado",
-          "channel": "informe"
-        }
-      ],
-      "last_update_at": "2026-11-25T20:17:32.154Z",
-      "last_update_note": "A correção do Relatório sobre Ações Formativas 2026 foi realizada, e a DIMM solicitou sua aprovação. A data e o destinatário do pedido não foram informados.",
-      "last_update_kind": "alterado",
-      "last_update_channel": "informe"
-    },
-    {
-      "id": "SEI-05",
-      "number": "02704/2026",
-      "title": "Diagnóstico das Escolas — relatório e autorização de publicação",
-      "project_id": "P13",
-      "responsible": "Igor · Danielly",
-      "priority": "Monitorar",
-      "status_current": "Ficha catalográfica recebida; despacho à SCS para publicação",
-      "current_unit": null,
-      "current_unit_verified": false,
-      "last_reported_unit": "SCS (destinatária do despacho para publicação)",
-      "awaiting": "Acompanhar a publicação junto à SCS e confirmar separadamente a atribuição do ISBN.",
-      "last_movement": "Após autorização de publicação registrada na rodada anterior, o relatório foi enviado à COIN para solicitação de ficha catalográfica e ISBN. A COIN enviou a ficha e houve despacho à SCS para publicação. A atribuição do ISBN e a efetiva publicação não foram confirmadas no informe.",
-      "last_movement_date": null,
-      "last_checked_at": "2026-11-25T20:17:32.154Z",
-      "last_verified_at": null,
-      "source": "Informe de acompanhamento processual fornecido pela coordenação em 25/11/2026. Sem consulta direta ao SEI.",
-      "evidence": "Ficha catalográfica recebida; despacho à SCS para publicação.",
-      "tracked_since": "2026-11-13",
-      "last_report_received_date": "2026-11-25",
-      "verification_method": "informe_coordenacao_sem_consulta_direta_ao_sei",
-      "update_note": "Não houve nova confirmação da unidade atual neste informe.",
-      "presidency_publication_approved": true,
-      "source_id": "S26",
-      "updates": [
-        {
-          "id": "SEI-UPD-20261125-02704",
-          "at": "2026-11-25T20:17:32.154Z",
-          "actor": "Coordenação ENAJU (informe registrado)",
-          "text": "Após autorização de publicação registrada na rodada anterior, o relatório foi enviado à COIN para solicitação de ficha catalográfica e ISBN. A COIN enviou a ficha e houve despacho à SCS para publicação. A atribuição do ISBN e a efetiva publicação não foram confirmadas no informe.",
-          "source": "Informe de acompanhamento processual fornecido pela coordenação em 25/11/2026. Sem consulta direta ao SEI.",
-          "kind": "alterado",
-          "channel": "informe"
-        }
-      ],
-      "last_update_at": "2026-11-25T20:17:32.154Z",
-      "last_update_note": "Após autorização de publicação registrada na rodada anterior, o relatório foi enviado à COIN para solicitação de ficha catalográfica e ISBN. A COIN enviou a ficha e houve despacho à SCS para publicação. A atribuição do ISBN e a efetiva publicação não foram confirmadas no informe.",
       "last_update_kind": "alterado",
       "last_update_channel": "informe"
     },
@@ -3360,12 +3658,12 @@
     }
   ],
   "sei_tracking_policy": {
-    "scope": "Doze processos prioritários em acompanhamento. Inclui o SEI 24452/2026 (OJS dos Cadernos ENAJU). O SEI 08366/2026 permanece no histórico.",
-    "not_live": "Sem integração autenticada com o SEI. A atualização de 25/11/2026 reflete informe da coordenação, não consulta à caixa SEI.",
+    "scope": "Treze processos prioritários em acompanhamento. Inclui o SEI 24582/2026 (encerramento do exercício financeiro de 2026). O SEI 08366/2026 permanece no histórico.",
+    "not_live": "Sem integração autenticada com o SEI. As atualizações refletem informes da coordenação, não consulta à caixa SEI.",
     "public_notice": "O site é público. Não inserir dados pessoais sensíveis, documentos internos ou peças sigilosas.",
-    "status": "Situação informada pela coordenação em 25/11/2026, sem leitura direta da tramitação no sistema SEI.",
+    "status": "A situação de cada processo reflete o último informe registrado. Confirmações de assinatura ou envio não equivalem a publicação ou encerramento.",
     "movement_date": "A data do informe é distinta da data da movimentação. Quando não informada, a data da movimentação fica em branco.",
-    "current_unit": "Unidade, quando exibida, corresponde à última posição informada e não foi reconfirmada em 25/11. Destino de despacho e unidade que se manifestou não comprovam localização atual."
+    "current_unit": "A unidade, quando exibida, corresponde à última posição informada. Destino de despacho e unidade que se manifestou não comprovam localização atual."
   },
   "archived_sei_tracking": [
     {
